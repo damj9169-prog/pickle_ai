@@ -132,9 +132,171 @@ def fetch_feed(feed):
     return feed, items
 
 
+def parse_skyskysky_table(raw_html, base_url):
+    from html.parser import HTMLParser
+    class TableParser(HTMLParser):
+        def __init__(self):
+            super().__init__()
+            self.in_tr = False
+            self.in_td = False
+            self.rows = []
+            self.cur_row = []
+            self.cur_cell = []
+            self.cur_href = ""
+        def handle_starttag(self, tag, attrs):
+            ad = dict(attrs)
+            if tag == "tr":
+                self.in_tr = True
+                self.cur_row = []
+            elif tag in ("td", "th") and self.in_tr:
+                self.in_td = True
+                self.cur_cell = []
+                self.cur_href = ""
+            elif tag == "a" and self.in_td and not self.cur_href:
+                self.cur_href = ad.get("href", "")
+        def handle_endtag(self, tag):
+            if tag in ("td", "th") and self.in_td:
+                self.in_td = False
+                txt = re.sub(r"\s+", " ", "".join(self.cur_cell)).strip()
+                self.cur_row.append((txt, self.cur_href))
+            elif tag == "tr" and self.in_tr:
+                self.in_tr = False
+                if self.cur_row:
+                    self.rows.append(self.cur_row)
+        def handle_data(self, data):
+            if self.in_td:
+                self.cur_cell.append(data)
+
+    p = TableParser()
+    p.feed(raw_html)
+    items = []
+    for row in p.rows:
+        if len(row) >= 6 and row[0][0] != "名称":
+            name, href = row[0]
+            height, floors, loc, comp, status = row[1][0], row[2][0], row[3][0], row[4][0], row[5][0]
+            if not name or not loc:
+                continue
+            link = urllib.parse.urljoin(base_url, href) if href else base_url
+            items.append({"name": name, "link": link, "height": height, "floors": floors, "loc": loc, "comp": comp, "status": status})
+    return items
+
+
+def build_skyskysky(cfg):
+    title = cfg.get("title", "🏗 建設・再開発プロジェクト")
+    gh_file = cfg.get("github_file") or "construction.html"
+    out_path = os.path.join(ROOT_DIR, gh_file)
+    feeds = cfg.get("feeds", [])
+
+    def fetch_one(fd):
+        try:
+            req = urllib.request.Request(fd["url"], headers={"User-Agent": "Mozilla/5.0"})
+            raw = urllib.request.urlopen(req, timeout=12).read().decode("utf-8", errors="ignore")
+            return fd, parse_skyskysky_table(raw, fd["url"])
+        except Exception as e:
+            print(f"[warn] skyskysky {fd.get('name')}: {e}", file=sys.stderr)
+            return fd, []
+
+    results = []
+    with concurrent.futures.ThreadPoolExecutor(max_workers=4) as ex:
+        for res in [ex.submit(fetch_one, fd) for fd in feeds]:
+            results.append(res.result())
+
+    tabs = ['<button class="tab active" onclick="filterPref(\'ALL\', this)">すべて</button>',
+            '<button class="tab" onclick="filterPref(\'ACTIVE\', this)">計画中・建設中のみ</button>']
+    sections = []
+    total = 0
+    for fd, items in results:
+        pref = fd["name"]
+        tabs.append(f'<button class="tab" onclick="filterPref(\'{html.escape(pref)}\', this)">{html.escape(pref)} ({len(items)})</button>')
+        total += len(items)
+        rows = []
+        for it in items:
+            st = it["status"]
+            is_active = "1" if ("計画" in st or "建設" in st or "予定" in st) else "0"
+            badge_cls = "badge-en" if is_active == "1" else "badge-jp"
+            rows.append(f'''
+            <a class="item" data-active="{is_active}" href="{html.escape(it["link"])}" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge {badge_cls}">{html.escape(st or "不明")}</span>{html.escape(it["name"])}</div>
+              <div class="item-meta"><span>📍 {html.escape(it["loc"])} ・ {html.escape(it["height"])}m / {html.escape(it["floors"])}階</span><span>竣工: {html.escape(it["comp"])}</span></div>
+            </a>''')
+        sections.append(f'''
+        <section class="source-card" data-pref="{html.escape(pref)}">
+          <div class="source-header"><span class="source-name">{html.escape(pref)}</span><span class="source-count">{len(items)}件</span></div>
+          <div class="items">{''.join(rows)}</div>
+        </section>''')
+
+    now_str = datetime.datetime.now(JST).strftime("%Y-%m-%d %H:%M")
+    page = f'''<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{html.escape(title)}</title>
+<style>
+  body {{ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #f4f6f5; color: #1f2937; margin: 0; padding: 16px; }}
+  .container {{ max-width: 860px; margin: 0 auto; }}
+  h1 {{ font-size: 20px; margin: 0 0 4px; }}
+  .sub {{ font-size: 12px; color: #6b7280; margin-bottom: 12px; }}
+  .tabs {{ display: flex; gap: 8px; overflow-x: auto; padding-bottom: 8px; margin-bottom: 12px; }}
+  .tab {{ border: 1px solid #d1d5db; background: #fff; border-radius: 999px; padding: 6px 14px; font-size: 13px; cursor: pointer; white-space: nowrap; color: #374151; }}
+  .tab.active {{ background: #145343; color: #fff; border-color: #145343; font-weight: 600; }}
+  .source-card {{ background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 14px 16px; margin-bottom: 14px; }}
+  .source-header {{ display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #145343; padding-bottom: 8px; margin-bottom: 8px; }}
+  .source-name {{ font-weight: 700; font-size: 15px; }}
+  .source-count {{ font-size: 12px; color: #6b7280; }}
+  .item {{ display: block; padding: 10px 0; border-bottom: 1px solid #f3f4f6; text-decoration: none; color: inherit; }}
+  .item:last-child {{ border-bottom: none; }}
+  .item:hover .item-title {{ color: #145343; text-decoration: underline; }}
+  .item-title {{ font-size: 14px; font-weight: 600; line-height: 1.45; }}
+  .item-meta {{ display: flex; justify-content: space-between; font-size: 12px; color: #6b7280; margin-top: 4px; gap: 8px; flex-wrap: wrap; }}
+  .badge {{ display: inline-block; font-size: 10px; font-weight: 700; padding: 2px 6px; border-radius: 4px; margin-right: 6px; }}
+  .badge-en {{ background: #e0f2fe; color: #0369a1; }}
+  .badge-jp {{ background: #f3f4f6; color: #4b5563; }}
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>{html.escape(title)}</h1>
+  <div class="sub">更新: {now_str} JST ・ 6都府県 計{total}件</div>
+  <div class="tabs">{''.join(tabs)}</div>
+  {''.join(sections)}
+</div>
+<script>
+function filterPref(key, btn) {{
+  document.querySelectorAll('.tab').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  document.querySelectorAll('.source-card').forEach(card => {{
+    if (key === 'ALL') {{
+      card.style.display = 'block';
+      card.querySelectorAll('.item').forEach(it => it.style.display = 'block');
+    }} else if (key === 'ACTIVE') {{
+      card.style.display = 'block';
+      let vis = 0;
+      card.querySelectorAll('.item').forEach(it => {{
+        const show = it.dataset.active === '1';
+        it.style.display = show ? 'block' : 'none';
+        if (show) vis++;
+      }});
+      if (vis === 0) card.style.display = 'none';
+    }} else {{
+      card.style.display = (card.dataset.pref === key) ? 'block' : 'none';
+      card.querySelectorAll('.item').forEach(it => it.style.display = 'block');
+    }}
+  }});
+}}
+</script>
+</body>
+</html>'''
+    with open(out_path, "w", encoding="utf-8") as f:
+        f.write(page)
+    print(f"Built {gh_file} ({len(results)} prefs, {total} projects)")
+    return {"file": gh_file, "title": title, "feeds": feeds}
+
+
 def build_one(cfg_path, trans_cache):
     with open(cfg_path, "r", encoding="utf-8") as f:
         cfg = json.load(f)
+    if cfg.get("type") == "skyskysky":
+        return build_skyskysky(cfg)
 
     title = cfg.get("title", "📰 ニュース監視ダッシュボード")
     gh_file = cfg.get("github_file") or os.path.basename(cfg.get("output_html", "news.html"))

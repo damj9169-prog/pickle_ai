@@ -1,0 +1,15 @@
+{
+  "type": "skyskysky",
+  "title": "🏗 建設・再開発プロジェクト（6都府県）",
+  "output_html": "/workspace/downloads/construction-dashboard.html",
+  "github_repo": "damj9169-prog/pickle_ai",
+  "github_file": "construction.html",
+  "feeds": [
+    {"media": "大阪府", "name": "大阪府", "url": "https://skyskysky.net/construction-japan/27osaka/00.html"},
+    {"media": "兵庫県", "name": "兵庫県", "url": "https://skyskysky.net/construction-japan/28hyogo/00.html"},
+    {"media": "京都府", "name": "京都府", "url": "https://skyskysky.net/construction-japan/26kyoto/00.html"},
+    {"media": "神奈川県", "name": "神奈川県", "url": "https://skyskysky.net/construction-japan/14kanagawa/00.html"},
+    {"media": "東京都", "name": "東京都", "url": "https://skyskysky.net/construction-japan/13tokyo/00.html"},
+    {"media": "愛知県", "name": "愛知県", "url": "https://skyskysky.net/construction-japan/23aichi/00.html"}
+  ]
+}
