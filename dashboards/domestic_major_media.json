@@ -10,7 +10,55 @@
       "name": "共同通信",
       "lang": "JP",
       "domain": "kyodo.co.jp",
-      "url": "https://news.google.com/rss/search?q=site:kyodo.co.jp+OR+site:47news.jp&hl=ja&gl=JP&ceid=JP:ja",
+      "url": "https://news.google.com/rss/search?q=site:kyodo.co.jp&hl=ja&gl=JP&ceid=JP:ja",
+      "limit": 15
+    },
+    {
+      "media": "47NEWS",
+      "name": "47NEWS",
+      "lang": "JP",
+      "domain": "47news.jp",
+      "url": "https://news.google.com/rss/search?q=site:47news.jp&hl=ja&gl=JP&ceid=JP:ja",
+      "limit": 15
+    },
+    {
+      "media": "日経新聞",
+      "name": "日本経済新聞",
+      "lang": "JP",
+      "domain": "nikkei.com",
+      "url": "https://news.google.com/rss/search?q=site:nikkei.com&hl=ja&gl=JP&ceid=JP:ja",
+      "limit": 15
+    },
+    {
+      "media": "Yahoo!ニュース",
+      "name": "Yahoo!ニュース 主要トピックス",
+      "lang": "JP",
+      "domain": "news.yahoo.co.jp",
+      "url": "https://news.yahoo.co.jp/rss/topics/top-picks.xml",
+      "limit": 10
+    },
+    {
+      "media": "Yahoo!ニュース",
+      "name": "Yahoo!ニュース 国内・経済",
+      "lang": "JP",
+      "domain": "news.yahoo.co.jp",
+      "url": "https://news.yahoo.co.jp/rss/categories/business.xml",
+      "limit": 15
+    },
+    {
+      "media": "ライブドア",
+      "name": "ライブドアニュース",
+      "lang": "JP",
+      "domain": "news.livedoor.com",
+      "url": "https://news.google.com/rss/search?q=site:news.livedoor.com&hl=ja&gl=JP&ceid=JP:ja",
+      "limit": 15
+    },
+    {
+      "media": "Googleニュース",
+      "name": "Googleニュース トップ",
+      "lang": "JP",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss?hl=ja&gl=JP&ceid=JP:ja",
       "limit": 15
     },
     {
