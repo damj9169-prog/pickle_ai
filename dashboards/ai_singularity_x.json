@@ -1,0 +1,90 @@
+{
+  "title": "🤖 AI・シンギュラリティX 9アカウント監視ダッシュボード",
+  "output_html": "/workspace/downloads/ai-singularity-x-dashboard.html",
+  "telegram_thread_id": 4,
+  "github_repo": "damj9169-prog/pickle_ai",
+  "github_file": "ai-singularity-x.html",
+  "feeds": [
+    {
+      "type": "x",
+      "media": "K.Ishi",
+      "name": "@K_Ishi_AI",
+      "handle": "K_Ishi_AI",
+      "lang": "JP",
+      "domain": "x.com",
+      "limit": 15
+    },
+    {
+      "type": "x",
+      "media": "bioshok",
+      "name": "@bioshok3",
+      "handle": "bioshok3",
+      "lang": "JP",
+      "domain": "x.com",
+      "limit": 15
+    },
+    {
+      "type": "x",
+      "media": "sutoroveli",
+      "name": "@sutoroveli",
+      "handle": "sutoroveli",
+      "lang": "JP",
+      "domain": "x.com",
+      "limit": 15
+    },
+    {
+      "type": "x",
+      "media": "sutoroveli_news",
+      "name": "@sutoroveli_news",
+      "handle": "sutoroveli_news",
+      "lang": "JP",
+      "domain": "x.com",
+      "limit": 15
+    },
+    {
+      "type": "x",
+      "media": "Dr Singularity",
+      "name": "@Dr_Singularity",
+      "handle": "Dr_Singularity",
+      "lang": "EN",
+      "domain": "x.com",
+      "limit": 15
+    },
+    {
+      "type": "x",
+      "media": "あいシンギュラリティ",
+      "name": "@singularity20xy",
+      "handle": "singularity20xy",
+      "lang": "JP",
+      "domain": "x.com",
+      "limit": 15
+    },
+    {
+      "type": "x",
+      "media": "しょー/AIの神",
+      "name": "@god_of_ai7",
+      "handle": "god_of_ai7",
+      "lang": "JP",
+      "domain": "x.com",
+      "limit": 15
+    },
+    {
+      "type": "x",
+      "media": "Tsubame",
+      "name": "@Tsubame33785667",
+      "handle": "Tsubame33785667",
+      "lang": "JP",
+      "domain": "x.com",
+      "limit": 15
+    },
+    {
+      "type": "x",
+      "media": "松田悠玄",
+      "name": "@ytk_matsuda",
+      "handle": "ytk_matsuda",
+      "lang": "JP",
+      "domain": "x.com",
+      "limit": 15
+    }
+  ]
+}

@@ -308,8 +308,8 @@ def build_one(cfg_path, trans_cache):
         for res in [ex.submit(fetch_feed, fd) for fd in feeds]:
             results.append(res.result())
 
-    order_map = {fd["url"]: i for i, fd in enumerate(feeds)}
-    results.sort(key=lambda x: order_map.get(x[0]["url"], 999))
+    order_map = {(fd.get("url") or fd.get("handle") or fd.get("name", "")): i for i, fd in enumerate(feeds)}
+    results.sort(key=lambda x: order_map.get(x[0].get("url") or x[0].get("handle") or x[0].get("name", ""), 999))
 
     to_trans = {it["title"] for _, items in results for it in items if is_foreign(it["title"]) and it["title"] not in trans_cache}
     if to_trans:
@@ -336,7 +336,7 @@ def build_one(cfg_path, trans_cache):
         total_articles += len(items)
         media = feed.get("media", feed.get("name", "その他"))
         lang = feed.get("lang", "JP")
-        domain = feed.get("domain") or urllib.parse.urlparse(feed["url"]).netloc
+        domain = feed.get("domain") or urllib.parse.urlparse(feed.get("url", "")).netloc or "x.com"
         rows = []
         for it in items:
             orig = it["title"]
