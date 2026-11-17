@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>📈 投資・相場X 10アカウント監視ダッシュボード</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Hiragino Sans", sans-serif; background: #f4f6f5; color: #1f2937; margin: 0; padding: 16px; }
+  .container { max-width: 820px; margin: 0 auto; }
+  h1 { font-size: 20px; margin: 0 0 4px; }
+  .sub { font-size: 12px; color: #6b7280; margin-bottom: 12px; }
+  .tabs { display: flex; gap: 8px; overflow-x: auto; padding-bottom: 8px; margin-bottom: 12px; }
+  .tab { border: 1px solid #d1d5db; background: #fff; border-radius: 999px; padding: 6px 14px; font-size: 13px; cursor: pointer; white-space: nowrap; color: #374151; }
+  .tab.active { background: #145343; color: #fff; border-color: #145343; font-weight: 600; }
+  .source-card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 14px 16px; margin-bottom: 14px; box-shadow: 0 1px 2px rgba(0,0,0,0.03); }
+  .source-header { display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #145343; padding-bottom: 8px; margin-bottom: 8px; }
+  .source-name { font-weight: 700; font-size: 15px; }
+  .source-count { font-size: 12px; color: #6b7280; }
+  .item { display: block; padding: 10px 0; border-bottom: 1px solid #f3f4f6; text-decoration: none; color: inherit; }
+  .item:last-child { border-bottom: none; }
+  .item:hover .item-title { color: #145343; text-decoration: underline; }
+  .item-title { font-size: 14px; font-weight: 600; line-height: 1.45; }
+  .ja-line { font-size: 13px; color: #065f46; background: #ecfdf5; border-left: 3px solid #10b981; padding: 5px 8px; margin-top: 5px; border-radius: 0 6px 6px 0; line-height: 1.45; }
+  .item-meta { display: flex; justify-content: space-between; font-size: 11px; color: #9ca3af; margin-top: 5px; }
+  .badge { display: inline-block; font-size: 10px; font-weight: 700; padding: 1px 6px; border-radius: 4px; margin-right: 6px; vertical-align: middle; }
+  .badge-en { background: #e0f2fe; color: #0369a1; }
+  .badge-jp { background: #fef3c7; color: #92400e; }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>📈 投資・相場X 10アカウント監視ダッシュボード</h1>
+  <div class="sub">更新: 2026-11-18 08:11 JST ・ 6フィード / 計30件（外国語は原文＋インライン和訳）</div>
+  <div class="tabs"><button class="tab active" onclick="filterTab('ALL', this)">すべて</button><button class="tab" onclick="filterTab('後藤達也', this)">後藤達也</button><button class="tab" onclick="filterTab('Masa', this)">Masa</button><button class="tab" onclick="filterTab('ABCトレーダー', this)">ABCトレーダー</button><button class="tab" onclick="filterTab('Shen', this)">Shen</button><button class="tab" onclick="filterTab('ざら速', this)">ざら速</button><button class="tab" onclick="filterTab('にこそく', this)">にこそく</button><button class="tab" onclick="filterTab('たけぞう', this)">たけぞう</button><button class="tab" onclick="filterTab('満州中央銀行', this)">満州中央銀行</button><button class="tab" onclick="filterTab('T.Kamada', this)">T.Kamada</button><button class="tab" onclick="filterTab('世界四季報', this)">世界四季報</button><button class="tab" onclick="filterTab('EN_ONLY', this)">外国語のみ</button></div>
+  
+        <section class="source-card" data-media="後藤達也" data-lang="JP">
+          <div class="source-header">
+            <span class="source-name">@goto_finance</span>
+            <span class="source-count">5件</span>
+          </div>
+          <div class="items">
+            <a class="item" href="https://x.com/goto_finance" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-jp">JP</span>◆ 年収・銀行口座も 楽天証券が情報漏洩を公表しました。規模と流出内容は、最近の日本の事例の中でもかなり深刻です 【流出内容】 ・ログインID ・氏名 ・住所 ・電話番号 ・勤務先 ・出金先口座 ・年収・金融資産など</div>
+              
+              <div class="item-meta"><span>x.com</span><span class="pub">X Post</span></div>
+            </a>
+            <a class="item" href="https://x.com/goto_finance" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-jp">JP</span>◆ 今週の予定 NVIDIA決算、Anthropic上場予定が大きなイベントになります。米中露首脳会談など外交イベントも相次ぎます。今週もよろしくお願いします！</div>
+              
+              <div class="item-meta"><span>x.com</span><span class="pub">X Post</span></div>
+            </a>
+            <a class="item" href="https://x.com/goto_finance" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-jp">JP</span>◆ フアン氏、近く解任も（米報道） ・NVIDIA株は時間外で8%ほど下落 ・NVIDIAのジェンスン・フアンCEOは従業員とも不倫関係があったとNYTが報道 ・WSJによれば、NVIDIAはフアン氏の解任に向けた準備を進め、早ければ水曜にも取締役会を開き、フアン氏の進退を決定</div>
+              
+              <div class="item-meta"><span>x.com</span><span class="pub">X Post</span></div>
+            </a>
+            <a class="item" href="https://x.com/goto_finance" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-jp">JP</span>◆ フアン氏、近く解任も（米報道） ・NVIDIA株は時間外で8%ほど下落 ・NVIDIAのジェンスン・フアンCEOは従業員とも不倫関係があったとNYTが報道 ・WSJによれば、NVIDIAはフアン氏の解任に向けた準備を進め、早ければ水曜にも取締役会を開き、フアン氏の進退を決定</div>
+              
+              <div class="item-meta"><span>x.com</span><span class="pub">X Post</span></div>
+            </a>
+            <a class="item" href="https://x.com/goto_finance" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-jp">JP</span>◆ フアン氏、近く解任も（米報道） ・NVIDIA株は時間外で8%ほど下落 ・NVIDIAのジェンスン・フアンCEOは従業員とも不倫関係があったとNYTが報道 ・WSJによれば、NVIDIAはフアン氏の解任に向けた準備を進め、早ければ水曜にも取締役会を開き、フアン氏の進退を決定</div>
+              
+              <div class="item-meta"><span>x.com</span><span class="pub">X Post</span></div>
+            </a></div>
+        </section>
+        <section class="source-card" data-media="Masa" data-lang="JP">
+          <div class="source-header">
+            <span class="source-name">@Masa_Aug2020</span>
+            <span class="source-count">5件</span>
+          </div>
+          <div class="items">
+            <a class="item" href="https://x.com/Masa_Aug2020" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-jp">JP</span>NVDA 輸出規制にもかかわらず2028 ガイダンスの引き上げ（YoY成長率70%から75%へ）</div>
+              
+              <div class="item-meta"><span>x.com</span><span class="pub">X Post</span></div>
+            </a>
+            <a class="item" href="https://x.com/Masa_Aug2020" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-en">EN</span>&quot;THE BOARD DOES NOT INTEND TO REINSTATE JENSEN HUANG AS CEO&quot; - NVDA CALL</div>
+              <div class="ja-line">🇯🇵 <strong>【和訳】</strong>「取締役会はジェンセン・ファンをCEOとして復帰させるつもりはない」 - NVDAコール</div>
+              <div class="item-meta"><span>x.com</span><span class="pub">X Post</span></div>
+            </a>
+            <a class="item" href="https://x.com/Masa_Aug2020" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-jp">JP</span>Nvidiaのネオクラウド向け契約、2032年までに総額320億ドル また、供給契約は前四半期の2,790億ドルから3,900億ドルに増加しており、これは主に複数年にわたるメモリの調達に関連するもの  Nvidia&#x27;s neocloud commitments total $32B through 2032From seekingalpha.com</div>
+              
+              <div class="item-meta"><span>x.com</span><span class="pub">X Post</span></div>
+            </a>
+            <a class="item" href="https://x.com/Masa_Aug2020" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-jp">JP</span>米エヌビディアのフアン前ＣＥＯ、12月1日に下院委聴取＝外交委  米エヌビディアのフアン前ＣＥＯ、12月1日に下院委聴取＝外交委From reuters.com</div>
+              
+              <div class="item-meta"><span>x.com</span><span class="pub">X Post</span></div>
+            </a>
+            <a class="item" href="https://x.com/Masa_Aug2020" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-en">EN</span>ＦＲＢ、追加利上げ必要の可能性 「劇的な対応」不要＝ＮＹ連銀総裁  ＦＲＢ、追加利上げ必要の可能性 「劇的な対応」不要＝ＮＹ連銀総裁From reuters.com</div>
+              <div class="ja-line">🇯🇵 <strong>【和訳】</strong>ＦＲＢ、追加利上げ必要の可能性 「劇的な対応」不要＝ＮＹ連銀総裁  ＦＲＢ、追加利上げ必要の可能性 「劇的な対応」不要＝ＮＹ連銀総裁From reuters.com</div>
+              <div class="item-meta"><span>x.com</span><span class="pub">X Post</span></div>
+            </a></div>
+        </section>
+        <section class="source-card" data-media="ABCトレーダー" data-lang="JP">
+          <div class="source-header">
+            <span class="source-name">@ABC87791035</span>
+            <span class="source-count">5件</span>
+          </div>
+          <div class="items">
+            <a class="item" href="https://x.com/ABC87791035" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-jp">JP</span>さくらインベストさんで12/7（月）20時よりセミナーを開催します 年末にかけての株価、2027年の注目業種や銘柄などお話しせます。   【ABCトレーダー】12.7(月) WEBセミナー｜「AI・半導体バブルはまだ続く？ 株式投資戦略の最適解2027 AIバブル・戦争終結・金利低下で始まる日米株の大転換」 | 株式会社さくらインベストFrom sakura-inv.com</div>
+              
+              <div class="item-meta"><span>x.com</span><span class="pub">X Post</span></div>
+            </a>
+            <a class="item" href="https://x.com/ABC87791035" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-jp">JP</span>エヌビディア決算は強かった エヌビディア決算は市場予想を大幅に上回る、AI需要減速懸念を覆す売上高1,158億ドル、株価は反発か｜ABC Trader @ABC87791035   NVIDIA決算は市場予想を大幅に上回る、AI需要減速懸念を覆す売上高1,158億ドル、株価は反発か｜ABC TraderFrom note.com</div>
+              
+              <div class="item-meta"><span>x.com</span><span class="pub">X Post</span></div>
+            </a>
+            <a class="item" href="https://x.com/ABC87791035" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-jp">JP</span>ジェンスン・ファンはCEO復帰から逮捕まで天国地獄なみのシナリオがあってなかなかだな</div>
+              
+              <div class="item-meta"><span>x.com</span><span class="pub">X Post</span></div>
+            </a>
+            <a class="item" href="https://x.com/ABC87791035" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-jp">JP</span>京都に日本人は住んでいるのだろうか？</div>
+              
+              <div class="item-meta"><span>x.com</span><span class="pub">X Post</span></div>
+            </a>
+            <a class="item" href="https://x.com/ABC87791035" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-jp">JP</span>京極かねよ 2日連続で鰻を食べてしまった、今日は京都の京極かねよ やはり鰻は関東圧勝 小田原友栄 東麻布野田岩 香取うなぎ割烹山田</div>
+              
+              <div class="item-meta"><span>x.com</span><span class="pub">X Post</span></div>
+            </a></div>
+        </section>
+        <section class="source-card" data-media="Shen" data-lang="JP">
+          <div class="source-header">
+            <span class="source-name">@shenmacro</span>
+            <span class="source-count">5件</span>
+          </div>
+          <div class="items">
+            <a class="item" href="https://x.com/shenmacro" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-jp">JP</span>記事を作成しました。 S&amp;P 500は悲観強まる 2026/11/15｜人文科学アカデミー</div>
+              
+              <div class="item-meta"><span>x.com</span><span class="pub">X Post</span></div>
+            </a>
+            <a class="item" href="https://x.com/shenmacro" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-jp">JP</span>アンソロに分散しなかったのはリテラシー低い😡  
+孫正義さんに「お前は金融リテラシーが低い、卵を一つのバスケットに乗せるな、ARMとOpen AIから分散しろ」って言ってみましょう Quote
+
+  +1  たとえば、卵を一つのバスケットに乗せるなというのも、そういう知識があるから、そう見ようとするというので大事だと思うけれど。。 定義の問題か^^;</div>
+              
+              <div class="item-meta"><span>x.com</span><span class="pub">X Post</span></div>
+            </a>
+            <a class="item" href="https://x.com/shenmacro" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-jp">JP</span>焚書坑儒の正体も「民間の本を集めての編纂作業」だったんだろうなと思います。使った古本は捨てたし、出来上がった製本もその後項羽に燃やされてしまっただけで。   古本をAIに読み込ませるのは著作権的にどうなんだという批判は当然あれど、名著なのに絶版になっていて電子書籍にもなっていない本を見るたびに、せめてAIに取り込まれていた方が世のためでは？という気持ちになることもあります🧐  Quote
+
+ 
+隠れた名著はうなるほどあるからな…    Made with AI</div>
+              
+              <div class="item-meta"><span>x.com</span><span class="pub">X Post</span></div>
+            </a>
+            <a class="item" href="https://x.com/shenmacro" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-jp">JP</span>ご飯のまずい国が成長する理由はご飯がまずいことそのものではなく食事の社会的な位置付けが軽いから。クソ忙しいのに毎晩ちゃんと家族が集まらないといけないとか、ちゃんと手作りしないと愛情がとか言っていると、よほど命を燃やさない限りそれ以外のことはできなくなる。  
+何回も書くけれども、アメリカの幼稚園児がお昼ご飯に「袋に入ったままのミニにんじん」を持ってきている姿を見た時は衝撃を受けすぎて三度見をした。それもアリなんだと。そしてミニにんじん以外の子達もターゲット(普通のスーパー)に売っている「チーズとクラッカーとハムのセット」をそのまま持って Quote
+
+ </div>
+              
+              <div class="item-meta"><span>x.com</span><span class="pub">X Post</span></div>
+            </a>
+            <a class="item" href="https://x.com/shenmacro" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-jp">JP</span>またプッシュバックが入ってきた、12月50bp利上げの。</div>
+              
+              <div class="item-meta"><span>x.com</span><span class="pub">X Post</span></div>
+            </a></div>
+        </section>
+        <section class="source-card" data-media="ざら速" data-lang="JP">
+          <div class="source-header">
+            <span class="source-name">@ZARASOKU</span>
+            <span class="source-count">5件</span>
+          </div>
+          <div class="items">
+            <a class="item" href="https://x.com/ZARASOKU" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-jp">JP</span>週末99円セール！ 乙女戦争 ディーヴチー・ヴァールカ link.amazon/B0cFXbKUd 全12巻 1,188円 &gt;15世紀、中央ヨーロッパで起こり「宗教改革」の端緒となった「フス戦争」をモチーフに、少女の視点で、史実に基づいた凄惨な戦争を描く歴史巨編! 定価で全巻買ってた…面白いよ(´・ω・｀)</div>
+              
+              <div class="item-meta"><span>x.com</span><span class="pub">X Post</span></div>
+            </a>
+            <a class="item" href="https://x.com/ZARASOKU" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-jp">JP</span>ドイツ株17日 続落し2%安、ドイツ銀が大幅安 - 日本経済新聞</div>
+              
+              <div class="item-meta"><span>x.com</span><span class="pub">X Post</span></div>
+            </a>
+            <a class="item" href="https://x.com/ZARASOKU" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-jp">JP</span>ロンドン株17日 続落、ほぼ全面安の展開 - 日本経済新聞</div>
+              
+              <div class="item-meta"><span>x.com</span><span class="pub">X Post</span></div>
+            </a>
+            <a class="item" href="https://x.com/ZARASOKU" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-jp">JP</span>⤴⤴⤴⤴ 【🇺🇸エヌビディア 】+4.34％ 162.205 #FANG+ Nvidia NVDA</div>
+              
+              <div class="item-meta"><span>x.com</span><span class="pub">X Post</span></div>
+            </a>
+            <a class="item" href="https://x.com/ZARASOKU" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-jp">JP</span>パナソニック、映像制作用のシネマカメラ YouTuberなどの需要狙う - 日本経済新聞</div>
+              
+              <div class="item-meta"><span>x.com</span><span class="pub">X Post</span></div>
+            </a></div>
+        </section>
+        <section class="source-card" data-media="世界四季報" data-lang="JP">
+          <div class="source-header">
+            <span class="source-name">@4ki4</span>
+            <span class="source-count">5件</span>
+          </div>
+          <div class="items">
+            <a class="item" href="https://x.com/4ki4" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-en">EN</span>#earnings for the week of November 16, 2026 earningswhispers.com/calweek$NVDA$XPEV$PDD$WMT$INFQ$BABA$HD$PANW$TGT$KLAR$JD$ROST$BIDU$RCAT$DIS$GAP$P$LOW$TJX$IIIV$GLBE$HTHT$FUTU$NTIC$ACM$LZB$BBWI$BJ$AS$VIK$TCEHY$TME$OPRA$TSN$ZIM$JOYY$LQDT$OMER$SQ</div>
+              <div class="ja-line">🇯🇵 <strong>【和訳】</strong>#2026 年 11 月 16 日の週の収益稼ぎのささやき.com/calweek$NVDA$XPEV$PDD$WMT$INFQ$BABA$HD$PANW$TGT$KLAR$JD$ROST$BIDU$RCAT$DIS$GAP $P$LOW$TJX$IIIV$GLBE$HTHT$FUTU$NTIC$ACM$LZB$BBWI$BJ$AS$VIK$TCEHY$TME$OPRA$TSN$ZIM$JOYY$LQDT$OMER$SQ</div>
+              <div class="item-meta"><span>x.com</span><span class="pub">X Post</span></div>
+            </a>
+            <a class="item" href="https://x.com/4ki4" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-jp">JP</span>NYダウ続落で848ドル安 NVIDIA決算前に警戒、テック株売り続く - 日本経済新聞 nikkei.com/article/DGXZQO… ⤵【🇺🇸ダウ平均 】-1.64％ 50,759.42ドル （-848.75ドル）</div>
+              
+              <div class="item-meta"><span>x.com</span><span class="pub">X Post</span></div>
+            </a>
+            <a class="item" href="https://x.com/4ki4" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-jp">JP</span>米GM、在任12年超のバーラCEOの後継者選定か 米報道 - 日本経済新聞 $GM  米GM、在任12年超のバーラCEOの後継者選定か 米報道From nikkei.com</div>
+              
+              <div class="item-meta"><span>x.com</span><span class="pub">X Post</span></div>
+            </a>
+            <a class="item" href="https://x.com/4ki4" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-jp">JP</span>米アンソロピック、IPO価格80ドル超に引き上げ検討 投資家需要強く - 日本経済新聞 $ANT  米アンソロピック、IPO価格80ドル超に引き上げ検討 投資家需要強くFrom nikkei.com</div>
+              
+              <div class="item-meta"><span>x.com</span><span class="pub">X Post</span></div>
+            </a>
+            <a class="item" href="https://x.com/4ki4" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-jp">JP</span>米下院のNVIDIAファン氏聴取、12月1日に変更 法務トップも - 日本経済新聞  米下院のNVIDIAファン氏聴取、12月1日に変更 法務トップもFrom nikkei.com</div>
+              
+              <div class="item-meta"><span>x.com</span><span class="pub">X Post</span></div>
+            </a></div>
+        </section>
+</div>
+<script>
+function filterTab(key, btn) {
+  document.querySelectorAll('.tab').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  document.querySelectorAll('.source-card').forEach(card => {
+    if (key === 'ALL') card.style.display = 'block';
+    else if (key === 'EN_ONLY') card.style.display = (card.dataset.lang !== 'JP') ? 'block' : 'none';
+    else card.style.display = (card.dataset.media === key) ? 'block' : 'none';
+  });
+}
+</script>
+</body>
+</html>
