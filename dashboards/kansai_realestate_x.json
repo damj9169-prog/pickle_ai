@@ -1,0 +1,90 @@
+{
+  "title": "🏙 関西・大阪 再開発・不動産X 9アカウント監視ダッシュボード",
+  "output_html": "/workspace/downloads/kansai-realestate-x-dashboard.html",
+  "telegram_thread_id": 3,
+  "github_repo": "damj9169-prog/pickle_ai",
+  "github_file": "kansai-realestate-x.html",
+  "feeds": [
+    {
+      "type": "x",
+      "media": "ティーラボ",
+      "name": "@t_realestate_lb",
+      "handle": "t_realestate_lb",
+      "lang": "JP",
+      "domain": "x.com",
+      "limit": 15
+    },
+    {
+      "type": "x",
+      "media": "まさし",
+      "name": "@osaka_nakagawa",
+      "handle": "osaka_nakagawa",
+      "lang": "JP",
+      "domain": "x.com",
+      "limit": 15
+    },
+    {
+      "type": "x",
+      "media": "大阪の近未来",
+      "name": "@osakanearfuture",
+      "handle": "osakanearfuture",
+      "lang": "JP",
+      "domain": "x.com",
+      "limit": 15
+    },
+    {
+      "type": "x",
+      "media": "関西シティラボ",
+      "name": "@KansaiSanpo",
+      "handle": "KansaiSanpo",
+      "lang": "JP",
+      "domain": "x.com",
+      "limit": 15
+    },
+    {
+      "type": "x",
+      "media": "デベロップ",
+      "name": "@osaka_deve",
+      "handle": "osaka_deve",
+      "lang": "JP",
+      "domain": "x.com",
+      "limit": 15
+    },
+    {
+      "type": "x",
+      "media": "芝崎健一@TOWERZ",
+      "name": "@shibasan_towerz",
+      "handle": "shibasan_towerz",
+      "lang": "JP",
+      "domain": "x.com",
+      "limit": 15
+    },
+    {
+      "type": "x",
+      "media": "すごろく",
+      "name": "@kmsugoroku",
+      "handle": "kmsugoroku",
+      "lang": "JP",
+      "domain": "x.com",
+      "limit": 15
+    },
+    {
+      "type": "x",
+      "media": "日経関西",
+      "name": "@nikkeikansai",
+      "handle": "nikkeikansai",
+      "lang": "JP",
+      "domain": "x.com",
+      "limit": 15
+    },
+    {
+      "type": "x",
+      "media": "ロング＠再都市化",
+      "name": "@saitoshika_west",
+      "handle": "saitoshika_west",
+      "lang": "JP",
+      "domain": "x.com",
+      "limit": 15
+    }
+  ]
+}
