@@ -1,0 +1,137 @@
+{
+  "title": "📰 国内主要報道 監視ダッシュボード",
+  "output_html": "/workspace/downloads/domestic-media-dashboard.html",
+  "telegram_thread_id": 7,
+  "github_repo": "damj9169-prog/pickle_ai",
+  "github_file": "domestic.html",
+  "feeds": [
+    {
+      "media": "共同通信",
+      "name": "共同通信",
+      "lang": "JP",
+      "domain": "kyodo.co.jp",
+      "url": "https://news.google.com/rss/search?q=site:kyodo.co.jp+OR+site:47news.jp&hl=ja&gl=JP&ceid=JP:ja",
+      "limit": 15
+    },
+    {
+      "media": "時事通信",
+      "name": "時事通信",
+      "lang": "JP",
+      "domain": "jiji.com",
+      "url": "https://news.google.com/rss/search?q=site:jiji.com&hl=ja&gl=JP&ceid=JP:ja",
+      "limit": 15
+    },
+    {
+      "media": "FNN",
+      "name": "FNNプライムオンライン",
+      "lang": "JP",
+      "domain": "fnn.jp",
+      "url": "https://news.google.com/rss/search?q=site:fnn.jp&hl=ja&gl=JP&ceid=JP:ja",
+      "limit": 15
+    },
+    {
+      "media": "日テレ",
+      "name": "日テレNEWS NNN",
+      "lang": "JP",
+      "domain": "news.ntv.co.jp",
+      "url": "https://news.google.com/rss/search?q=site:news.ntv.co.jp&hl=ja&gl=JP&ceid=JP:ja",
+      "limit": 15
+    },
+    {
+      "media": "テレ朝",
+      "name": "テレ朝news",
+      "lang": "JP",
+      "domain": "news.tv-asahi.co.jp",
+      "url": "https://news.google.com/rss/search?q=site:news.tv-asahi.co.jp&hl=ja&gl=JP&ceid=JP:ja",
+      "limit": 15
+    },
+    {
+      "media": "朝日",
+      "name": "朝日新聞",
+      "lang": "JP",
+      "domain": "asahi.com",
+      "url": "https://news.google.com/rss/search?q=site:asahi.com&hl=ja&gl=JP&ceid=JP:ja",
+      "limit": 15
+    },
+    {
+      "media": "毎日",
+      "name": "毎日新聞",
+      "lang": "JP",
+      "domain": "mainichi.jp",
+      "url": "https://news.google.com/rss/search?q=site:mainichi.jp&hl=ja&gl=JP&ceid=JP:ja",
+      "limit": 15
+    },
+    {
+      "media": "読売",
+      "name": "読売新聞",
+      "lang": "JP",
+      "domain": "yomiuri.co.jp",
+      "url": "https://news.google.com/rss/search?q=site:yomiuri.co.jp&hl=ja&gl=JP&ceid=JP:ja",
+      "limit": 15
+    },
+    {
+      "media": "産経",
+      "name": "産経新聞",
+      "lang": "JP",
+      "domain": "sankei.com",
+      "url": "https://news.google.com/rss/search?q=site:sankei.com&hl=ja&gl=JP&ceid=JP:ja",
+      "limit": 15
+    },
+    {
+      "media": "神戸新聞",
+      "name": "神戸新聞NEXT",
+      "lang": "JP",
+      "domain": "kobe-np.co.jp",
+      "url": "https://news.google.com/rss/search?q=site:kobe-np.co.jp&hl=ja&gl=JP&ceid=JP:ja",
+      "limit": 15
+    },
+    {
+      "media": "TBS",
+      "name": "TBS NEWS DIG",
+      "lang": "JP",
+      "domain": "newsdig.tbs.co.jp",
+      "url": "https://news.google.com/rss/search?q=site:newsdig.tbs.co.jp&hl=ja&gl=JP&ceid=JP:ja",
+      "limit": 15
+    },
+    {
+      "media": "スポーツ",
+      "name": "日刊スポーツ",
+      "lang": "JP",
+      "domain": "nikkansports.com",
+      "url": "https://news.google.com/rss/search?q=site:nikkansports.com&hl=ja&gl=JP&ceid=JP:ja",
+      "limit": 10
+    },
+    {
+      "media": "スポーツ",
+      "name": "スポニチ",
+      "lang": "JP",
+      "domain": "sponichi.co.jp",
+      "url": "https://news.google.com/rss/search?q=site:sponichi.co.jp&hl=ja&gl=JP&ceid=JP:ja",
+      "limit": 10
+    },
+    {
+      "media": "スポーツ",
+      "name": "スポーツ報知",
+      "lang": "JP",
+      "domain": "hochi.news",
+      "url": "https://news.google.com/rss/search?q=site:hochi.news&hl=ja&gl=JP&ceid=JP:ja",
+      "limit": 10
+    },
+    {
+      "media": "スポーツ",
+      "name": "サンスポ",
+      "lang": "JP",
+      "domain": "sanspo.com",
+      "url": "https://news.google.com/rss/search?q=site:sanspo.com&hl=ja&gl=JP&ceid=JP:ja",
+      "limit": 10
+    },
+    {
+      "media": "スポーツ",
+      "name": "デイリースポーツ",
+      "lang": "JP",
+      "domain": "daily.co.jp",
+      "url": "https://news.google.com/rss/search?q=site:daily.co.jp&hl=ja&gl=JP&ceid=JP:ja",
+      "limit": 10
+    }
+  ]
+}

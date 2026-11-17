@@ -1,0 +1,121 @@
+{
+  "title": "🚀 スタートアップ5媒体 監視ダッシュボード",
+  "output_html": "/workspace/downloads/startup-media-dashboard.html",
+  "telegram_thread_id": 5,
+  "github_repo": "damj9169-prog/pickle_ai",
+  "github_file": "startup.html",
+  "feeds": [
+    {
+      "media": "TechCrunch",
+      "name": "TechCrunch (US)",
+      "lang": "EN",
+      "domain": "techcrunch.com",
+      "url": "https://techcrunch.com/feed/",
+      "limit": 15
+    },
+    {
+      "media": "36Kr",
+      "name": "36Kr Japan",
+      "lang": "JP",
+      "domain": "36kr.jp",
+      "url": "https://36kr.jp/feed/",
+      "limit": 10
+    },
+    {
+      "media": "36Kr",
+      "name": "36Kr (Global / EN)",
+      "lang": "EN",
+      "domain": "eu.36kr.com",
+      "url": "https://news.google.com/rss/search?q=site:eu.36kr.com+OR+site:kr-asia.com&hl=en-US&gl=US&ceid=US:en",
+      "limit": 10
+    },
+    {
+      "media": "THE BRIDGE",
+      "name": "THE BRIDGE",
+      "lang": "JP",
+      "domain": "thebridge.jp",
+      "url": "https://thebridge.jp/feed",
+      "limit": 15
+    },
+    {
+      "media": "Forbes",
+      "name": "Forbes JAPAN",
+      "lang": "JP",
+      "domain": "forbesjapan.com",
+      "url": "https://news.google.com/rss/search?q=site:forbesjapan.com&hl=ja&gl=JP&ceid=JP:ja",
+      "limit": 15
+    },
+    {
+      "media": "Forbes",
+      "name": "Forbes (Innovation / EN)",
+      "lang": "EN",
+      "domain": "forbes.com",
+      "url": "https://www.forbes.com/innovation/feed/",
+      "limit": 15
+    },
+    {
+      "media": "Business Insider",
+      "name": "Business Insider Japan",
+      "lang": "JP",
+      "domain": "businessinsider.jp",
+      "url": "https://www.businessinsider.jp/feed/index.xml",
+      "limit": 15
+    },
+    {
+      "media": "Business Insider",
+      "name": "Business Insider (Tech / EN)",
+      "lang": "EN",
+      "domain": "businessinsider.com",
+      "url": "https://news.google.com/rss/search?q=site:businessinsider.com+(AI+OR+startup+OR+tech)&hl=en-US&gl=US&ceid=US:en",
+      "limit": 15
+    },
+    {
+      "media": "Bloomberg",
+      "name": "Bloomberg Japan",
+      "lang": "JP",
+      "domain": "bloomberg.co.jp",
+      "url": "https://news.google.com/rss/search?q=site:bloomberg.co.jp&hl=ja&gl=JP&ceid=JP:ja",
+      "limit": 15
+    },
+    {
+      "media": "Bloomberg",
+      "name": "Bloomberg (EN)",
+      "lang": "EN",
+      "domain": "bloomberg.com",
+      "url": "https://news.google.com/rss/search?q=site:bloomberg.com+(tech+OR+AI+OR+markets+OR+startup)&hl=en-US&gl=US&ceid=US:en",
+      "limit": 15
+    },
+    {
+      "media": "Reuters",
+      "name": "Reuters Japan",
+      "lang": "JP",
+      "domain": "jp.reuters.com",
+      "url": "https://news.google.com/rss/search?q=site:jp.reuters.com&hl=ja&gl=JP&ceid=JP:ja",
+      "limit": 15
+    },
+    {
+      "media": "Reuters",
+      "name": "Reuters (EN)",
+      "lang": "EN",
+      "domain": "reuters.com",
+      "url": "https://news.google.com/rss/search?q=site:reuters.com+(tech+OR+AI+OR+business)&hl=en-US&gl=US&ceid=US:en",
+      "limit": 15
+    },
+    {
+      "media": "WSJ",
+      "name": "WSJ 日本版",
+      "lang": "JP",
+      "domain": "jp.wsj.com",
+      "url": "https://news.google.com/rss/search?q=site:jp.wsj.com&hl=ja&gl=JP&ceid=JP:ja",
+      "limit": 15
+    },
+    {
+      "media": "WSJ",
+      "name": "WSJ (EN)",
+      "lang": "EN",
+      "domain": "wsj.com",
+      "url": "https://news.google.com/rss/search?q=site:wsj.com+(tech+OR+AI+OR+markets)&hl=en-US&gl=US&ceid=US:en",
+      "limit": 15
+    }
+  ]
+}
