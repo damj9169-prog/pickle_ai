@@ -1,0 +1,1067 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>🚀 スタートアップ5媒体 監視ダッシュボード</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Hiragino Sans", sans-serif; background: #f4f6f5; color: #1f2937; margin: 0; padding: 16px; }
+  .container { max-width: 820px; margin: 0 auto; }
+  h1 { font-size: 20px; margin: 0 0 4px; }
+  .sub { font-size: 12px; color: #6b7280; margin-bottom: 12px; }
+  .tabs { display: flex; gap: 8px; overflow-x: auto; padding-bottom: 8px; margin-bottom: 12px; }
+  .tab { border: 1px solid #d1d5db; background: #fff; border-radius: 999px; padding: 6px 14px; font-size: 13px; cursor: pointer; white-space: nowrap; color: #374151; }
+  .tab.active { background: #145343; color: #fff; border-color: #145343; font-weight: 600; }
+  .source-card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 14px 16px; margin-bottom: 14px; box-shadow: 0 1px 2px rgba(0,0,0,0.03); }
+  .source-header { display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #145343; padding-bottom: 8px; margin-bottom: 8px; }
+  .source-name { font-weight: 700; font-size: 15px; }
+  .source-count { font-size: 12px; color: #6b7280; }
+  .item { display: block; padding: 10px 0; border-bottom: 1px solid #f3f4f6; text-decoration: none; color: inherit; }
+  .item:last-child { border-bottom: none; }
+  .item:hover .item-title { color: #145343; text-decoration: underline; }
+  .item-title { font-size: 14px; font-weight: 600; line-height: 1.45; }
+  .ja-line { font-size: 13px; color: #065f46; background: #ecfdf5; border-left: 3px solid #10b981; padding: 5px 8px; margin-top: 5px; border-radius: 0 6px 6px 0; line-height: 1.45; }
+  .item-meta { display: flex; justify-content: space-between; font-size: 11px; color: #9ca3af; margin-top: 5px; }
+  .badge { display: inline-block; font-size: 10px; font-weight: 700; padding: 1px 6px; border-radius: 4px; margin-right: 6px; vertical-align: middle; }
+  .badge-en { background: #e0f2fe; color: #0369a1; }
+  .badge-jp { background: #fef3c7; color: #92400e; }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>🚀 スタートアップ5媒体 監視ダッシュボード</h1>
+  <div class="sub">更新: 2026-11-17 11:14 JST ・ 13フィード / 計185件（外国語は原文＋インライン和訳）</div>
+  <div class="tabs">
+    <button class="tab active" onclick="filterTab('ALL', this)">すべて</button><button class="tab" onclick="filterTab('TechCrunch', this)">TechCrunch</button><button class="tab" onclick="filterTab('36Kr', this)">36Kr</button><button class="tab" onclick="filterTab('THE BRIDGE', this)">THE BRIDGE</button><button class="tab" onclick="filterTab('Forbes', this)">Forbes</button><button class="tab" onclick="filterTab('Business Insider', this)">Business Insider</button><button class="tab" onclick="filterTab('Bloomberg', this)">Bloomberg</button><button class="tab" onclick="filterTab('Reuters', this)">Reuters</button><button class="tab" onclick="filterTab('WSJ', this)">WSJ</button><button class="tab" onclick="filterTab('EN_ONLY', this)">外国語のみ</button>
+  </div>
+  
+        <section class="source-card" data-media="TechCrunch" data-lang="EN">
+          <div class="source-header">
+            <span class="source-name">TechCrunch (US)</span>
+            <span class="source-count">15件</span>
+          </div>
+          <div class="items">
+            <a class="item" href="https://techcrunch.com/2026/11/16/cybersecurity-ai-startup-corma-reaches-1b-valuation-in-about-3-months/" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-en">EN</span>Cybersecurity AI startup Corma reaches $1B valuation in about 3 months</div>
+              <div class="ja-line">🇯🇵 <strong>【和訳】</strong>サイバーセキュリティ AI スタートアップ Corma が約 3 か月で評価額 10 億ドルに到達</div>
+              <div class="item-meta"><span>techcrunch.com</span><span class="pub">Mon, 16 Nov 2026 23:32</span></div>
+            </a>
+            <a class="item" href="https://techcrunch.com/2026/11/16/cyber-giant-infoblox-confirms-security-incident-after-hackers-access-company-information/" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-en">EN</span>Cyber giant Infoblox confirms security incident after hackers access ‘company information’</div>
+              <div class="ja-line">🇯🇵 <strong>【和訳】</strong>サイバー大手インフォブロックス、ハッカーが「企業情報」にアクセスした後のセキュリティインシデントを確認</div>
+              <div class="item-meta"><span>techcrunch.com</span><span class="pub">Mon, 16 Nov 2026 22:12</span></div>
+            </a>
+            <a class="item" href="https://techcrunch.com/2026/11/16/all-the-questions-nvidia-should-answer-on-tuesday-but-probably-wont/" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-en">EN</span>All the questions Nvidia should answer on Tuesday — but probably won’t</div>
+              <div class="ja-line">🇯🇵 <strong>【和訳】</strong>Nvidia が火曜日に答えるべきすべての質問 - しかしおそらく答えられない</div>
+              <div class="item-meta"><span>techcrunch.com</span><span class="pub">Mon, 16 Nov 2026 22:03</span></div>
+            </a>
+            <a class="item" href="https://techcrunch.com/2026/11/16/apple-reveals-new-mac-security-controls-as-ai-agents-raise-privacy-risks/" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-en">EN</span>Apple reveals new Mac security controls as AI agents raise privacy risks</div>
+              <div class="ja-line">🇯🇵 <strong>【和訳】</strong>AI エージェントがプライバシー リスクを高める中、Apple が新しい Mac セキュリティ制御を公開</div>
+              <div class="item-meta"><span>techcrunch.com</span><span class="pub">Mon, 16 Nov 2026 21:01</span></div>
+            </a>
+            <a class="item" href="https://techcrunch.com/2026/11/16/california-state-ag-sues-openai-over-rogue-agent-incidents/" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-en">EN</span>California state AG sues OpenAI over rogue agent incidents</div>
+              <div class="ja-line">🇯🇵 <strong>【和訳】</strong>カリフォルニア州AG、不正エージェント事件でOpenAIを告訴</div>
+              <div class="item-meta"><span>techcrunch.com</span><span class="pub">Mon, 16 Nov 2026 20:07</span></div>
+            </a>
+            <a class="item" href="https://techcrunch.com/2026/11/16/uber-confirms-hackers-stole-thousands-of-drivers-license-information-in-data-breach/" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-en">EN</span>Uber says hackers stole information on close to 150,000 driver’s licenses during data breach</div>
+              <div class="ja-line">🇯🇵 <strong>【和訳】</strong>ウーバー、ハッカーがデータ侵害中に15万件近くの運転免許証の情報を盗んだと発表</div>
+              <div class="item-meta"><span>techcrunch.com</span><span class="pub">Mon, 16 Nov 2026 19:53</span></div>
+            </a>
+            <a class="item" href="https://techcrunch.com/2026/11/16/apple-adds-face-unlock-to-the-iphone-duo-but-its-not-face-id/" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-en">EN</span>Apple adds ‘face unlock’ to the iPhone Duo, but it’s not Face ID</div>
+              <div class="ja-line">🇯🇵 <strong>【和訳】</strong>Apple、iPhone Duoに「顔認証」機能を追加、ただしFace IDではない</div>
+              <div class="item-meta"><span>techcrunch.com</span><span class="pub">Mon, 16 Nov 2026 19:26</span></div>
+            </a>
+            <a class="item" href="https://techcrunch.com/2026/11/16/trump-says-ex-nvidia-ceo-jensen-huangs-affair-with-an-alleged-chinese-spy-did-not-threaten-national-security/" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-en">EN</span>Trump says ex-Nvidia CEO Jensen Huang’s affair with an alleged Chinese spy did not threaten national security</div>
+              <div class="ja-line">🇯🇵 <strong>【和訳】</strong>トランプ大統領、元エヌビディア最高経営責任者ジェンスン・フアン氏と中国スパイ容疑者との不倫は国家安全保障を脅かすものではないと発言</div>
+              <div class="item-meta"><span>techcrunch.com</span><span class="pub">Mon, 16 Nov 2026 19:12</span></div>
+            </a>
+            <a class="item" href="https://techcrunch.com/2026/11/16/island-is-a-new-screen-time-app-that-turns-staying-off-your-phone-into-a-game/" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-en">EN</span>Island is a new screen-time app that turns staying off your phone into a game</div>
+              <div class="ja-line">🇯🇵 <strong>【和訳】</strong>Island は、携帯電話を使用しない時間をゲームに変える新しいスクリーンタイム アプリです</div>
+              <div class="item-meta"><span>techcrunch.com</span><span class="pub">Mon, 16 Nov 2026 18:54</span></div>
+            </a>
+            <a class="item" href="https://techcrunch.com/2026/11/16/tesla-goes-all-in-on-the-cybercab-with-upcoming-e3b-berlin-gigafactory-expansion/" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-en">EN</span>Tesla goes all-in on the Cybercab with upcoming €3B Berlin gigafactory expansion</div>
+              <div class="ja-line">🇯🇵 <strong>【和訳】</strong>テスラ、30億ユーロのベルリンギガファクトリー拡張でサイバーキャブに全力投球</div>
+              <div class="item-meta"><span>techcrunch.com</span><span class="pub">Mon, 16 Nov 2026 18:21</span></div>
+            </a>
+            <a class="item" href="https://techcrunch.com/2026/11/16/sam-altman-on-nvidia-without-jensen-huang-the-industry-will-be-fine/" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-en">EN</span>Sam Altman on Nvidia without Jensen Huang: The industry will be ‘fine’</div>
+              <div class="ja-line">🇯🇵 <strong>【和訳】</strong>サム・アルトマン、ジェンセン・ファンなしのNVIDIAについて語る：業界は「大丈夫」だろう</div>
+              <div class="item-meta"><span>techcrunch.com</span><span class="pub">Mon, 16 Nov 2026 18:11</span></div>
+            </a>
+            <a class="item" href="https://techcrunch.com/2026/11/16/fbi-says-artex-ai-open-source-hacking-tool-used-to-breach-networks-in-under-three-hours/" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-en">EN</span>FBI says Artex AI open source hacking tool used to breach networks in ‘under three hours’</div>
+              <div class="ja-line">🇯🇵 <strong>【和訳】</strong>FBI、Artex AIのオープンソースハッキングツールが「3時間以内」にネットワーク侵入に使用されたと発表</div>
+              <div class="item-meta"><span>techcrunch.com</span><span class="pub">Mon, 16 Nov 2026 17:36</span></div>
+            </a>
+            <a class="item" href="https://techcrunch.com/2026/11/16/jordan-belforts-new-ai-voice-startup-tone-wants-to-sell-like-the-wolf-of-wall-street/" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-en">EN</span>Jordan Belfort’s new AI voice startup, Tone, wants to sell like the ‘Wolf of Wall Street’</div>
+              <div class="ja-line">🇯🇵 <strong>【和訳】</strong>ジョーダン・ベルフォート氏の新しい AI 音声スタートアップ、トーンは「ウルフ・オブ・ウォールストリート」のように売れたいと考えている</div>
+              <div class="item-meta"><span>techcrunch.com</span><span class="pub">Mon, 16 Nov 2026 17:10</span></div>
+            </a>
+            <a class="item" href="https://techcrunch.com/2026/11/16/openai-will-embed-apollo-researchers-to-investigate-ai-subversion/" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-en">EN</span>OpenAI will embed safety researchers to investigate AI subversion</div>
+              <div class="ja-line">🇯🇵 <strong>【和訳】</strong>OpenAIはAI破壊を調査するために安全研究者を組み込む予定</div>
+              <div class="item-meta"><span>techcrunch.com</span><span class="pub">Mon, 16 Nov 2026 17:02</span></div>
+            </a>
+            <a class="item" href="https://techcrunch.com/2026/11/16/openai-releases-a-new-image-classifier-and-chatgpt-warnings-to-combat-csam/" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-en">EN</span>OpenAI releases a new image classifier and ChatGPT warnings to combat CSAM</div>
+              <div class="ja-line">🇯🇵 <strong>【和訳】</strong>OpenAI が CSAM に対抗するための新しい画像分類子と ChatGPT 警告をリリース</div>
+              <div class="item-meta"><span>techcrunch.com</span><span class="pub">Mon, 16 Nov 2026 17:00</span></div>
+            </a></div>
+        </section>
+        <section class="source-card" data-media="36Kr" data-lang="JP">
+          <div class="source-header">
+            <span class="source-name">36Kr Japan</span>
+            <span class="source-count">10件</span>
+          </div>
+          <div class="items">
+            <a class="item" href="https://36kr.jp/504413/" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-jp">JP</span>ソフトバンク主導で約800億円調達、独「Agile Robots」が評価額1.4兆円に、ヒューマノイド年産1万台へ</div>
+              
+              <div class="item-meta"><span>36kr.jp</span><span class="pub">Tue, 17 Nov 2026 00:30</span></div>
+            </a>
+            <a class="item" href="https://36kr.jp/504362/" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-jp">JP</span>使用済みEV電池、非正規ルートに流出　中国で電池ごとの「デジタルID」導入へ</div>
+              
+              <div class="item-meta"><span>36kr.jp</span><span class="pub">Mon, 16 Nov 2026 23:30</span></div>
+            </a>
+            <a class="item" href="https://36kr.jp/502753/" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-jp">JP</span>中国eバイク「DYU」、手頃な価格で欧米開拓　乗れる電動ワゴンも</div>
+              
+              <div class="item-meta"><span>36kr.jp</span><span class="pub">Mon, 16 Nov 2026 22:30</span></div>
+            </a>
+            <a class="item" href="https://36kr.jp/504196/" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-jp">JP</span>中国の電力成長、約9割を再エネが牽引　新規発電設備の7割超を占める</div>
+              
+              <div class="item-meta"><span>36kr.jp</span><span class="pub">Mon, 16 Nov 2026 09:00</span></div>
+            </a>
+            <a class="item" href="https://36kr.jp/504379/" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-jp">JP</span>バイトダンス版「Muse」登場か、月間4億人利用の豆包が「代わりに動くAI」に</div>
+              
+              <div class="item-meta"><span>36kr.jp</span><span class="pub">Mon, 16 Nov 2026 02:30</span></div>
+            </a>
+            <a class="item" href="https://36kr.jp/504405/" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-jp">JP</span>中国の10月乗用車販売、NEV比率が7割突破　エンジン車はほぼ半減</div>
+              
+              <div class="item-meta"><span>36kr.jp</span><span class="pub">Mon, 16 Nov 2026 00:30</span></div>
+            </a>
+            <a class="item" href="https://36kr.jp/504202/" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-jp">JP</span>人型ロボット普及で「修理難民」問題　中国EC大手が修理市場に参入、配達員も技術者に</div>
+              
+              <div class="item-meta"><span>36kr.jp</span><span class="pub">Sun, 15 Nov 2026 22:35</span></div>
+            </a>
+            <a class="item" href="https://36kr.jp/504388/" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-jp">JP</span>創業2年の中国バイク「ZXMOTO」、世界選手権で6勝　欧州進出も加速</div>
+              
+              <div class="item-meta"><span>36kr.jp</span><span class="pub">Sun, 15 Nov 2026 09:00</span></div>
+            </a>
+            <a class="item" href="https://36kr.jp/504347/" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-jp">JP</span>中国の高速鉄道、時速400キロ時代へ 　試験車は時速453キロを記録</div>
+              
+              <div class="item-meta"><span>36kr.jp</span><span class="pub">Sun, 15 Nov 2026 01:00</span></div>
+            </a>
+            <a class="item" href="https://36kr.jp/504006/" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-jp">JP</span>人型ロボットの「表情」に商機　中国スタートアップ、ワイヤで動く顔を開発</div>
+              
+              <div class="item-meta"><span>36kr.jp</span><span class="pub">Sat, 14 Nov 2026 23:00</span></div>
+            </a></div>
+        </section>
+        <section class="source-card" data-media="36Kr" data-lang="EN">
+          <div class="source-header">
+            <span class="source-name">36Kr (Global / EN)</span>
+            <span class="source-count">10件</span>
+          </div>
+          <div class="items">
+            <a class="item" href="https://news.google.com/rss/articles/CBMiU0FVX3lxTE1ZMjJrTW5GYnY5U3I4bGxybFhiZldWcU1HVUdkc253V2RPQTRpNThZR1hFdFRhZUVVMWQ2bm54OGh3M09FWmZkbGdZa2lwQVk2dmg4?oc=5" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-en">EN</span>8:00 36Kr Daily Tech Brief | DeepSeek Implements Usage Limits Amid Computing Power Shortage; NVIDIA Board Rules Out Arranging Jensen Huang to Rejoin as CEO; AI Virtual Actor Endorsed Color Contact Lens Ad Results in 68,200 Yuan Fine - eu.36kr.com</div>
+              <div class="ja-line">🇯🇵 <strong>【和訳】</strong>8:00 36Kr 毎日の技術概要 | DeepSeek、計算能力不足の中で使用制限を導入。 NVIDIA 取締役会はジェンスン フアン氏を CEO として再入社させる計画を否定。 AIバーチャル俳優がカラーコンタクトレンズ広告を承認、罰金6万8200元の結果 - eu.36kr.com</div>
+              <div class="item-meta"><span>eu.36kr.com</span><span class="pub">Tue, 17 Nov 2026 00:31</span></div>
+            </a>
+            <a class="item" href="https://news.google.com/rss/articles/CBMiU0FVX3lxTE9uT0VyaFBtcW54bVpaZ3BfdXRTSzJQZ3NnVTl5MkV2d044RlJBM0pCelNTYjNkeGhia09UQ1Vob0NLODR3cFJZUGFvYWlMdTk0aU1Z?oc=5" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-en">EN</span>Revamped Claude Code: Fully Customize All Colors &amp; Animated Backgrounds Starting Today - 36Kr</div>
+              <div class="ja-line">🇯🇵 <strong>【和訳】</strong>改良されたクロード コード: 今日からすべての色とアニメーション背景を完全にカスタマイズ - 36Kr</div>
+              <div class="item-meta"><span>eu.36kr.com</span><span class="pub">Mon, 16 Nov 2026 01:01</span></div>
+            </a>
+            <a class="item" href="https://news.google.com/rss/articles/CBMiU0FVX3lxTFBVQ1RnTHN2MFZsclVJaldCT3IyYVpRX3hlSjdmVEJvSVoxTVRoWnNyR1BDRjNnVWxhbzVXXzBLVmRfRnZ1U016aDVFa0hzeldmQTR3?oc=5" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-en">EN</span>XtalPi-Incubated Virtual Cell Company Secures Over ¥100M Pre-A Financing Led by Hua Capital, HSG, Xinglian | 36Kr Exclusive - 36Kr</div>
+              <div class="ja-line">🇯🇵 <strong>【和訳】</strong>XtalPi が設立した仮想セル会社、Hua Capital、HSG、Xinglian 主導で 1 億円を超えるプレ A 資金調達を確保 | 36Kr 独占 - 36Kr</div>
+              <div class="item-meta"><span>eu.36kr.com</span><span class="pub">Mon, 16 Nov 2026 01:31</span></div>
+            </a>
+            <a class="item" href="https://news.google.com/rss/articles/CBMiU0FVX3lxTE8ycHRUbC1ENXNmeDZ5VUFYN0NmZi1FUVQ3TmZkdDlES3kxOWdBYVhXN0JBMFZhemhNb3kxZlpCMERtcFRzY1Vybi1ZYjdhQ3ktbFRJ?oc=5" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-en">EN</span>Claude Launches Full Office Suite AI Integration: Why Netizens Say Skipping Excel Learning Was the Right Call - 36Kr</div>
+              <div class="ja-line">🇯🇵 <strong>【和訳】</strong>クロードが完全なオフィス スイート AI 統合を開始: Excel の学習をスキップするのが正しい選択だったとネチズンが言う理由 - 36Kr</div>
+              <div class="item-meta"><span>eu.36kr.com</span><span class="pub">Thu, 12 Nov 2026 02:40</span></div>
+            </a>
+            <a class="item" href="https://news.google.com/rss/articles/CBMiU0FVX3lxTE02TzVfamhsUWNsU2s3TjNPOWE0djJOTzZJd05lZkVmeWpCbEVENjViOFZ1c19VM2xNUzJtelJpWHVucjFzdnBQdWxjd0duelJCVUxr?oc=5" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-en">EN</span>8:00 36Kr Daily Briefing: Foreign Media Reports Jensen Huang Faces Potential NVIDIA Dismissal Without Successor Designated; ChatGPT Responds to Sudden Large-Scale Account Bans; Lingshi Youming Addresses &quot;Priority Checkout for Cigarette Purchas - eu.36kr.com</div>
+              <div class="ja-line">🇯🇵 <strong>【和訳】</strong>8:00 36Kr 毎日のブリーフィング: 海外メディアは、ジェンセン フアン氏が後任指名なしで NVIDIA を解雇される可能性に直面していると報じた。 ChatGPT、突然の大規模なアカウント停止に対応。凌士友明、「タバコ購入者の優先チェックアウト - eu.36kr.com」に対応</div>
+              <div class="item-meta"><span>eu.36kr.com</span><span class="pub">Tue, 10 Nov 2026 00:23</span></div>
+            </a>
+            <a class="item" href="https://news.google.com/rss/articles/CBMiU0FVX3lxTE5STURJTVRieVhrLUFya0RUVWNJOUd5aDMyS1RHSG9WV2ViTHliVExtSG9XMTZ1Nm5veDBTYnFEMC1Oa2F4LXM5WEZ4YzNzQWR5Znhv?oc=5" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-en">EN</span>Anthropic Cancels Programming Interviews: Newcomers Gain Direct Competition Opportunities With Senior Engineers - 36Kr</div>
+              <div class="ja-line">🇯🇵 <strong>【和訳】</strong>Anthropic、プログラミング面接を中止: 新人は上級エンジニアと直接競争する機会を得る - 36Kr</div>
+              <div class="item-meta"><span>eu.36kr.com</span><span class="pub">Wed, 28 Oct 2026 07:00</span></div>
+            </a>
+            <a class="item" href="https://news.google.com/rss/articles/CBMiU0FVX3lxTE1pdTk2QmtsQUYzSkFpLUtodnRYdFMtZEx0bHZlWElDak1tQWRTc01WTmZBQkVxQlBVVmVnalR5cnN2V0llU3pjeXlaWTlRSXdSaTN3?oc=5" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-en">EN</span>Zhang Yiming Mapped Out a Slow-Paced Development Roadmap for ByteDance AI - 36Kr</div>
+              <div class="ja-line">🇯🇵 <strong>【和訳】</strong>Zhang Yiming 氏、ByteDance AI のゆっくりとした開発ロードマップを作成 - 36Kr</div>
+              <div class="item-meta"><span>eu.36kr.com</span><span class="pub">Fri, 13 Nov 2026 10:11</span></div>
+            </a>
+            <a class="item" href="https://news.google.com/rss/articles/CBMiU0FVX3lxTE5BWENqYVpoLWxfZU1RbWdacG0ycFRFNUhqTktZaHlCM0d3MzRqSF9ybkdrUXlOVzEwVm92OEFBRHRJQ2szcXVOOXRQekZxYnF2aWxj?oc=5" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-en">EN</span>Gold Price Nosedives Again: Latest Institutional Warning Points to Potential Drop to $3,600 - eu.36kr.com</div>
+              <div class="ja-line">🇯🇵 <strong>【和訳】</strong>金価格が再び急落：最新の制度的警告は3,600ドルまで下落する可能性を指摘 - eu.36kr.com</div>
+              <div class="item-meta"><span>eu.36kr.com</span><span class="pub">Mon, 16 Nov 2026 08:51</span></div>
+            </a>
+            <a class="item" href="https://news.google.com/rss/articles/CBMiU0FVX3lxTE5pWC1qcmFlSS1GeFBmbzdSaTlPQ1c1UzQ3dFVkdXFmZEpjekpuLXNoRTRFd2VVbzVYOXFiclkzQmNYbXEzdjFyOTBEMWhEN1hVZmQ0?oc=5" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-en">EN</span>8:00 36Kr | NVIDIA &amp; Jensen Huang Face Shareholder Class-Action Suit: $2.85T Market Value Evaporates in 2 Days; Anthropic Launches Official IPO Roadshow; Alibaba Plans T-Head Spin-Off for Independent Listing - eu.36kr.com</div>
+              <div class="ja-line">🇯🇵 <strong>【和訳】</strong>8:00 36Kr | NVIDIA と Jensen Huang が株主集団訴訟に直面: 市場価値 28 億 5000 万ドルが 2 日で蒸発。 Anthropic が公式 IPO ロードショーを開始。アリババ、Tヘッドの独立上場を計画 - eu.36kr.com</div>
+              <div class="item-meta"><span>eu.36kr.com</span><span class="pub">Wed, 11 Nov 2026 00:30</span></div>
+            </a>
+            <a class="item" href="https://news.google.com/rss/articles/CBMiZEFVX3lxTE5PSzZibzd0b2JqMmt0SlJ1OWV5V0FpOEU0aVROVEpJbkI5cWJERFlZS1AzaTE5LUFqR0FHcVdrVjBaTHZMVTFYQUdScmtzTVZ2VW9VendSN0VCb01vQ1phZUJxU3A?oc=5" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-en">EN</span>Anthropic Team Zero Rust Experience: Achieves 40% Lower CPU Consumption &amp; 20% Reduced Latency via Claude-Assisted Cross-Language Core API Refactoring - 36Kr</div>
+              <div class="ja-line">🇯🇵 <strong>【和訳】</strong>Anthropic Team Zero Rust エクスペリエンス: クロード支援によるクロス言語コア API リファクタリングにより、CPU 消費量の 40% 削減とレイテンシの 20% 削減を達成 - 36Kr</div>
+              <div class="item-meta"><span>eu.36kr.com</span><span class="pub">Wed, 28 Oct 2026 07:00</span></div>
+            </a></div>
+        </section>
+        <section class="source-card" data-media="THE BRIDGE" data-lang="JP">
+          <div class="source-header">
+            <span class="source-name">THE BRIDGE</span>
+            <span class="source-count">15件</span>
+          </div>
+          <div class="items">
+            <a class="item" href="https://thebridge.jp/2026/11/sazo-bdashcamp-2026-fall-winner" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-jp">JP</span>「国境を越える買い物」をAIで簡単にするSAZO、B Dash Camp 2026 Fall優勝 #bdashcamp</div>
+              
+              <div class="item-meta"><span>thebridge.jp</span><span class="pub">Tue, 17 Nov 2026 00:06</span></div>
+            </a>
+            <a class="item" href="https://thebridge.jp/2026/11/beam-technologies-bdashcamp-2026-fall-2nd-place" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-jp">JP</span>地上では作れない「極限半導体」を宇宙で、BEAM TechnologiesがB Dash Camp 2026 Fall準優勝 #bdashcamp</div>
+              
+              <div class="item-meta"><span>thebridge.jp</span><span class="pub">Tue, 17 Nov 2026 00:01</span></div>
+            </a>
+            <a class="item" href="https://thebridge.jp/2026/11/whitematter-raises-20m-series-a" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-jp">JP</span>企業のAIエージェントを統制するWhiteMatter、シリーズAで2,000万ドルを調達——旧QuilrAI</div>
+              
+              <div class="item-meta"><span>thebridge.jp</span><span class="pub">Sun, 15 Nov 2026 23:51</span></div>
+            </a>
+            <a class="item" href="https://thebridge.jp/2026/11/space-quarters-pre-series-a-910-million-yen" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-jp">JP</span>軌道上で溶接して宇宙の構造物を組み立てるSpace Quarters、プレシリーズAで9.1億円を調達</div>
+              
+              <div class="item-meta"><span>thebridge.jp</span><span class="pub">Sun, 15 Nov 2026 23:35</span></div>
+            </a>
+            <a class="item" href="https://thebridge.jp/2026/11/openai-chatgpt-wallet-agent-payments" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-jp">JP</span>OpenAI、エージェントが利用者の承認を得て支払う「ChatGPT Wallet」を開始</div>
+              
+              <div class="item-meta"><span>thebridge.jp</span><span class="pub">Sun, 15 Nov 2026 23:12</span></div>
+            </a>
+            <a class="item" href="https://thebridge.jp/2026/11/anthropic-claude-meetings-beta" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-jp">JP</span>Anthropic、ビデオ会議にClaudeが加わり資料づくりを進める「Claude Meetings」のベータ版</div>
+              
+              <div class="item-meta"><span>thebridge.jp</span><span class="pub">Sun, 15 Nov 2026 23:12</span></div>
+            </a>
+            <a class="item" href="https://thebridge.jp/2026/11/nebuly-raises-21m-series-a" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-jp">JP</span>企業のAIエージェントの投資対効果を測るNebuly、シリーズAで2,100万ドルを調達</div>
+              
+              <div class="item-meta"><span>thebridge.jp</span><span class="pub">Sun, 15 Nov 2026 23:12</span></div>
+            </a>
+            <a class="item" href="https://thebridge.jp/2026/11/nidus-raises-30m-defense-manufacturing" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-jp">JP</span>防衛の工場で産業ロボットに組み立てをさせるNidus、3,000万ドルを調達</div>
+              
+              <div class="item-meta"><span>thebridge.jp</span><span class="pub">Sun, 15 Nov 2026 23:12</span></div>
+            </a>
+            <a class="item" href="https://thebridge.jp/2026/11/charta-health-raises-55m-series-b" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-jp">JP</span>医療の請求の前にAIでカルテを確かめるCharta Health、シリーズBで5,500万ドルを調達</div>
+              
+              <div class="item-meta"><span>thebridge.jp</span><span class="pub">Sun, 15 Nov 2026 23:12</span></div>
+            </a>
+            <a class="item" href="https://thebridge.jp/2026/11/databento-raises-100m-series-c" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-jp">JP</span>市場データAPIのDatabento、シリーズCで1億ドルを調達し評価額11億ドルに</div>
+              
+              <div class="item-meta"><span>thebridge.jp</span><span class="pub">Sun, 15 Nov 2026 23:12</span></div>
+            </a>
+            <a class="item" href="https://thebridge.jp/2026/11/langchain-raises-300m-series-c" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-jp">JP</span>AIエージェントの開発基盤LangChain、3億ドルを調達し評価額30億ドルに</div>
+              
+              <div class="item-meta"><span>thebridge.jp</span><span class="pub">Sun, 15 Nov 2026 23:12</span></div>
+            </a>
+            <a class="item" href="https://thebridge.jp/2026/11/q-ctrl-raises-290m-series-c" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-jp">JP</span>量子技術のソフトウェアを手がける豪Q-CTRL、シリーズCで2.9億ドルを調達</div>
+              
+              <div class="item-meta"><span>thebridge.jp</span><span class="pub">Sun, 15 Nov 2026 23:12</span></div>
+            </a>
+            <a class="item" href="https://thebridge.jp/2026/11/boston-medical-sciences-series-b-5550-million-yen" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-jp">JP</span>下剤のいらない大腸CT検査のAIを開発するBoston Medical Sciences、シリーズBで55.5億円を調達</div>
+              
+              <div class="item-meta"><span>thebridge.jp</span><span class="pub">Sun, 15 Nov 2026 23:12</span></div>
+            </a>
+            <a class="item" href="https://thebridge.jp/2026/11/google-intelligent-eyewear-pre-order" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-jp">JP</span>Google、Geminiを搭載したスマートグラス「Intelligent Eyewear」の予約を開始</div>
+              
+              <div class="item-meta"><span>thebridge.jp</span><span class="pub">Fri, 13 Nov 2026 04:18</span></div>
+            </a>
+            <a class="item" href="https://thebridge.jp/2026/11/google-gemini-4-hydrogen" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-jp">JP</span>Google、日常の作業向けの高速モデル「Gemini 4 Hydrogen」を全利用者に提供——Gemini 3.8 Flashの移行先</div>
+              
+              <div class="item-meta"><span>thebridge.jp</span><span class="pub">Fri, 13 Nov 2026 04:16</span></div>
+            </a></div>
+        </section>
+        <section class="source-card" data-media="Forbes" data-lang="JP">
+          <div class="source-header">
+            <span class="source-name">Forbes JAPAN</span>
+            <span class="source-count">15件</span>
+          </div>
+          <div class="items">
+            <a class="item" href="https://news.google.com/rss/articles/CBMiWkFVX3lxTE1jSEViaVl3UEFBN3VqNUVhelNfcHJ3WlBwV3pleDhuRDJWVUNaYzhILWxnN0JwQURBUUhoZGloNEwyMDNWalQ0d3lPM2Z5bVM0SlNrMnhjeEpXdw?oc=5" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-jp">JP</span>エヌビディア11月17日決算、フアン辞任後の経営と対中輸出規制が焦点 - Forbes JAPAN</div>
+              
+              <div class="item-meta"><span>forbesjapan.com</span><span class="pub">Mon, 16 Nov 2026 02:00</span></div>
+            </a>
+            <a class="item" href="https://news.google.com/rss/articles/CBMiWkFVX3lxTE11RW55a0VBN1Y3OEotUlhhTGhUM0c4dkRHdmpHdElrTUR4REpQQjNGaTFZOW9sUHN2cTZrWGx2US1BcHhsa3dGTF9JaFRtT2VPX0RTRWJmVUFldw?oc=5" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-jp">JP</span>金・銀価格が1年ぶり安値に下落、米FRB利上げ観測が重し - Forbes JAPAN</div>
+              
+              <div class="item-meta"><span>forbesjapan.com</span><span class="pub">Tue, 17 Nov 2026 00:15</span></div>
+            </a>
+            <a class="item" href="https://news.google.com/rss/articles/CBMiWkFVX3lxTFBWazg5YU5aYXVwWmlaenJZaW5NbzFMaUg1Sm04clJhNUdqSU45cXRDcXVobHRSZmZZQzRHN0NaUnVSSzBpUkJkVkk0ajdVcG9pejNPa18tbUNMdw?oc=5" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-jp">JP</span>グーグル、「医療機関向けGemini」を先行提供──電子カルテ確認や保険申請を支援 - Forbes JAPAN</div>
+              
+              <div class="item-meta"><span>forbesjapan.com</span><span class="pub">Mon, 16 Nov 2026 08:30</span></div>
+            </a>
+            <a class="item" href="https://news.google.com/rss/articles/CBMiWkFVX3lxTE9wdmRtdHM2ODdOdkJrX1JyTUFxUjNHSEs4clRLNlZQOWJkVFI1Sy0xQ2hvRG0tUkVHSXNjRlplZnFUbHJIMnJGMzgtRV9iU1FvM0ZHcTVQR3VmZw?oc=5" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-jp">JP</span>米国の金利はどこまで上がる──FRB理事、異例の12月「0.50ポイント」利上げ検討を提起 - Forbes JAPAN</div>
+              
+              <div class="item-meta"><span>forbesjapan.com</span><span class="pub">Mon, 16 Nov 2026 02:30</span></div>
+            </a>
+            <a class="item" href="https://news.google.com/rss/articles/CBMiWkFVX3lxTE5xMWtBRkttU1NkNXozU2p6UXBjUTY0NTY5SHlpaWVfMlRjcnZoRmVfdkVuTllTZE00ZDdsakw0enFlb18yMkktcXdlc01Kb0U5WXl0b3dQWHZxZw?oc=5" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-jp">JP</span>アップルのスマートグラス、「2027年WWDC」で発表へ──フラッグシップ製品に据える考え - Forbes JAPAN</div>
+              
+              <div class="item-meta"><span>forbesjapan.com</span><span class="pub">Mon, 16 Nov 2026 07:30</span></div>
+            </a>
+            <a class="item" href="https://news.google.com/rss/articles/CBMiWkFVX3lxTE1RNFJHdjBTZk1tSzJ1OEJkaUNER0tic0dHbmNWakc5NEl4TEdzQTlOM1gwMmpMS081THlRSkYtb1RURi1KWUVFS0ZBY0p6bkJubWZkeGJwN0FZZw?oc=5" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-jp">JP</span>ジェンスン・フアン、エヌビディアへの復帰を早くも検討との報道 - Forbes JAPAN</div>
+              
+              <div class="item-meta"><span>forbesjapan.com</span><span class="pub">Sun, 15 Nov 2026 22:00</span></div>
+            </a>
+            <a class="item" href="https://news.google.com/rss/articles/CBMiWkFVX3lxTFB4dW0tZFRrc016VjhiSW9QZTM0RGgzdXJydXZ6R2JnUVk4clhzU1otWGp5Q3VrM1g1UlpuUEFLcVp1dzlQLTJTb1IyMkF5NU1FY3JzOVFHajNYQQ?oc=5" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-jp">JP</span>AIに銘柄選定を頼むと「人気銘柄」ばかりに誘導される理由、投資で差をつけるためのAI活用法 - Forbes JAPAN</div>
+              
+              <div class="item-meta"><span>forbesjapan.com</span><span class="pub">Sat, 14 Nov 2026 22:00</span></div>
+            </a>
+            <a class="item" href="https://news.google.com/rss/articles/CBMiWkFVX3lxTE5BQTIxR0ZnZ2lvcGpxcnk4MW16OTk4VVh4ZHdvUVdsT1NiRTJJLWhGWENyUEU1WDZMYUhjamZPblpMWlMtaWlrd3Y3d19WQU8yd2Z1amxXRzMzZw?oc=5" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-jp">JP</span>米国株は12月から23時間取引へ、日本の投資家も昼間に売買──楽天・SBI・マネックス・松井など対応予定 - Forbes JAPAN</div>
+              
+              <div class="item-meta"><span>forbesjapan.com</span><span class="pub">Sat, 14 Nov 2026 02:00</span></div>
+            </a>
+            <a class="item" href="https://news.google.com/rss/articles/CBMiWkFVX3lxTE81NmpSSnZja004TlZTZVVoMXZxVWNlUlBUdy16QnBvd1haV1FuMUFVY1dEVUhEWDFaa1djN2FUdXVWMG1GS0dFZnpoNHdCQ3NwTnFCc25EZjkxUQ?oc=5" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-jp">JP</span>ブロードコム株の命運、AI需要減速で懸念される株価急落のリスク - Forbes JAPAN</div>
+              
+              <div class="item-meta"><span>forbesjapan.com</span><span class="pub">Sat, 14 Nov 2026 02:15</span></div>
+            </a>
+            <a class="item" href="https://news.google.com/rss/articles/CBMiWkFVX3lxTE1ua2pVcXcxd2I3eXJkS3hiOVhxbkZRa1BYa1VIOGU2aC1peXVHQ25xYndJRXdmc2FlLXR5V0JlRHktbFJERExpSDc2VDd6SGlDR1UxVEhORjFSUQ?oc=5" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-jp">JP</span>フアン退任で著名投資家がエヌビディアへの「投資停止」を表明、各界からは擁護の声 - Forbes JAPAN</div>
+              
+              <div class="item-meta"><span>forbesjapan.com</span><span class="pub">Fri, 13 Nov 2026 23:00</span></div>
+            </a>
+            <a class="item" href="https://news.google.com/rss/articles/CBMiWkFVX3lxTE5TR3BEeEtTbERTaWhqYTFHSGt1c2h5dmJIeUd6UVdyVkotS0hmbmdtMm43aEpxSS1EVEpxMFVPWTFRLWxIWFU1a2NxSzMxUnd2bW00X2RGZVkydw?oc=5" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-jp">JP</span>Microsoft 365の「大規模障害」が継続、メール機能は回復に向かうも影響広がる - Forbes JAPAN</div>
+              
+              <div class="item-meta"><span>forbesjapan.com</span><span class="pub">Fri, 13 Nov 2026 22:06</span></div>
+            </a>
+            <a class="item" href="https://news.google.com/rss/articles/CBMiWkFVX3lxTE9panJRNm85TG5PdkRNQzNJVm9CTU9rNUNEbUdZUHJ3cnZINW9PX3JxZTRJNnpZaFBwMGtiLWkwNVRPTnpaVXJkbWVycGxPNWhPY3JFQ09UT2stQQ?oc=5" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-jp">JP</span>応募ゼロの原因は待遇ではない 成果を出す企業が週15分する求人運用 - Forbes JAPAN</div>
+              
+              <div class="item-meta"><span>forbesjapan.com</span><span class="pub">Mon, 16 Nov 2026 10:15</span></div>
+            </a>
+            <a class="item" href="https://news.google.com/rss/articles/CBMiWkFVX3lxTE1LV1FsT0Z5R28wM0gwMkdhYjYxbmhDQVNoWmdJUHpiQmZzUFJxNE9fQ1VFaEs0SV9Md1daYXFOTzJSM19JNzMtU2tkcWFqdG5SODlfdVdDUjBfUQ?oc=5" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-jp">JP</span>クリエイターエコノミーが急成長を持続するために必要なもの - Forbes JAPAN</div>
+              
+              <div class="item-meta"><span>forbesjapan.com</span><span class="pub">Sun, 15 Nov 2026 22:26</span></div>
+            </a>
+            <a class="item" href="https://news.google.com/rss/articles/CBMiWkFVX3lxTE1VejNUbWd4NWVRbExLR19ta1BWWWpjWVdpQmpiVGdRcmNiaFJ2OXNOUDF0TWJFRkV0MkdlR3czTm03MWFxdzdFUThQZExwYWN6amR1TWQtNDNyQQ?oc=5" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-jp">JP</span>「続く」マイクロソフトの大規模障害、OutlookやTeamsに深刻な影響 - Forbes JAPAN</div>
+              
+              <div class="item-meta"><span>forbesjapan.com</span><span class="pub">Fri, 13 Nov 2026 10:30</span></div>
+            </a>
+            <a class="item" href="https://news.google.com/rss/articles/CBMiWkFVX3lxTE5VbHVMRllGTVlKaGZYTkRLM1NxVGpTd0dpVVl4LWdxYWx3TnZibml5MEIzVkNrRU9qOEExUFl1WmN5VWp6N3d5U0xja3RrWU00RHFRWV9YRzhZZw?oc=5" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-jp">JP</span>世界で3番目に裕福なミュージシャン、ポール・マッカートニーは資産2230億円をどのように築いたのか？ - Forbes JAPAN</div>
+              
+              <div class="item-meta"><span>forbesjapan.com</span><span class="pub">Thu, 12 Nov 2026 23:00</span></div>
+            </a></div>
+        </section>
+        <section class="source-card" data-media="Forbes" data-lang="EN">
+          <div class="source-header">
+            <span class="source-name">Forbes (Innovation / EN)</span>
+            <span class="source-count">15件</span>
+          </div>
+          <div class="items">
+            <a class="item" href="https://www.forbes.com/sites/lanceeliot/2026/11/16/researchers-using-ai-machine-learning-to-solve-human-emotion-mysteries-must-first-break-free-of-human-biases/" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-en">EN</span>Researchers Using AI Machine Learning To Solve Human Emotion Mysteries Must First Break Free Of Human Biases</div>
+              <div class="ja-line">🇯🇵 <strong>【和訳】</strong>人間の感情の謎を解くために AI 機械学習を使用する研究者は、まず人間の偏見から解放される必要があります</div>
+              <div class="item-meta"><span>forbes.com</span><span class="pub">Mon, 16 Nov 2026 20:46</span></div>
+            </a>
+            <a class="item" href="https://www.forbes.com/sites/brianmazique/2026/11/16/xbox-just-revealed-the-exact-hour-gta-6-starts-streaming-and-it-isnt-midnight/" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-en">EN</span>Xbox Just Revealed The Exact Hour GTA 6 Starts Streaming, And It Isn’t Midnight</div>
+              <div class="ja-line">🇯🇵 <strong>【和訳】</strong>Xboxは「GTA 6」のストリーミング開始の正確な時間を明らかにしたが、それは真夜中ではない</div>
+              <div class="item-meta"><span>forbes.com</span><span class="pub">Mon, 16 Nov 2026 20:13</span></div>
+            </a>
+            <a class="item" href="https://www.forbes.com/sites/tiriasresearch/2026/11/16/palantir-and-nvidia-show-why-enterprise-ai-value-goes-beyond-models/" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-en">EN</span>Palantir And Nvidia Show Why Enterprise AI Value Goes Beyond Models</div>
+              <div class="ja-line">🇯🇵 <strong>【和訳】</strong>Palantir と Nvidia が示す、エンタープライズ AI の価値がモデルを超えた理由</div>
+              <div class="item-meta"><span>forbes.com</span><span class="pub">Mon, 16 Nov 2026 19:35</span></div>
+            </a>
+            <a class="item" href="https://www.forbes.com/sites/brianmazique/2026/11/16/wwes-40th-survivor-series-is-almost-here-but-one-big-problem-hangs-over-wargames/" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-en">EN</span>WWE’s 40th Survivor Series Is Almost Here, But One Big Problem Hangs Over WarGames</div>
+              <div class="ja-line">🇯🇵 <strong>【和訳】</strong>WWE の第 40 回サバイバー シリーズがもうすぐ始まりますが、ウォーゲームには大きな問題が 1 つあります</div>
+              <div class="item-meta"><span>forbes.com</span><span class="pub">Mon, 16 Nov 2026 19:07</span></div>
+            </a>
+            <a class="item" href="https://www.forbes.com/sites/demetrigiannikopoulos/2026/11/16/when-everyone-has-ai-what-sets-healthcare-companies-apart/" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-en">EN</span>When Everyone Has AI, What Sets Healthcare Companies Apart?</div>
+              <div class="ja-line">🇯🇵 <strong>【和訳】</strong>誰もが AI を持っているとき、ヘルスケア企業は何が違うのでしょうか?</div>
+              <div class="item-meta"><span>forbes.com</span><span class="pub">Mon, 16 Nov 2026 18:14</span></div>
+            </a>
+            <a class="item" href="https://www.forbes.com/sites/johnkoetsier/2026/11/16/humanoid-robots-this-company-sells-the-body-you-supply-a-brain/" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-en">EN</span>Humanoid Robots: This Company Sells The Body, You Supply A Brain</div>
+              <div class="ja-line">🇯🇵 <strong>【和訳】</strong>人型ロボット: この会社は体を売っていますが、脳はあなたが供給します</div>
+              <div class="item-meta"><span>forbes.com</span><span class="pub">Mon, 16 Nov 2026 17:39</span></div>
+            </a>
+            <a class="item" href="https://www.forbes.com/sites/erikkain/2026/11/16/wordle-hints-clues-answer-tuesday-november-17/" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-en">EN</span>Today’s Wordle #1977 Hints, Clues And Answer For Tuesday November 17</div>
+              <div class="ja-line">🇯🇵 <strong>【和訳】</strong>今日の Wordle #1977 ヒント、手がかり、答え 11 月 17 日火曜日</div>
+              <div class="item-meta"><span>forbes.com</span><span class="pub">Mon, 16 Nov 2026 17:15</span></div>
+            </a>
+            <a class="item" href="https://www.forbes.com/sites/davidphelan/2026/11/16/apple-iphone-18-release-new-later-date-enters-the-schedule/" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-en">EN</span>Apple iPhone 18 Release: Later Date Enters The Schedule</div>
+              <div class="ja-line">🇯🇵 <strong>【和訳】</strong>Apple iPhone 18リリース：後の日付がスケジュールに入る</div>
+              <div class="item-meta"><span>forbes.com</span><span class="pub">Mon, 16 Nov 2026 16:50</span></div>
+            </a>
+            <a class="item" href="https://www.forbes.com/sites/davidphelan/2026/11/16/apple-iphone-duo-2-face-id-top-priority-for-new-model-but-not-yet-report-says/" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-en">EN</span>Apple iPhone Duo 2: Face ID Top Priority For New Model But Not Yet, Report Says</div>
+              <div class="ja-line">🇯🇵 <strong>【和訳】</strong>Apple iPhone Duo 2：Face IDは新モデルの最優先だがまだ導入されていないとのレポート</div>
+              <div class="item-meta"><span>forbes.com</span><span class="pub">Mon, 16 Nov 2026 16:40</span></div>
+            </a>
+            <a class="item" href="https://www.forbes.com/sites/omerawan/2026/11/16/the-us-loses-measles-elimination-status-heres-what-that-means-and-the-path-forward/" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-en">EN</span>The U.S. Loses Measles Elimination Status—Here’s What That Means And The Path Forward</div>
+              <div class="ja-line">🇯🇵 <strong>【和訳】</strong>米国は麻疹撲滅ステータスを失う—これが何を意味するのか、そして今後はどうなるのか</div>
+              <div class="item-meta"><span>forbes.com</span><span class="pub">Mon, 16 Nov 2026 15:59</span></div>
+            </a>
+            <a class="item" href="https://www.forbes.com/councils/forbestechcouncil/2026/11/16/how-to-keep-crm-and-erp-silos-from-killing-operational-efficiency/" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-en">EN</span>How To Keep CRM And ERP Silos From Killing Operational Efficiency</div>
+              <div class="ja-line">🇯🇵 <strong>【和訳】</strong>CRM と ERP のサイロ化によって業務効率が損なわれないようにする方法</div>
+              <div class="item-meta"><span>forbes.com</span><span class="pub">Mon, 16 Nov 2026 15:45</span></div>
+            </a>
+            <a class="item" href="https://www.forbes.com/sites/shimiteobialo/2026/11/16/build-and-buy-why-billion-dollar-startups-like-function-health-are-going-shopping/" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-en">EN</span>Build And Buy: Why Billion-Dollar Startups Like Function Health Are Going Shopping</div>
+              <div class="ja-line">🇯🇵 <strong>【和訳】</strong>構築して購入: ファンクションヘルスのような数十億ドル規模のスタートアップがショッピングをする理由</div>
+              <div class="item-meta"><span>forbes.com</span><span class="pub">Mon, 16 Nov 2026 15:25</span></div>
+            </a>
+            <a class="item" href="https://www.forbes.com/sites/murtuza-merchant/2026/11/16/decentralized-ai-is-cashing-in-on-nvidias-chaos-but-watch-the-tokens/" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-en">EN</span>Nvidia Is Fueling The Rise Of Alternative AI Networks</div>
+              <div class="ja-line">🇯🇵 <strong>【和訳】</strong>Nvidia が代替 AI ネットワークの台頭を促進</div>
+              <div class="item-meta"><span>forbes.com</span><span class="pub">Mon, 16 Nov 2026 15:14</span></div>
+            </a>
+            <a class="item" href="https://www.forbes.com/sites/krisholt/2026/11/16/nyt-connections-answers-explained-tuesday-november-17-1255/" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-en">EN</span>NYT ‘Connections’ Answers Explained For Tuesday, November 17</div>
+              <div class="ja-line">🇯🇵 <strong>【和訳】</strong>NYT「コネクション」の答えが11月17日火曜日に解説</div>
+              <div class="item-meta"><span>forbes.com</span><span class="pub">Mon, 16 Nov 2026 15:00</span></div>
+            </a>
+            <a class="item" href="https://www.forbes.com/sites/johnwerner/2026/11/16/the-butcher-the-baker-the-candlestick-maker--and-the-robot/" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-en">EN</span>The Butcher, The Baker, The Candlestick Maker … And The Robot?</div>
+              <div class="ja-line">🇯🇵 <strong>【和訳】</strong>肉屋、パン屋、燭台職人…そしてロボット？</div>
+              <div class="item-meta"><span>forbes.com</span><span class="pub">Mon, 16 Nov 2026 14:50</span></div>
+            </a></div>
+        </section>
+        <section class="source-card" data-media="Business Insider" data-lang="JP">
+          <div class="source-header">
+            <span class="source-name">Business Insider Japan</span>
+            <span class="source-count">15件</span>
+          </div>
+          <div class="items">
+            <a class="item" href="https://www.businessinsider.jp/article/2611-vp-hr-microsoft-workplace-relationships-nvidia-cheating/" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-jp">JP</span>「職場恋愛はすべてが間違いではないが、すぐに厄介になる」元マイクロソフト人事担当バイスプレジデントの結論</div>
+              
+              <div class="item-meta"><span>businessinsider.jp</span><span class="pub">Tue, 17 Nov 2026 02:00</span></div>
+            </a>
+            <a class="item" href="https://www.businessinsider.jp/article/2611-high-income-earners-economic-anxiety-midterm-elections/" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-jp">JP</span>年収10万ドルでも「その日暮らし」…中間選挙にも影響か。米高所得層に広がる経済的不安</div>
+              
+              <div class="item-meta"><span>businessinsider.jp</span><span class="pub">Tue, 17 Nov 2026 01:30</span></div>
+            </a>
+            <a class="item" href="https://www.businessinsider.jp/article/2611-elon-musk-tesla-move-fast-drove-success-says-ex-president/" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-jp">JP</span>「来週やろう」は通用しない。元テスラのプレジデントが語る、マスクとうまく仕事をするための2つのカギ</div>
+              
+              <div class="item-meta"><span>businessinsider.jp</span><span class="pub">Tue, 17 Nov 2026 01:30</span></div>
+            </a>
+            <a class="item" href="https://www.businessinsider.jp/article/2611-nvidia-ceo-jensen-huang-scandal/" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-jp">JP</span>「離婚したら革ジャンは誰の財産になるのか」ファン氏の女スパイ疑惑、中国で大喜利状態に</div>
+              
+              <div class="item-meta"><span>businessinsider.jp</span><span class="pub">Mon, 16 Nov 2026 22:30</span></div>
+            </a>
+            <a class="item" href="https://www.businessinsider.jp/article/2611-elon-musk-bullet-point-tactic-to-show-exceptional-ability/" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-jp">JP</span>「すごい」と言わせる実績を3つ。マスクの採用術から学ぶ、人事評価で自分の価値を伝える方法</div>
+              
+              <div class="item-meta"><span>businessinsider.jp</span><span class="pub">Mon, 16 Nov 2026 22:00</span></div>
+            </a>
+            <a class="item" href="https://www.businessinsider.jp/article/2611-okuma-kiwi-refruits/" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-jp">JP</span>慶應・和歌山大→福島でキウイ起業。居住者1700人の大熊町に20代2人が見いだした「商機」</div>
+              
+              <div class="item-meta"><span>businessinsider.jp</span><span class="pub">Mon, 16 Nov 2026 21:30</span></div>
+            </a>
+            <a class="item" href="https://www.businessinsider.jp/article/2611-anthropic-ipo-howard-marks-ant-stock-ai-tech-oaktree/" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-jp">JP</span>アンソロピック上場を前に、ハワード・マークス氏が警鐘。「AIの進歩の速さ」こそがOpenAIとアンソロピックのリスクだ</div>
+              
+              <div class="item-meta"><span>businessinsider.jp</span><span class="pub">Mon, 16 Nov 2026 21:00</span></div>
+            </a>
+            <a class="item" href="https://www.businessinsider.jp/article/2611-startup-ceo-spara-hiring-mistake-company-culture-leadership/" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-jp">JP</span>優秀でも「協調性に欠ける社員」は解雇…AI企業CEOが語る、組織を成長させる人材の条件</div>
+              
+              <div class="item-meta"><span>businessinsider.jp</span><span class="pub">Mon, 16 Nov 2026 21:00</span></div>
+            </a>
+            <a class="item" href="https://www.businessinsider.jp/article/2611-tabine-air-cushion-travel/" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-jp">JP</span>バッグの隙間に入るコレで移動の疲労感が激減。旅行・出張の必須ツール</div>
+              
+              <div class="item-meta"><span>businessinsider.jp</span><span class="pub">Mon, 16 Nov 2026 12:00</span></div>
+            </a>
+            <a class="item" href="https://www.businessinsider.jp/article/2611-costco-employee-recommended-products-7/" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-jp">JP</span>コストコ勤務21年の私が「これは買い！」と思った、注目の商品7選</div>
+              
+              <div class="item-meta"><span>businessinsider.jp</span><span class="pub">Mon, 16 Nov 2026 11:00</span></div>
+            </a>
+            <a class="item" href="https://www.businessinsider.jp/article/2611-machino-miryokudo-ranking-2026/" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-jp">JP</span>【2026年版】最も魅力的な都道府県は「神奈川県」、東京は5位。最新の街の魅力度ランキングが発表</div>
+              
+              <div class="item-meta"><span>businessinsider.jp</span><span class="pub">Mon, 16 Nov 2026 10:00</span></div>
+            </a>
+            <a class="item" href="https://www.businessinsider.jp/article/2611-see-singapore-airlines-new-long-haul-cabins-business-first/" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-jp">JP</span>「世界最高の航空会社」は進化を止めない…シンガポール航空、15億ドルを投じた全クラスの最新シートを一挙公開</div>
+              
+              <div class="item-meta"><span>businessinsider.jp</span><span class="pub">Mon, 16 Nov 2026 10:00</span></div>
+            </a>
+            <a class="item" href="https://www.businessinsider.jp/article/2611-hotel-1928-texas-michelin-key/" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-jp">JP</span>ミシュランのホテル版を獲得した築100年のブティックホテルの内部を見てみよう</div>
+              
+              <div class="item-meta"><span>businessinsider.jp</span><span class="pub">Mon, 16 Nov 2026 09:00</span></div>
+            </a>
+            <a class="item" href="https://www.businessinsider.jp/article/2611-jensen-huang-resigns-nvidia-implications-for-ai-trade-tech-stocks/" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-jp">JP</span>「ジェンスン・ファンの存在は重要だった」。エヌビディアCEO辞任を受け、投資家はAI関連銘柄全体を懸念している</div>
+              
+              <div class="item-meta"><span>businessinsider.jp</span><span class="pub">Mon, 16 Nov 2026 08:30</span></div>
+            </a>
+            <a class="item" href="https://www.businessinsider.jp/article/281694-g/" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-jp">JP</span>起業家のプレゼンを科学的に検証。資金調達できる起業家の成功要因は…収益性でも市場規模でもなかった</div>
+              
+              <div class="item-meta"><span>businessinsider.jp</span><span class="pub">Mon, 16 Nov 2026 08:05</span></div>
+            </a></div>
+        </section>
+        <section class="source-card" data-media="Business Insider" data-lang="EN">
+          <div class="source-header">
+            <span class="source-name">Business Insider (Tech / EN)</span>
+            <span class="source-count">15件</span>
+          </div>
+          <div class="items">
+            <a class="item" href="https://news.google.com/rss/articles/CBMikwFBVV95cUxPYS02M19qb2RyV05jSlVjNFFlaGxhY3QzYk5fUW9MWTluZkEyTDFXaXZPMF9EZWJlX216UzZxRTFIUWN4VC1hMmpmd2dMdDhLTjRGMzJBWkFxcVpjdWozNFFQVThUUklYOUF1ZVNfc2VuVDZDY1ZQazFIMXVFNzVmMXp5N1c4VTBHczZSMl9aY2F1aVk?oc=5" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-en">EN</span>I went to a math class at Caltech. The professor no longer grades homework because everyone&#x27;s using AI. - Business Insider</div>
+              <div class="ja-line">🇯🇵 <strong>【和訳】</strong>私はカリフォルニア工科大学の数学のクラスに行きました。誰もが AI を使用しているため、教授は宿題を採点しなくなりました。 - ビジネスインサイダー</div>
+              <div class="item-meta"><span>businessinsider.com</span><span class="pub">Mon, 16 Nov 2026 11:12</span></div>
+            </a>
+            <a class="item" href="https://news.google.com/rss/articles/CBMilwFBVV95cUxOTFFxeVFFYVJvT1V2NnNIVmIyOTZxOUlCSFN1MU5sdkNMUE8welo3b1ZmZFZMbTk2Z0pQV21ZTTIxczNfNTkzbVZtM3dtRk1GUzdNWm5Gc2Rhc0Rrallwakg2bEpjMW9GeldONV82VndtLXE1bVVDcHFaaEs5a3RYc0tGMlNRXzlaUm1zbTRvTm4wNEhKOTBn?oc=5" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-en">EN</span>Thinking about taking a buyout? 9 Big Tech workers who did said to ask yourself these questions first - Business Insider</div>
+              <div class="ja-line">🇯🇵 <strong>【和訳】</strong>買収をお考えですか?実際に働いた9人のビッグテック従業員は、まず次の質問を自分自身に問いなさいと語った Business Insider Japan</div>
+              <div class="item-meta"><span>businessinsider.com</span><span class="pub">Mon, 16 Nov 2026 10:16</span></div>
+            </a>
+            <a class="item" href="https://news.google.com/rss/articles/CBMisAFBVV95cUxQeDdwNlpUcDEtTTJKZW00dVBXOHVsNjdhZ1lrUVZPMTdjSkhtZlBRLUhObTdoLW5ZYnVLVUh1RWpleXVTOFJVVXJJdFBueUs4RnRnMDlyXzNBMk83bjkyZ3lZUWNSSlpoNmN1dG13cFlaQmwtVHk0S3J4X2c3UElQNG1XYTNReVVLQVJpUlh5cG1feW9zNlpqajdsZnlacll1SVVURE80ZkM5aEl0UGlIeA?oc=5" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-en">EN</span>Western special forces are training without their &#x27;high-tech wizardry’ to survive a kill zone like the one in Ukraine - Business Insider</div>
+              <div class="ja-line">🇯🇵 <strong>【和訳】</strong>西側特殊部隊は、ウクライナのような殺戮地帯で生き残るために「ハイテク魔法」を使わずに訓練している Business Insider Japan</div>
+              <div class="item-meta"><span>businessinsider.com</span><span class="pub">Mon, 16 Nov 2026 14:56</span></div>
+            </a>
+            <a class="item" href="https://news.google.com/rss/articles/CBMipgFBVV95cUxNQ3VQWXRJQ25aMWdpNHVoTlhZWWRQWVBOWm5LQXFDSHJmUE1JRTI0RU9QcXhPOFJ3MXpQblc0ajdDNVNvUU1Dd2l3VmlHTUpEQ01rekRMQnM3WURueHFCdFNfSjRIZkVxN2FSNGxUWEZxUVlWUlhrdmZlN013QmRMN2JuSTgxcF9zNUFOengyaVhzYVdSOVpSSGhra1AzOS1QVE5tTFR3?oc=5" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-en">EN</span>‘SNL’ parodies Jensen Huang and other tech billionaires: ‘May I pleasure you in an industry secret?’ - Business Insider</div>
+              <div class="ja-line">🇯🇵 <strong>【和訳】</strong>「SNL」はジェンスン・ファンや他のハイテク億万長者をパロディ：「業界秘密を教えてもらってもいいですか？」 - Business Insider</div>
+              <div class="item-meta"><span>businessinsider.com</span><span class="pub">Sun, 15 Nov 2026 16:30</span></div>
+            </a>
+            <a class="item" href="https://news.google.com/rss/articles/CBMiqgFBVV95cUxPY2Q0S2w2M09WaTM3V0xCazBjWnVtUXFjTXJILVBaS1dMbHNfWS1iaDRDX1RDMG9CWkhjVEFMRlcxOFFmSjN6VzRuZzlqOXhCWXVjUzVvd2UtbE5iVTNURzhwRjl4eG9jcnBycHFQT1JGb29YYUlnLXBPbDh1NVpXanVfUDJoUFdUV1BxdU50VVVMa2VxVVNJZjZ4ME45S1hSOTVMLUU4akEwUQ?oc=5" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-en">EN</span>AI writes 90% of the code at this company. It still can&#x27;t hire enough engineers. - Business Insider</div>
+              <div class="ja-line">🇯🇵 <strong>【和訳】</strong>この会社ではコードの 90% を AI が書いています。依然としてエンジニアを十分に雇用できていない。 - ビジネスインサイダー</div>
+              <div class="item-meta"><span>businessinsider.com</span><span class="pub">Sun, 15 Nov 2026 10:00</span></div>
+            </a>
+            <a class="item" href="https://news.google.com/rss/articles/CBMigwFBVV95cUxONHZ3VXF6MzBwQ2JXMkxrSm5vcWtnaFlJa19WY3Z1N3lMdDIyMzQwTUJMaFFFMWRKS2NoSEdUWDlENldNY2RteXdKOUNEdWUzbS1Fb3lfckpOWXdvTGxLUUdvUkxjc2VCeGZfUXQ0cTRxYUZrVm1SNmZWR0taR1VqZmZvTQ?oc=5" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-en">EN</span>Welcome to &#x27;Grandthropic&#x27;, the Day the Gaming and AI Industries Get Tested - Business Insider</div>
+              <div class="ja-line">🇯🇵 <strong>【和訳】</strong>ゲームと AI 業界が試される日「Grandthropic」へようこそ - Business Insider</div>
+              <div class="item-meta"><span>businessinsider.com</span><span class="pub">Mon, 16 Nov 2026 11:44</span></div>
+            </a>
+            <a class="item" href="https://news.google.com/rss/articles/CBMiogFBVV95cUxNaUdqWWN4MzI2UTZ2TVk5b0hzUmxpRlIwd2lsNTRLZUhKdlFBY0JSUHNOLVI0dGMyLTNGanI0REQxc1ItMU1fS08tRlljaXIxS3JSRGItSk9MOHFLN3RENkZNaWNQY3R3ajdabVdIRml6Rk5Dek80MWVIMmxpRjVlTXhwaVFCbzFsY3plVFZtdGFlb18wRzdFUEstTGpqQXdRc2c?oc=5" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-en">EN</span>One-time &#x27;SNL&#x27; host Elon Musk wasn&#x27;t a fan of its parody of tech&#x27;s wild week - Business Insider</div>
+              <div class="ja-line">🇯🇵 <strong>【和訳】</strong>かつて「SNL」の司会者だったイーロン・マスク氏は、テクノロジー業界のワイルドな一週間をパロディ化した番組のファンではなかった Business Insider Japan</div>
+              <div class="item-meta"><span>businessinsider.com</span><span class="pub">Mon, 16 Nov 2026 15:27</span></div>
+            </a>
+            <a class="item" href="https://news.google.com/rss/articles/CBMimAFBVV95cUxOckZ1X0JLc05EbW9FWHEydVF0d2JfX3JxeG5TX09Odm9zZ084NWdScUwxdmFCVlFTYlhzUUhwZUdQSEVlaTdYRTJqV2hyVjB1cjJXLWMybS1NRXZkRF9IRXlUbGl4WFZVREdtMUc0M203eWxBalpBTVhhQnJraGt0LUlBZTczQlpOcDNRYy10ZDVmRl81allnZw?oc=5" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-en">EN</span>Jensen Huang joins tech&#x27;s ousted founders club. These 11 execs were cast out of the companies they built. - Business Insider</div>
+              <div class="ja-line">🇯🇵 <strong>【和訳】</strong>ジェンセン・フアン氏がテクノロジー業界の追放されたファウンダーズ・クラブに参加。これら 11 人の幹部は、彼らが設立した会社から追放されました。 - ビジネスインサイダー</div>
+              <div class="item-meta"><span>businessinsider.com</span><span class="pub">Sun, 15 Nov 2026 10:44</span></div>
+            </a>
+            <a class="item" href="https://news.google.com/rss/articles/CBMipAFBVV95cUxOWTNUMDdhTjZBOXhTMUpjTVZsdm9oM1hDRkdhblZHTTlEbzFlbVgxN0VtUVdXMlVNSDNaSldFTS1VdkhpUzBvZ0x4SUxRbWV5SHVMc0RUNmt3dUxUTHJEVGF3RHdxbER1V1dxVU9hY0g1dEpZdE1WVGVQNlFCRlY4S1VqaVN2aG9zazBGUDJwZWt1WHcwai14X0ZhNkhoeXNUcG83Zw?oc=5" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-en">EN</span>The Chinese spy allegation that toppled Nvidia&#x27;s CEO is starting to look shaky - Business Insider</div>
+              <div class="ja-line">🇯🇵 <strong>【和訳】</strong>Nvidia CEOを失脚させた中国スパイ疑惑が怪しくなり始めている - Business Insider</div>
+              <div class="item-meta"><span>businessinsider.com</span><span class="pub">Sat, 14 Nov 2026 20:00</span></div>
+            </a>
+            <a class="item" href="https://news.google.com/rss/articles/CBMinwFBVV95cUxNUjk4UmcxSXEtTUFwYWZWNG81eWtWOWNGd2J5SjRvdWQwYm9tbUIxelR0UHdJYTZwZzNSeDhlN0N1eVhOR2gzMnZCNFZNby04TU9mdVZYSHJqb21HWWNwMm9TZE5QX0JJRF9xZHNIdWhNRlY3TmowMGw3anZITGExVFZBS1pjWEk1a1pqMEJTdDVPOXdpT2hpTTcyTWhzQ1E?oc=5" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-en">EN</span>Former OpenAI researcher says the &#x27;most likely reason&#x27; you will die is due to &#x27;an AI accident&#x27; - Business Insider</div>
+              <div class="ja-line">🇯🇵 <strong>【和訳】</strong>OpenAIの元研究者、人が死ぬ「最も可能性の高い理由」は「AI事故」によるものだと語る Business Insider Japan</div>
+              <div class="item-meta"><span>businessinsider.com</span><span class="pub">Sun, 15 Nov 2026 09:37</span></div>
+            </a>
+            <a class="item" href="https://news.google.com/rss/articles/CBMi2gFBVV95cUxOQThUZTRhVDdyaWhOcnJzaWRxNmd4UzhBeXNmaU53MW5hbFRKcFFGWllTcEtQWDJoZ3E3Q3pvdU1waVR3UEJ3NFlobldHX2laVjNIN05aQTdER2xBMkZBLWNRaVpSRDJkSkNvRzRzdnNrYk5hZ1ljblVld0RsdlRDWWg1RkZSQldwMWtocVhKbjB2LUc3RC1xNkFaV1NTY25YdHM1MWFzTXoxaERzWHdLajdpRERfSzdZVGpuc01hVzhWWS0tTU1KYm5SWGt1VmM1d0dNTndSUHVkdw?oc=5" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-en">EN</span>Elon Musk, Nvidia employees and Silicon Valley executives back Jensen Huang’s return as $720 million AI expansion targets five African countries - Business Insider Africa</div>
+              <div class="ja-line">🇯🇵 <strong>【和訳】</strong>イーロン・マスク氏、エヌビディア社員、シリコンバレー幹部らがジェンセン・ファン氏の復帰を支持、7億2000万ドル規模のAI拡張がアフリカ5か国を対象に Business Insider Japan</div>
+              <div class="item-meta"><span>businessinsider.com</span><span class="pub">Mon, 16 Nov 2026 06:54</span></div>
+            </a>
+            <a class="item" href="https://news.google.com/rss/articles/CBMinAFBVV95cUxPRWVxbWpkTExvdWN4TzhCSlo3SDdBdHBqUThqbnZEaG56UWdfZ1B5YkxqNExwWE9MUWxCdUFReG04RTdRcnNGWkc2WWp2ejlvZVc5Z2hSOHBNbE5NRFZERXJMSjlzQ3JjS3c3Mm01ZksyQ044YVgtRkxCTm5aN3VKTEhoQ0NiQW9NeXVXU3ZJV3FsVEI5TUhvaEVYZDY?oc=5" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-en">EN</span>Anthropic employees could soon be a lot richer. 4 financial advisors share how they can manage the tax bill. - Business Insider</div>
+              <div class="ja-line">🇯🇵 <strong>【和訳】</strong>人間の従業員は近いうちにもっと裕福になるかもしれない。 4 人の財務アドバイザーが税金を管理する方法を共有します。 - ビジネスインサイダー</div>
+              <div class="item-meta"><span>businessinsider.com</span><span class="pub">Mon, 16 Nov 2026 10:00</span></div>
+            </a>
+            <a class="item" href="https://news.google.com/rss/articles/CBMirAFBVV95cUxNeU1vdTM4LVkzSWZOSWg2YnMtQk5OYXMybTJFb2NSX2d3Qk1fZG5aYWh6VnFEdXdSZFR0Y3l1aDJkcWx5NmdPSTJwWkpnMU1HLVlQVUQxX2tBVkJ6c1EzSVhPcnM3QmJ1RDg5NU8tc1NlUGNoTkhPNmRSVXdiMFNDUG16SWdnOTVTdy1MNmFDQ3RFMmhFemNGZlJZYWVzU0I3Rk9wa0VSWnVaYW5R?oc=5" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-en">EN</span>The tech industry&#x27;s unexpected new social butterflies - Business Insider</div>
+              <div class="ja-line">🇯🇵 <strong>【和訳】</strong>テクノロジー業界の予期せぬ新たなソーシャル蝶 Business Insider Japan</div>
+              <div class="item-meta"><span>businessinsider.com</span><span class="pub">Mon, 16 Nov 2026 10:03</span></div>
+            </a>
+            <a class="item" href="https://news.google.com/rss/articles/CBMiqAFBVV95cUxOWHFqX0E3YzJhSkctSnJ4V0NFb3FMRmZqQThEbjQ4UzhpbDh0alZ6STZWUG1YQzhNLS15eWVlWHZlcTNGU1M1N1plclFnTUdtTzZsZFdMeldPal94RXNXWlBjeHdrSWtEY05kSHhhLV96RC1MVTRUcmNseFktbEFqY21CTGJjNnhoclpwdXVkbW93Yk8tU1lCX2VyeThmOVZydmhOclBaOXE?oc=5" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-en">EN</span>The US is cracking down on a loophole that let China get Nvidia&#x27;s best chips - Business Insider</div>
+              <div class="ja-line">🇯🇵 <strong>【和訳】</strong>米国は中国にNVIDIAの最高級チップを入手させる抜け穴を取り締まっている Business Insider Japan</div>
+              <div class="item-meta"><span>businessinsider.com</span><span class="pub">Mon, 16 Nov 2026 16:02</span></div>
+            </a>
+            <a class="item" href="https://news.google.com/rss/articles/CBMiowFBVV95cUxQajJnemliQ2VIcEFZbTc4ZTFRLVFiWTJOamU2dWlacktPMnRUVEhWdDRURGFvQmZ4RW0zbDFWTjE1a0hvUl9Zei1GUUk0WjhrXy1KQk1sdHhjWC01VnV5MHk0Q2w4eEVFQWUtSFFFWWdDV05NbFAwYnNzNkJxanBGWUZPQUtROFBCS2tXRy12UGl4SjdkTWtlQjc1N2o2bHdzaUF3?oc=5" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-en">EN</span>Reddit&#x27;s traffic is down 13%, partly thanks to Google&#x27;s AI Overviews - Business Insider</div>
+              <div class="ja-line">🇯🇵 <strong>【和訳】</strong>Redditのトラフィックは13%減少、一部はGoogleのAI概要のおかげ - Business Insider</div>
+              <div class="item-meta"><span>businessinsider.com</span><span class="pub">Thu, 12 Nov 2026 10:52</span></div>
+            </a></div>
+        </section>
+        <section class="source-card" data-media="Bloomberg" data-lang="JP">
+          <div class="source-header">
+            <span class="source-name">Bloomberg Japan</span>
+            <span class="source-count">15件</span>
+          </div>
+          <div class="items">
+            <a class="item" href="https://news.google.com/rss/articles/CBMiVkFVX3lxTE1BOUd6eHFVVTV6NXZfbnNEUmpocU5MZDE3aGd4bG5yVmhmc2dVYmxSZG5JT3NvVnR3aVBMVU9MSllybkpXRXZ2cWxBdVh2cEYyOE9VdWZ3?oc=5" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-jp">JP</span>アセット &amp; インベストメントマネジャー (AIM) - Bloomberg.com</div>
+              
+              <div class="item-meta"><span>bloomberg.co.jp</span><span class="pub">Wed, 20 Sep 2017 03:49</span></div>
+            </a>
+            <a class="item" href="https://news.google.com/rss/articles/CBMiVkFVX3lxTFA2N2syVnhLQmsybl9FQUJVYld6cGI4R3lTU0JhU0MyUVdkRGhhWmpzdmNTY0dPRzRvWTZyU3RHdkRPLUxRZ1NGSGlWaEpOU1dRenVnWmF3?oc=5" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-jp">JP</span>ニュース支局 - Bloomberg.com</div>
+              
+              <div class="item-meta"><span>bloomberg.co.jp</span><span class="pub">Wed, 20 Sep 2017 03:49</span></div>
+            </a>
+            <a class="item" href="https://news.google.com/rss/articles/CBMibkFVX3lxTFBiVmRpODhHek5xMlJVVjBDOW1lNFNkN2JLWjRoejItN0EwVDNwNE5KUmx5cGV1VzZLcXBwT1JjaURkaUgyaXJUbmJuSHdpdXRiT0R2VU9wMG11OS1VVGlMa25hS3JaNkZWMGVDempn?oc=5" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-jp">JP</span>ブル－ムバ－グ インテリジェンス - Bloomberg.com</div>
+              
+              <div class="item-meta"><span>bloomberg.co.jp</span><span class="pub">Wed, 20 Sep 2017 03:50</span></div>
+            </a>
+            <a class="item" href="https://news.google.com/rss/articles/CBMiZEFVX3lxTE9Uek1TZ2Y5cTBVNHNXUFdCUDhpd2pjZHpDTC04VFRxUDd0Q1pYWHlNNHdqMndlaHlURndDN1FvRGtBVHFtdEpaUml4TW1ZaEx0dXFKZm1fbXhKRm40TEV2NVhFN0I?oc=5" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-jp">JP</span>トレード・取引執行 関連商品 - Bloomberg.com</div>
+              
+              <div class="item-meta"><span>bloomberg.co.jp</span><span class="pub">Sat, 28 Sep 2019 09:14</span></div>
+            </a>
+            <a class="item" href="https://news.google.com/rss/articles/CBMiVkFVX3lxTFBKWWN2dm55ekcwYzNibmt2TEtJT0J6YUhoVjdyMDhPLVoxYldPdVh2V3ZNeTAyU1d5bE1Tb2kyWmdmYTdzdkJMRi03dUlhbGFhOE5ibVZR?oc=5" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-jp">JP</span>マルチアセット・リスク管理システム (MARS) API - Bloomberg.com</div>
+              
+              <div class="item-meta"><span>bloomberg.co.jp</span><span class="pub">Sat, 28 Sep 2019 09:21</span></div>
+            </a>
+            <a class="item" href="https://news.google.com/rss/articles/CBMiXEFVX3lxTE4xUThDSWZlcWl6MmJEYnR6VnEtOS1BYzhmTXczWFVzeVk0S29tOGh5Rl9hQ1VqRXFzaVd1ZzZsX0JBSm9nNlNjNkQyVnEyc3FYUThFNGVfQzhwNmQ2?oc=5" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-en">EN</span>会社概要 - Bloomberg.com</div>
+              <div class="ja-line">🇯🇵 <strong>【和訳】</strong>会社概要 - Bloomberg.com</div>
+              <div class="item-meta"><span>bloomberg.co.jp</span><span class="pub">Wed, 31 Aug 2016 22:01</span></div>
+            </a>
+            <a class="item" href="https://news.google.com/rss/articles/CBMiV0FVX3lxTE1uVlBUTTF5aHkzaXY1dVVUendHNDFTUmlqalhDZTBYVDBuLXIwb3Rub0xPZE1LeGxHZ2NwQTU0bEdRc3pzOTNJeS1WVF9JbS1KYnQxenlQTQ?oc=5" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-jp">JP</span>ステイ・コネクテッド（アカウント移行）プログラム - Bloomberg.com</div>
+              
+              <div class="item-meta"><span>bloomberg.co.jp</span><span class="pub">Mon, 28 Aug 2023 11:13</span></div>
+            </a>
+            <a class="item" href="https://news.google.com/rss/articles/CBMiX0FVX3lxTFBwektVS19nZURwU3pKTGZRc0RrcWk0TmZnM2dabExsenljYzhlNnhwMG1DV3hnZHlxSmR3RjNVVjR1VnZyN0c5WTQyNTFZNUtEVEpXSlhtMUdTV2I1a3RZ?oc=5" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-jp">JP</span>教育機関のためのブルームバーグ - Bloomberg.com</div>
+              
+              <div class="item-meta"><span>bloomberg.co.jp</span><span class="pub">Wed, 20 Sep 2017 03:49</span></div>
+            </a>
+            <a class="item" href="https://news.google.com/rss/articles/CBMidkFVX3lxTE5PdGxlOVl3cmtTcUlnVHJiZG5XUFNqU0pGR1pXVVI5cncxRl9vLTZxN1VBWWFuSzFDR3BubUJ0M1hYcWEtVy1rNGtJQ2h4dGZpcnczQ09TZkxJeTFNblpPeE9wSVFSU21EU2hqSmQ3VVgzdVdOS0E?oc=5" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-jp">JP</span>ルルレモン、マーケティング戦略を大転換－有名アスリートを積極起用 - Bloomberg</div>
+              
+              <div class="item-meta"><span>bloomberg.co.jp</span><span class="pub">Wed, 03 Sep 2025 07:00</span></div>
+            </a>
+            <a class="item" href="https://news.google.com/rss/articles/CBMiWkFVX3lxTE1aZlhHSGsyZ3l4aUJjTDVMMWxWUHktUUJ2dVJhUVdpNExnazUtRloycmhTTld1U202MEc3MXBjQkNFZ2c0bGRtaFZMQ1A0VTVqNTZkRmtDZGpaZw?oc=5" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-en">EN</span>BQuant Desktop - Bloomberg.com</div>
+              <div class="ja-line">🇯🇵 <strong>【和訳】</strong>BQuant デスクトップ - Bloomberg.com</div>
+              <div class="item-meta"><span>bloomberg.co.jp</span><span class="pub">Wed, 09 Feb 2022 02:55</span></div>
+            </a>
+            <a class="item" href="https://news.google.com/rss/articles/CBMiVkFVX3lxTE5vcTNiVmN0M2FmU3VqbWgtaVJlS0FhRHQyYXk0bEdzWGozWnVPV1hIRTZqZVkyVUNJOGFqT1VaVjJXSml3YTMzOTVqVjRmUEdRV1NsUV93?oc=5" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-jp">JP</span>株式実行管理システム（EMSX） - Bloomberg.com</div>
+              
+              <div class="item-meta"><span>bloomberg.co.jp</span><span class="pub">Sat, 28 Sep 2019 09:20</span></div>
+            </a>
+            <a class="item" href="https://news.google.com/rss/articles/CBMiX0FVX3lxTE1ybzI0NkNSam5uV2tSR255VmtUYzhtZWV6OHlYTU82blIxcmJmSVVIRXRkMkx2bHhKQmVIRER3Sl8wdWk4VU45WnlSUl9CT3lMR1BiT3RQRUQ3UlJWZmJv?oc=5" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-en">EN</span>学生＆新卒・ 第二新卒 - Bloomberg.com</div>
+              <div class="ja-line">🇯🇵 <strong>【和訳】</strong>学生＆新卒・ 第二新卒 - Bloomberg.com</div>
+              <div class="item-meta"><span>bloomberg.co.jp</span><span class="pub">Fri, 08 Nov 2024 16:04</span></div>
+            </a>
+            <a class="item" href="https://news.google.com/rss/articles/CBMiWEFVX3lxTFBmYlB2bmtOQ1B1ZEx1QkQ0VmdnZWpqeHRGN0F0T0NrOEVpczVHelhqVmhiV09WbEdsU3RBc1RSVk9XNXFVRnBsaURFTFlzMDJ6MUVMbzBjcGY?oc=5" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-jp">JP</span>プレスルーム - Bloomberg.com</div>
+              
+              <div class="item-meta"><span>bloomberg.co.jp</span><span class="pub">Wed, 20 Sep 2017 03:49</span></div>
+            </a>
+            <a class="item" href="https://news.google.com/rss/articles/CBMiaEFVX3lxTE1TeDR1aERkUUloclVsa3pEaVUtT2hURm1zUGJKOVNLSGdVTmJxQUJNb1lhRHFfRWFWYTlTNDdEZW5VT3VxMnRqb1RYVlV6eWpmNXRvS3lLeXF1LS12Q1hWRnkzQkZCQ1Vp?oc=5" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-en">EN</span>【お客様事例 7】住友生命保険相互会社様 - Bloomberg.com</div>
+              <div class="ja-line">🇯🇵 <strong>【和訳】</strong>【お客様事例 7】住友生命保険相互会社様 - Bloomberg.com</div>
+              <div class="item-meta"><span>bloomberg.co.jp</span><span class="pub">Fri, 19 May 2023 14:37</span></div>
+            </a>
+            <a class="item" href="https://news.google.com/rss/articles/CBMibkFVX3lxTE4wZ1F6U0lQYkl5SGNxUjJ4My1kYngxWTRRcmhlQ2V4akx1UURHYjd6R256QVN1SXR6cU1DTVhkbE41UzVjYmZiQlV3dFZfREgwQVVxcDhuTkJ6c0tXWEhPcHFzRlhlWHlzcTRDQ3JB?oc=5" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-en">EN</span>お客様事例 5住友電工 - Bloomberg.com</div>
+              <div class="ja-line">🇯🇵 <strong>【和訳】</strong>お客様事例 5住友電工 - Bloomberg.com</div>
+              <div class="item-meta"><span>bloomberg.co.jp</span><span class="pub">Fri, 05 Mar 2021 17:01</span></div>
+            </a></div>
+        </section>
+        <section class="source-card" data-media="Bloomberg" data-lang="EN">
+          <div class="source-header">
+            <span class="source-name">Bloomberg (EN)</span>
+            <span class="source-count">15件</span>
+          </div>
+          <div class="items">
+            <a class="item" href="https://news.google.com/rss/articles/CBMiswFBVV95cUxOYVg3VkVBT0FNUUgyeUVYdUNTMVVEMDJZRnJvRVFoU1BKVFh4UlB4VmxxbnA3S19ONWx1LVhuU3VHS3hjY20tVkpkQ0o1ZTZ4eExmdGwybGxkMDNTeEdWRU5xU1l1LW5lemZLOFhtemYwNHBmM0RLWGRyYlAxckZnRzJyZzB2bFNpM05iQXVQb0hwN24wRll5ZE5oeHFxeUJkcG80VUI1TG5kQWlEZmZKUVZEbw?oc=5" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-en">EN</span>China’s Top AI Firms Limit Cyber Capabilities in Latest Models - Bloomberg.com</div>
+              <div class="ja-line">🇯🇵 <strong>【和訳】</strong>中国のトップAI企業、最新モデルのサイバー機能を制限 - Bloomberg.com</div>
+              <div class="item-meta"><span>bloomberg.com</span><span class="pub">Mon, 16 Nov 2026 23:00</span></div>
+            </a>
+            <a class="item" href="https://news.google.com/rss/articles/CBMirAFBVV95cUxNVDE4NkNPbFZVWjZXLXpxR0VKV2prZ21BYmcxbk4wRExWRURaYWJ3U1VDdDBTZWYtSVJwaFdPMjExbWdwTmpJLVBnRGxBQ18yTUlDTmlCR2hSNGpYa0JRYVZ6c3EwekJoYUl1bU0xOTJZOFRxZjVMNzYyWGpfV0tPQThKRXdocG9KVWpDdVExNGpLZEpCaVFLQ3YwQWpHU21rTkpTMVJLZnpjbFRm?oc=5" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-en">EN</span>Altman Says AI Industry ‘Will Be Fine’ After Huang’s Ouster - Bloomberg.com</div>
+              <div class="ja-line">🇯🇵 <strong>【和訳】</strong>アルトマン氏、黄氏追放後AI業界は「大丈夫」と語る - Bloomberg.com</div>
+              <div class="item-meta"><span>bloomberg.com</span><span class="pub">Mon, 16 Nov 2026 17:51</span></div>
+            </a>
+            <a class="item" href="https://news.google.com/rss/articles/CBMitgFBVV95cUxNTUE0U2w2TzBJcDJHS2dWS3k4MEp1MkFQWHVBTi1nNkJvcG9zQlQ4S0JvTU5aLWNScTJVdmdsYnhLaF9DTXczVU1mQ0V2ZGg0WndacERXamttQy1iT0hYUmc1dndPajU3eDRxX2haeVVmaDhrN0dQdFduNHB6eEZyNEItM0lBYkhQcWFWY3JlUFItUGhnZTBqS0tFeS1iWEJUN214bzVPSHB3SjJhVlVRZHdHRGpsQQ?oc=5" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-en">EN</span>Fed’s Warsh Says Staff Are Gaming Out Contingencies on AI Impact - Bloomberg.com</div>
+              <div class="ja-line">🇯🇵 <strong>【和訳】</strong>FRBのウォーシュ氏、スタッフはAIへの影響について不測の事態を想定していると発言 - Bloomberg.com</div>
+              <div class="item-meta"><span>bloomberg.com</span><span class="pub">Mon, 16 Nov 2026 17:00</span></div>
+            </a>
+            <a class="item" href="https://news.google.com/rss/articles/CBMiswFBVV95cUxOUWtEOGtHd0VyaHpJRnEzcDYtRklURlFfcFByaFNfQ2dhLVJTbkFoSklXeDd3X1dwdVRRR2JVYVRxazF4NGFzd1o5TVZsR0xWbWFuYnd3eU1fRzNBMWNUY1FzeFZLcWQzWFRPT0Y4SmRCUUVleTVIZzFkRmhCQ1pKMjNlSTVjMGI4aTZnd3k5d3lPUG1XTFpnSHlHN2Zoa3BKUk1hUFdKdUczX20xNFEwNDU1Yw?oc=5" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-en">EN</span>Nasdaq 100 Plunges as Nvidia Earnings, Anthropic IPO on Horizon - Bloomberg.com</div>
+              <div class="ja-line">🇯🇵 <strong>【和訳】</strong>Nvidiaの収益でナスダック100が急落、人類的IPOは地平線上に - Bloomberg.com</div>
+              <div class="item-meta"><span>bloomberg.com</span><span class="pub">Mon, 16 Nov 2026 21:19</span></div>
+            </a>
+            <a class="item" href="https://news.google.com/rss/articles/CBMisgFBVV95cUxON25DZk1jd0tYWDRER19JREV4U1dZbGstZXlsUUZrVkgyVmlXTFd5Zmw1NmtQQmNoOUpDMlh5Q0trTXVUTmthWEtGNktnQ0x2dE4tTlJtOGVuZTFBMlAtYVdZUXlHUzhHOHZSelFSb2JFNGVham5ldzRpS0x5WHpGWldkQW1ZNnR3ckdRTEgyMXpQcklJUDRpLUlFVXJzUjlRbXQzWnJETURCcmFNT2NYLVRR?oc=5" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-en">EN</span>Lula Worries Slam Brazil Markets From Real to Corporate Bonds - Bloomberg.com</div>
+              <div class="ja-line">🇯🇵 <strong>【和訳】</strong>ルーラ氏、レアルから社債までブラジル市場を厳しく批判 - Bloomberg.com</div>
+              <div class="item-meta"><span>bloomberg.com</span><span class="pub">Mon, 16 Nov 2026 21:27</span></div>
+            </a>
+            <a class="item" href="https://news.google.com/rss/articles/CBMisgFBVV95cUxQM2hWeWhlSVZUNUZ3TXQzZkhiWHpLVXUwUm1sUTRoMFFEV3loLWZYS0Y2SGI1czdYMFZic2E2dzA5SmhJTk5qLS1GdjlLS25UNUlTeTk3RlVmamhzZm1nSmE2dXQtMW9LTG8wYzh3aDVkemx2dVNJSHNzbFl4UmpsVWNlVDRWcnBjZWZRS0FEb09wQ0hma1ZhaVhUNWJNcUZ4X25KZzVXQVAyOEg5bXZDeGJR?oc=5" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-en">EN</span>Nvidia Backs ‘Genius Grant’ Winner’s Push to Make Cost-Efficient AI - Bloomberg.com</div>
+              <div class="ja-line">🇯🇵 <strong>【和訳】</strong>Nvidia、コスト効率の高い AI 開発を目指す「Genius Grant」受賞者の取り組みを支持 - Bloomberg.com</div>
+              <div class="item-meta"><span>bloomberg.com</span><span class="pub">Mon, 16 Nov 2026 16:00</span></div>
+            </a>
+            <a class="item" href="https://news.google.com/rss/articles/CBMipgFBVV95cUxQU3diZGZDaW14MTdtajJNSTFnMXF3MWtpODZRZDN3UVVRZXBwQllnQXFRRUFYbTAzQmJkLW1qTDAzZDhyYW54UjdBVjFrZVRzV3JiTVRTdmlybkVtRnZVSWlMTnFvYVp3dkFGeWhUVFdrUE1Na3E0WTVuekRuSm5jN1A2aDBnb1NjYXRhYmJfdjlBQWY1X093Q1hHTDM4ZzNhdlYwNVRn?oc=5" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-en">EN</span>US Moves to Curb Remote Access to Nvidia’s Advanced AI Chips - Bloomberg.com</div>
+              <div class="ja-line">🇯🇵 <strong>【和訳】</strong>米国、NVIDIAの先進AIチップへのリモートアクセスを制限へ - Bloomberg.com</div>
+              <div class="item-meta"><span>bloomberg.com</span><span class="pub">Mon, 16 Nov 2026 23:27</span></div>
+            </a>
+            <a class="item" href="https://news.google.com/rss/articles/CBMiyAFBVV95cUxPdzh2MlBUVDU1TE1oaEtfQVVNcHNaTzZvSzQtdFNmSHdWeFRYY3BFY2hQNjV0MDY0WkQ2cUFORS1xa0wwbkRlaG8taWxWZEFVQlZYQUhnNzl0YkRZTlkyeThtTlBQa0xXWVpmbWt5d2R0Sk1YcnQyQjB6M0xSbjlQaHFITndsTTdCaTk2b0E0TmZsZEJid2VSOW9SOGF5VzZneWxPdlRUQzJxMWY5SHFfQU1od05lbDI3ZmhhQzRLQS1BZ1JhOXZ1dQ?oc=5" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-en">EN</span>The Incredibly Weird And Consequential Timing for Anthropic’s IPO - Bloomberg.com</div>
+              <div class="ja-line">🇯🇵 <strong>【和訳】</strong>AnthropicのIPOの信じられないほど奇妙かつ重大なタイミング - Bloomberg.com</div>
+              <div class="item-meta"><span>bloomberg.com</span><span class="pub">Mon, 16 Nov 2026 22:30</span></div>
+            </a>
+            <a class="item" href="https://news.google.com/rss/articles/CBMisAFBVV95cUxNWlRlX3pOelgxdVZHMkRZSVNxeWRkWmVrLW5hOUU1M3JVZ2hJcDRUQ1Bnc2liaC03dmZWNE0wd1JYT2hUNXBibFozbWgwQ2dadC1jVFZKemVoM0R4a2tMdUNadEwzMm11eXNxZFRjV1ZVSFhzQ1ItV3RBb0hJekpCYUNPS09UNVktX0lqeGJFUEN1bXQxeWZuTDBPTlhBMHNqM0x5QW1ORjViSFgwZEExbw?oc=5" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-en">EN</span>Tradeweb Is Rolling Out AI Assistant for US Treasury Traders - Bloomberg.com</div>
+              <div class="ja-line">🇯🇵 <strong>【和訳】</strong>Tradeweb、米国国債トレーダー向けに AI アシスタントを展開 - Bloomberg.com</div>
+              <div class="item-meta"><span>bloomberg.com</span><span class="pub">Mon, 16 Nov 2026 19:45</span></div>
+            </a>
+            <a class="item" href="https://news.google.com/rss/articles/CBMilAFBVV95cUxQSHFoREFNUWJRYTJxR0pTRnpHM2Q1NlhjQ1pjN0w3U1FWM09sclNuMlVNLWx4YXF0TURpOEdtSk9sc3BXTEpBakhLd21neWhod2pvZ1hRNVAtZWxNTlZmUXl4TXNJQ0MyTTFqa0tpRGVmOVpQZlRidlZzYkFLYnlNSXduLUtPSXo3QUJ0aVhlM0xWVFNh?oc=5" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-en">EN</span>Asian Stocks to Fall Ahead of Nvidia, Anthropic: Markets Wrap - Bloomberg.com</div>
+              <div class="ja-line">🇯🇵 <strong>【和訳】</strong>アジア株、エヌビディアに先んじて下落、アンスロピック：マーケットラップ - Bloomberg.com</div>
+              <div class="item-meta"><span>bloomberg.com</span><span class="pub">Tue, 17 Nov 2026 01:13</span></div>
+            </a>
+            <a class="item" href="https://news.google.com/rss/articles/CBMitAFBVV95cUxPcFhFeVFsT0wxMG1zZWtMN1gzNzV5XzN2aUJtclZEa2NaUTN0a2Y3cV83djJMeWZ0Zk5uUThTa2o0SGhQb1NrUGJVWXBLV2xoRzFyUC1mU0s1bXJfekVJaDl2RndqTGJfN0Vkd25OS0JROUNZQ0V3bjJ0b0dkUDIwNlpCcXl4NVpHX3pGQkNCZjZOOFliV0JjaG96NnJVM1BfVDRIa2x1MElXNVZXZ1VHNXdyaXE?oc=5" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-en">EN</span>US Futures Drop as Market Looks to Nvidia Results, Anthropic IPO - Bloomberg.com</div>
+              <div class="ja-line">🇯🇵 <strong>【和訳】</strong>市場がNVIDIAの業績と人為的なIPOに注目し、米国先物相場が下落 - Bloomberg.com</div>
+              <div class="item-meta"><span>bloomberg.com</span><span class="pub">Mon, 16 Nov 2026 16:52</span></div>
+            </a>
+            <a class="item" href="https://news.google.com/rss/articles/CBMiswFBVV95cUxONGZ4V3B6NFVBWmRlYXl1Q0pUc2IySFdrb1hIcUxGcnNvZHVndW0tZEJUQXVKNEdvWTJwaUctNThfUFBxbzNjUEptRHVZeGVLWHVMTDc1TUNua1BwWjJTaWYwbW5rN1hOU09LY1FsRmhrb3ROdUJQSnZMelh2ZUcyel9ZZ1pCazlxaW9sbWdjVjZLcmRwUUdKZHNrbjVKRDRHem9rU0hCV1B1b0hvaVRfWFllUQ?oc=5" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-en">EN</span>BlackRock Shifts AI Bets, Adds Equity Risk in New Model Shakeup - Bloomberg.com</div>
+              <div class="ja-line">🇯🇵 <strong>【和訳】</strong>ブラックロック、AIへの投資を変更、新モデル刷新で株式リスクを追加 - Bloomberg.com</div>
+              <div class="item-meta"><span>bloomberg.com</span><span class="pub">Mon, 16 Nov 2026 13:55</span></div>
+            </a>
+            <a class="item" href="https://news.google.com/rss/articles/CBMitAFBVV95cUxPMjhwVzZrQ1FranFNWlRGLVkzN1JSb1dwUlU0QVAzZHVIYll0QTByXzBEV3NCT2JzLV9hVjJkdFp1YUhKcVdJSVpMelZHZ0hod09jbExCRnpDWDBMS09iS0ExQ2VHV3czc2pHNjNTQ3MzRG1zODVfS1Zpam9VV2VHU0VwM0x0QVpiN2x4OXB2bTV5aXNXRWVXcjFnRFkxbVZZV2JNdk5hMzZNZjBOZ25ybG1YXzY?oc=5" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-en">EN</span>AI Data Centers Are Running Into a Weather Problem - Bloomberg.com</div>
+              <div class="ja-line">🇯🇵 <strong>【和訳】</strong>AIデータセンターが気象問題に直面 - Bloomberg.com</div>
+              <div class="item-meta"><span>bloomberg.com</span><span class="pub">Tue, 17 Nov 2026 01:40</span></div>
+            </a>
+            <a class="item" href="https://news.google.com/rss/articles/CBMisgFBVV95cUxON1VKTHI4cWNWNG10TkNPUDNKb0tLQXlxMmJ1aHE2d0twMW5Gb3NfREZMZmRhcnlMeFpHWVBfU0xoYnJ2TW1KTXRLbWxHOW5hWVZITUlRUW1OTlcxVENtM2t2aXRQZV9VR0tnVkVJU0podW1wLWRiVUJXLWQ0UWtGYTBkTGthd1o5YzQyOGJyR3lWSUtaWlRXblZZUVVIUnFfSkYxcEh4ckFaM3FqVi02amp3?oc=5" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-en">EN</span>Alibaba Unveils New Flagship AI Model in Riposte to US Rivals - Bloomberg.com</div>
+              <div class="ja-line">🇯🇵 <strong>【和訳】</strong>アリババ、米国ライバル企業への反撃で新たな主力AIモデルを発表 - Bloomberg.com</div>
+              <div class="item-meta"><span>bloomberg.com</span><span class="pub">Mon, 16 Nov 2026 02:00</span></div>
+            </a>
+            <a class="item" href="https://news.google.com/rss/articles/CBMiswFBVV95cUxPeHdTZG14X3RFSFFCSzJ6VGlqaVdNekZxd0t5eXMzLWdjVHlhWjZkSndXSDV2RlZnWVBGdEtZaWxPakR6SjJWSUxSV0l6TGctTWowU25uQjdwWllDallCUnhENV9xeXJvM2RrYTdPSGxiNUtJbzlMZ0JvMUlwVzRQeUxmazFNZlM4alRDdHVhY01ZNnJqOHBtY0RIa2swSjBVV1BoWm5sQ0VubjF6NEVPeFhBNA?oc=5" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-en">EN</span>Morgan Stanley Is ‘Max Overweight’ Global Stocks on AI Cycle - Bloomberg.com</div>
+              <div class="ja-line">🇯🇵 <strong>【和訳】</strong>モルガン・スタンレー、AIサイクルで世界株を「マックス・オーバーウエート」 - Bloomberg.com</div>
+              <div class="item-meta"><span>bloomberg.com</span><span class="pub">Mon, 16 Nov 2026 09:14</span></div>
+            </a></div>
+        </section>
+        <section class="source-card" data-media="Reuters" data-lang="JP">
+          <div class="source-header">
+            <span class="source-name">Reuters Japan</span>
+            <span class="source-count">15件</span>
+          </div>
+          <div class="items">
+            <a class="item" href="https://news.google.com/rss/articles/CBMiW0FVX3lxTE1jMXBXMjRUbUdiajh0OExFZEpEczNXbHlvYmhTeGdMdDFsUnBNeXBZY3NnRVl6U09BZEN5R3RURlhFVUxRWTRWamFuLXJIeE93R05qSDRYb3QzQ2s?oc=5" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-en">EN</span>Buy tech and small caps on pullbacks: trader - Reuters</div>
+              <div class="ja-line">🇯🇵 <strong>【和訳】</strong>反発でハイテク株と小型株を買う：トレーダー - ロイター</div>
+              <div class="item-meta"><span>jp.reuters.com</span><span class="pub">Tue, 17 Nov 2020 08:00</span></div>
+            </a>
+            <a class="item" href="https://news.google.com/rss/articles/CBMiW0FVX3lxTFB1ZXJ3Z3F5MHk1WjB1aVc1NTJhSEFCS05yYlVubkVra1hYSWNXRWQ5bFI3Mlhua1pZNW9KMi05bHJUMGNESnE1UWRQRTRGUmx2TF8tZW5lVU0yY2c?oc=5" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-en">EN</span>The diamond scandal rocking Italy&#x27;s banks - exclusive - Reuters</div>
+              <div class="ja-line">🇯🇵 <strong>【和訳】</strong>イタリアの銀行を揺るがすダイヤモンドスキャンダル＝独占 - ロイター</div>
+              <div class="item-meta"><span>jp.reuters.com</span><span class="pub">Tue, 18 Jun 2019 07:00</span></div>
+            </a>
+            <a class="item" href="https://news.google.com/rss/articles/CBMiW0FVX3lxTE95cUxiLWZxUXFfRm52LXlNb3NsU1lIS2RqcU1JUDJ6MFc0a3hES0s3VVZ0bE5nMDBydHc2elhhcDFxSlBLVEdPd1J5V2s5MXpQUDNlRDMyWFhnNlU?oc=5" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-en">EN</span>Protective mask sales lift 3M profit - Reuters</div>
+              <div class="ja-line">🇯🇵 <strong>【和訳】</strong>防護マスクの販売が300万利益を押し上げる - ロイター</div>
+              <div class="item-meta"><span>jp.reuters.com</span><span class="pub">Tue, 28 Apr 2020 07:00</span></div>
+            </a>
+            <a class="item" href="https://news.google.com/rss/articles/CBMiW0FVX3lxTFBaM2w0NzR5N0JSZnRDWjV1ZGdwVTNfeVYyRGQ1d3ZJZ1dRell1T3VKVkFxWmFvUmpjOFExVXM4T3RIamVpN0NzMG5oMmR5NzNzWmhhUE1yRFpwOWM?oc=5" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-en">EN</span>Bed Bath shares sink on sales warning - Reuters</div>
+              <div class="ja-line">🇯🇵 <strong>【和訳】</strong>販売警告でベッドバス株下落 - ロイター</div>
+              <div class="item-meta"><span>jp.reuters.com</span><span class="pub">Wed, 12 Feb 2020 08:00</span></div>
+            </a>
+            <a class="item" href="https://news.google.com/rss/articles/CBMiW0FVX3lxTE5BQlVYQi1vUmtaZEZkTTU5cEQ4TnZnTlpjRjVVY3cxT0lpQ1lMbkNYV1AyUUxPWTlQY3gxYXc5U2pTY2VVUmxRam1YdHNDZ2h4dldsYVJpamo3R0k?oc=5" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-en">EN</span>Future at stake for Kabul orphanage - Reuters</div>
+              <div class="ja-line">🇯🇵 <strong>【和訳】</strong>カブール孤児院、危機に瀕する将来 - ロイター</div>
+              <div class="item-meta"><span>jp.reuters.com</span><span class="pub">Fri, 15 Oct 2021 07:00</span></div>
+            </a>
+            <a class="item" href="https://news.google.com/rss/articles/CBMiW0FVX3lxTE01eUFmQ0tmNW1Rdk8zcEZmc0JGOVY2YVBNSWx3YXNURXpBemNvRDZMdlFvWkJMV3l2eEgtX2dRQVFMZkRiclEwaEFqWkZNeUEtcnUzbF9sa2lBLU0?oc=5" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-en">EN</span>China tells Didi to delist in U.S. - sources - Reuters</div>
+              <div class="ja-line">🇯🇵 <strong>【和訳】</strong>中国、滴滴出行に米国での上場廃止を指示＝関係筋 - ロイター</div>
+              <div class="item-meta"><span>jp.reuters.com</span><span class="pub">Fri, 26 Nov 2021 08:00</span></div>
+            </a>
+            <a class="item" href="https://news.google.com/rss/articles/CBMiW0FVX3lxTFBXamhHRjhGb3lnR2dBMURCcDdCRmp0OTNIcUFFSFVUcTY2STZ3ckpYclhrYnpVNGFNY0ZlYWUwZS1kdzJBVy1DZmpBNHZSdmV6M2N5dHctb19WLWM?oc=5" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-en">EN</span>Stay in cash: trader - Reuters</div>
+              <div class="ja-line">🇯🇵 <strong>【和訳】</strong>現金を維持：トレーダー - ロイター</div>
+              <div class="item-meta"><span>jp.reuters.com</span><span class="pub">Mon, 05 Oct 2020 07:00</span></div>
+            </a>
+            <a class="item" href="https://news.google.com/rss/articles/CBMieEFVX3lxTE5lMHVyUmZYRS1lWUhIc3JJZ1ByZXV2bHZKLW54V3BLY281bXdPbncyLWFkNl93b25WbFFBV0lNcGxmSjQ5N3ZtUU9IRlBxWGVRWEZRRkxUM2J0emZidDMzNW5LWlVSbENPT0lNbjlUNWU3YkpMUXBuZw?oc=5" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-jp">JP</span>ＷＨＯ、新型ウイルス「まだ不明な点多い」 理解は依然初期段階（字幕・12日） - Reuters</div>
+              
+              <div class="item-meta"><span>jp.reuters.com</span><span class="pub">Tue, 11 Feb 2020 08:00</span></div>
+            </a>
+            <a class="item" href="https://news.google.com/rss/articles/CBMiW0FVX3lxTE8wdnJXRUdHNGt5a2NQcGd2NG15X1BULXBsOG1IcU5aT1RmVjdONXlKNTRYUjZLeWVyUUtkejdhNVFKU1ZWRWltLWxFRy1ndFZyUEZ3MVlia2E1N3c?oc=5" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-en">EN</span>Tearing up speech &#x27;completely, entirely appropriate&#x27;: Pelosi - Reuters</div>
+              <div class="ja-line">🇯🇵 <strong>【和訳】</strong>涙を流す演説「全く、完全に適切」：ペロシ氏 - ロイター</div>
+              <div class="item-meta"><span>jp.reuters.com</span><span class="pub">Thu, 06 Feb 2020 08:00</span></div>
+            </a>
+            <a class="item" href="https://news.google.com/rss/articles/CBMiW0FVX3lxTFBuSDdsVGc3aml0bV9ic0N0c3oxSmJFd1hMWHR0NXpXc3dPQkRGVHU0Mng4cG41aXNRN1ZkT1BvQzVONGNLQmhnZVhKcDBGejZIcmRsZE44QVQ1SDA?oc=5" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-en">EN</span>S.Korea to drop Japan from its fast-track trade &#x27;white list&#x27; - Reuters</div>
+              <div class="ja-line">🇯🇵 <strong>【和訳】</strong>韓国、ファストトラック貿易の「ホワイトリスト」から日本を除外へ - ロイター</div>
+              <div class="item-meta"><span>jp.reuters.com</span><span class="pub">Mon, 12 Aug 2019 07:00</span></div>
+            </a>
+            <a class="item" href="https://news.google.com/rss/articles/CBMiW0FVX3lxTE05Rm9hN1U4R3cyd0FaQ2Y2Q1ZacW1HMGJMc0NsR0tYSThJMFVzaFBXcWg5czZLWjFVY1UwVXRVVmZtMUI1SWJoamZBLU1CcV9FNkxCNDRaYzM0Rmc?oc=5" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-jp">JP</span>トヨタとソフトバンクが提携、未来のクルマ作りへ加速（字幕・4日） - Reuters</div>
+              
+              <div class="item-meta"><span>jp.reuters.com</span><span class="pub">Thu, 04 Oct 2018 07:00</span></div>
+            </a>
+            <a class="item" href="https://news.google.com/rss/articles/CBMiW0FVX3lxTE8wRVhZUERQMXhlemNVWWVIQklCbEhGSGJQQ2FwaUdRbmdfXzJNejd3Z3lCQmQzTEJ4cmdZdzZ2bmZPVFNqNElTcHVsc3QyTDYyZTlweGtkVU1QZW8?oc=5" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-en">EN</span>With Republican firewall, U.S. Senate acquits Trump - Reuters</div>
+              <div class="ja-line">🇯🇵 <strong>【和訳】</strong>共和党ファイアウォールで米上院、トランプ大統領を無罪判決 - ロイター</div>
+              <div class="item-meta"><span>jp.reuters.com</span><span class="pub">Sat, 13 Feb 2021 08:00</span></div>
+            </a>
+            <a class="item" href="https://news.google.com/rss/articles/CBMiW0FVX3lxTFA2QlV1OGdTR0M0dlBoRVAzT3FIWnA2bXVMQVMxQk9HZXRzRWJtd1BqWTF0OHJ5MTV1M3FRRHpMdDVlWHBlYnpIR1d4ZDEwdjRZN1FERG1BaVNTUVk?oc=5" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-en">EN</span>DiCaprio felt &#x27;depressed&#x27; over Amazon fires - Reuters</div>
+              <div class="ja-line">🇯🇵 <strong>【和訳】</strong>ディカプリオ、アマゾン火災で「意気消沈」 - ロイター</div>
+              <div class="item-meta"><span>jp.reuters.com</span><span class="pub">Mon, 26 Aug 2019 07:00</span></div>
+            </a>
+            <a class="item" href="https://news.google.com/rss/articles/CBMiW0FVX3lxTE5JVDMtLWNxenh0WVp1WFdNeDU1VTJ0R0hwZldNWGgtMWYxQmtJMTBpX21IUno5VVkxNUo1YkhfalhhQkNfRkV5Z1NfMzFMMmhkSnJteU1CcjlxbTQ?oc=5" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-en">EN</span>UK to purge Huawei from 5G by 2027 - Reuters</div>
+              <div class="ja-line">🇯🇵 <strong>【和訳】</strong>英国、2027年までにファーウェイを5Gから排除へ - ロイター</div>
+              <div class="item-meta"><span>jp.reuters.com</span><span class="pub">Tue, 14 Jul 2020 07:00</span></div>
+            </a>
+            <a class="item" href="https://news.google.com/rss/articles/CBMiW0FVX3lxTE5MU21BM2c0cUk5SWs0RXhQOGhnUXdEXzllSG5KNHp5MEFxMmNISzV4RmtRYkZTc3BBZGVXb2xoUjRiSVlfbTF3LTNSQXBMcFBOUjhxc2hobGdzYzQ?oc=5" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-en">EN</span>&#x27;Great lockdown&#x27; to shrink global economy by 3% - IMF - Reuters</div>
+              <div class="ja-line">🇯🇵 <strong>【和訳】</strong>「大規模なロックダウン」で世界経済３％縮小－ＩＭＦ - ロイター</div>
+              <div class="item-meta"><span>jp.reuters.com</span><span class="pub">Tue, 14 Apr 2020 07:00</span></div>
+            </a></div>
+        </section>
+        <section class="source-card" data-media="WSJ" data-lang="JP">
+          <div class="source-header">
+            <span class="source-name">WSJ 日本版</span>
+            <span class="source-count">15件</span>
+          </div>
+          <div class="items">
+            <a class="item" href="https://news.google.com/rss/articles/CBMiogFBVV95cUxNLWxoTWxWcmQ4eTF4aXg3SFZDaDR2Q01iMmpCVnVtUXc2WmQxWnVLbmhRb2NKeWtMdEh2Z21WYk0wRzBUdXpEdG5rRkR4a09UdnI2VWhWeWJENEJkSldOblFCdklRckFHdGxJbHphWHBtclVFSlQzejZaRHdvY0dVWlNPUXBKOTFCWE50UVpCZElWdzlxTnQ2UF9jVnNDWTR5SUE?oc=5" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-jp">JP</span>トランプ政権、エヌビディアをAI「国家代表企業」に指定へ - WSJ</div>
+              
+              <div class="item-meta"><span>jp.wsj.com</span><span class="pub">Mon, 16 Nov 2026 05:25</span></div>
+            </a>
+            <a class="item" href="https://news.google.com/rss/articles/CBMisgFBVV95cUxPSnQ2eDQ4d0RFbmtYVWs5cm0tZmhDZkZZd09Ic2h0dnZlc0NYUkV6MUFsUTFXb0UwUzNZM0M2LUt0eUxneTItdUhLSE9tNjJZZVZnTTIyemZ6S2FNYi1pUWdEODFOT2tWUGxxRHRhRFE0eXNwdk5Tbi1GeXNRODdpajFtb00zak8xWGlHU2I4Zy1mc3JlcjN1NGpScjhzc1dCMVFXdFpuM1ZqWVJsLTB5V2lB?oc=5" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-jp">JP</span>エヌビディア前CEOが築いた中国「AI裏口ルート」 - WSJ</div>
+              
+              <div class="item-meta"><span>jp.wsj.com</span><span class="pub">Mon, 16 Nov 2026 07:02</span></div>
+            </a>
+            <a class="item" href="https://news.google.com/rss/articles/CBMipAFBVV95cUxNd180WE5YdkthU0tGUFpWcHdRcVY2U3hidTdfbVBPNEplTjdzWjJFakp5akF2TTJ2anZIUjY4TFlHamdNdEd3bk80bHB2eHA5Z2FXaTJjd0tMV0ZTYWVqbUpZLTBQUTNOYXNCZHJRQkpvWUNHalZ1aTRxeDRDRGhpUy1QOWs2STFZNGZkNFZ1dmFNSGhlMmtCNDAwX2Jhd3JxOW91UQ?oc=5" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-jp">JP</span>エヌビディア「白紙小切手」終焉、AI経済に無制限の支援 - WSJ</div>
+              
+              <div class="item-meta"><span>jp.wsj.com</span><span class="pub">Mon, 16 Nov 2026 04:33</span></div>
+            </a>
+            <a class="item" href="https://news.google.com/rss/articles/CBMilwFBVV95cUxOa3dqUFExVDNRMThPd2M3NnAtMDZzd2t5YmU4SG1GXzBxUjV3ZWxUdHdJbEZuRHp2TDg5NnVlMWhmOHJ1T1lEQUw3WS1NZGlCdjhwUFRlXzRGRE1ZdzhFVzJaWTlQb2gwd1J5V1lBRTdoTEJKbXM3Rm8zMTRONXNkM3RGQ0VDazB0dU9EZDhtcXgtZFNTaG9V?oc=5" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-jp">JP</span>【オピニオン】トランプ氏とフアン氏に共通の悲劇的欠陥 - WSJ</div>
+              
+              <div class="item-meta"><span>jp.wsj.com</span><span class="pub">Mon, 16 Nov 2026 04:32</span></div>
+            </a>
+            <a class="item" href="https://news.google.com/rss/articles/CBMijwFBVV95cUxQOWE5YldNNk83MG1iYktjNHdkajJ2cmNrYUMtVjNIOHhCZEtHTVRXNkctQWZnRFBObklKUkVBMXA3TnNhRjZZd3dvQnk0TFFDUXBjamh2SHc1SXMwaUFJc2dkNXRzOFFwVEhnb3FlNWZQU2x0LUxzQVcwRnNLOWdCekMxei14VWJ6eWRkdEx5cw?oc=5" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-jp">JP</span>エヌビディア次期CEO、米財務長官が社外からの起用要求 - WSJ</div>
+              
+              <div class="item-meta"><span>jp.wsj.com</span><span class="pub">Sun, 15 Nov 2026 22:04</span></div>
+            </a>
+            <a class="item" href="https://news.google.com/rss/articles/CBMiqwFBVV95cUxNQVhVdTg5TDYwV1EtSmZuLTlON0M5eXQ5OGd6bnJmbjVwcHhSeE9kRTlod3pFSl9naWZwSG1rcm1EV0psbW5CRzRuZ29YdG8xWEhxR2l4VzY5WWpVLUY2bVpaM1Y0cnpQaG4tNGJwT25scjdmQlA4ZW82dXFPdkhVQ1lPRWJKMENqVEJfYlV3bDg3WElCUHlSQnd4V2VNbHRhYURZTGY1dldWV28?oc=5" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-jp">JP</span>高級品業界で議論の「値下げ戦略」、ルイ・ヴィトンの選択とは - WSJ</div>
+              
+              <div class="item-meta"><span>jp.wsj.com</span><span class="pub">Mon, 16 Nov 2026 02:00</span></div>
+            </a>
+            <a class="item" href="https://news.google.com/rss/articles/CBMirAFBVV95cUxPOU9JSnFzWHNpQlpiZlhMYXhINHA1RGNTcU5pVFZ0bjlmWlVDajNrNHA0Q29uZDhycVlKSUg3RkNkcFpGVnJtcTljNjVNQnliSXIyckNiZm5vNW1HNS1Pb1lCU0xqMUV0enZFQjdKWGNQSUdTdmVyNzFJcGdLRkFLeHd5QzBPOUd6aUU1Nlo4VkZ5UzBSakFoV1F5SUwzRjRXX3YxTzBLTnFZNjQ0?oc=5" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-jp">JP</span>米航空障害の原因、アーカンソー州のルーターと特定 - WSJ</div>
+              
+              <div class="item-meta"><span>jp.wsj.com</span><span class="pub">Sun, 15 Nov 2026 03:45</span></div>
+            </a>
+            <a class="item" href="https://news.google.com/rss/articles/CBMiqAFBVV95cUxQVnFLclpVY3pKRjVyY3dGWGZwRHhIWVNDRUpZcHdmQ2s3RkowWlA5SXpianM3eUlpZEpLVGlUTHVuejVFTklxcnhMNGk3LXpabXV4SWR5T1JsQnJNcXdSdmhTUVdUQzBlVzF3M1drZlVibFlucmRBTUFySEpsb3FZcHNkVHNNbnpxb3NXLUcyc3p5ZHhmOVhJWEdNRHVmd1lZRGtOZTBEMUc?oc=5" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-jp">JP</span>フアン氏、エヌビディア暫定CEOを酷評していた - WSJ</div>
+              
+              <div class="item-meta"><span>jp.wsj.com</span><span class="pub">Fri, 13 Nov 2026 06:23</span></div>
+            </a>
+            <a class="item" href="https://news.google.com/rss/articles/CBMilwFBVV95cUxQVzl1Mno4TTNrWG96U21Vb05nREcxRG0tWHp2QXI0aHNuck5NeklSVm1FX1QtdXU5T0lzcDlCcWZwSlVNSDVNc0pDQ1RWZDkxOENyTXM0MG93N211SUI2amd0emt1ZVVsLU9TOVEwM2VnQVJ4Z282cWVTQXJ2RVJneF9zcEJKdWQ0UFNOVXpQQXREbmFWeFFz?oc=5" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-jp">JP</span>米商務省、半導体輸出の規制強化へ - WSJ</div>
+              
+              <div class="item-meta"><span>jp.wsj.com</span><span class="pub">Mon, 16 Nov 2026 19:47</span></div>
+            </a>
+            <a class="item" href="https://news.google.com/rss/articles/CBMiuAFBVV95cUxQblVxdmhTbURzMzZrM3l3UWhRY3RyWnNsNjBQRDhxWTJLaWFnSUZuMlJoTl9YdTU1Szk0VEpqMVZ1RFBPNWpCV0NiZEw4Y2lCOTlzUnpTeTBlVTM1UWNwT3ZGNng0cWczcnlia3NTR3VUSDFzRjZYaU9XVTdHZy1ZaTVwRVpVQUhXeU5sM3dKLVo5enJna3hjSEpXZ3lDaTFGQzBjSzRYQi03R0Vhb0FaYVU5WFEzaGtS?oc=5" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-jp">JP</span>エヌビディアCEOに愛人紹介した謎の実業家、正体は「夫」 - WSJ</div>
+              
+              <div class="item-meta"><span>jp.wsj.com</span><span class="pub">Thu, 12 Nov 2026 06:49</span></div>
+            </a>
+            <a class="item" href="https://news.google.com/rss/articles/CBMimAFBVV95cUxQLU9NYm9fa1ByX2luNHljRElsQVBscFdRc2FiRWJBZTlzYVNGTUFSQmVmZUVkbEhMY1BRV01sQ2VUbl9IWjR2T0tjRm9xVDhTajg4R1JsYnprV19EaWVGZjFaakdWVkpQMTFsc0RpTXd6R3FnNzJnYXFkM0lSM04xSGQ5dExMMEJKODdPU19FMzJVa1FjOFl6eA?oc=5" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-jp">JP</span>孫正義氏のタービン巨額投資、裏目に - WSJ</div>
+              
+              <div class="item-meta"><span>jp.wsj.com</span><span class="pub">Wed, 11 Nov 2026 06:27</span></div>
+            </a>
+            <a class="item" href="https://news.google.com/rss/articles/CBMiowFBVV95cUxQV1JvMHgwY1JnX0JISkJ6ZEFyeDAxdkdSeFFlRHVZdDN3c3JxeFR5d2VoQVlIWHJtakp4VXJZVGlFcEprQl9EUEtCeFczQ2hzX1hvTGRKWHpnS0I3ZVdyZ0ZZOF94NXhpRTdyQ25TcjE1VkRzZ1dINkljX3l2dzNwSllDUUNqYUVBZlp5YWQybTlPMHBseVJrZGQtRmpLbWV0NHNV?oc=5" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-jp">JP</span>バリュー株ファンド、中身はAI株だらけ - WSJ</div>
+              
+              <div class="item-meta"><span>jp.wsj.com</span><span class="pub">Mon, 16 Nov 2026 23:14</span></div>
+            </a>
+            <a class="item" href="https://news.google.com/rss/articles/CBMimgFBVV95cUxOc09aa0hBcUsyVXpzUUdYZjVacldqZlI2OU43TjNPU1F4dG1jQW9UT19zcUZmRll1SzhGY0ZKMVZ0U0pBVjZxTGxGcUg2a1JRSlRNRTBGanlRSlBuQW9TdXpwYlhwemlhWlNjQ2xjdTVUMnJuX1hpek9jUDFLNUlkLW1vZUJxRUs1MnotM3lDYzhLNExhckloQ2VR?oc=5" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-jp">JP</span>FRB、AIによる米経済への影響を検証 - WSJ</div>
+              
+              <div class="item-meta"><span>jp.wsj.com</span><span class="pub">Mon, 16 Nov 2026 18:54</span></div>
+            </a>
+            <a class="item" href="https://news.google.com/rss/articles/CBMilAFBVV95cUxQVGM0S2ItN3hWaXoyQ3hLb2hvMFF0MDVqekxNMlNleks3cEJGT3NNLW5hd19GSWpxZnZjQ0p6Y2VDcHFjOGlWRjUydkRkSzE2cm4yR0J3QWFYQ2JDT3hRVW90VldobDFIT25PSmNFYlJfRGVCN3JWSkI3RE93bzQ1OGU3YzZydW9OQWVOVC1jdDZJTDhh?oc=5" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-jp">JP</span>フアン氏の復帰求める動き、シリコンバレーで広がる - WSJ</div>
+              
+              <div class="item-meta"><span>jp.wsj.com</span><span class="pub">Mon, 16 Nov 2026 04:42</span></div>
+            </a>
+            <a class="item" href="https://news.google.com/rss/articles/CBMilgFBVV95cUxNVTJYTDFXMTlOS1ktcG1nQjBCbG9QbmtQbV9vNDNoekN3RS1ITEFkTjhrX3BYdW16NWxNQ0lRTDRKVlRaSThuUHRkdUNCVUhVSUg4eXdqNi1iUFoyWl8wU2NZa1hIR3VyUFVYd0dFaExJNXhxOUtxVy1MYUNyUTZMa3pldElIYWdhV3lBTlJZM1hfZUU4clE?oc=5" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-jp">JP</span>米出発便停止の影響続く、欠航は3日目に突入 - WSJ</div>
+              
+              <div class="item-meta"><span>jp.wsj.com</span><span class="pub">Sun, 15 Nov 2026 22:50</span></div>
+            </a></div>
+        </section>
+        <section class="source-card" data-media="WSJ" data-lang="EN">
+          <div class="source-header">
+            <span class="source-name">WSJ (EN)</span>
+            <span class="source-count">15件</span>
+          </div>
+          <div class="items">
+            <a class="item" href="https://news.google.com/rss/articles/CBMifEFVX3lxTE1jMVRGNmM2LXVUalRrSEREd3VLUDl4alRBLTZDaEhhWjdCbXZJQlNxZnBhQWdvS2lrLVRESjg3LUZLRkpEQ0wtUFZVLWcwNllRX190Vm5PcHlEcndfODBubE9HZDVHVkMyYWFiMlo0YkpkVWpCdXhLaGhHZG8?oc=5" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-en">EN</span>AI Stocks Resume Their Slide - WSJ</div>
+              <div class="ja-line">🇯🇵 <strong>【和訳】</strong>AI株下落再開 - WSJ</div>
+              <div class="item-meta"><span>wsj.com</span><span class="pub">Mon, 16 Nov 2026 21:38</span></div>
+            </a>
+            <a class="item" href="https://news.google.com/rss/articles/CBMirwFBVV95cUxOQjdTNjl1UUgxQjFiMEFHRXl6UHlheGRXQ1NkTXJRbnlSaWxIdElaeGh4cjUtYzVEdXM2NlZUdEoyTjhWcXFiMGxtUFIydjhHcF80bmhqb1lpY01ReEF3bTdUV1hNSi1QTVJiUnRYeWl0NHRhMWVWdW9vWFk0aFA3Z082b2htY29zM0ZKMHVKd2JmNnM5U1NBS1owVXlKcy1wZzREazFJSjJzQVIzQlZJ?oc=5" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-en">EN</span>Warsh Says Fed Is Gaming Out How AI Could Reshape Economy - WSJ</div>
+              <div class="ja-line">🇯🇵 <strong>【和訳】</strong>ウォーシュ氏、AIが経済をどのように再構築できるかFRBが検討中と発言 - WSJ</div>
+              <div class="item-meta"><span>wsj.com</span><span class="pub">Mon, 16 Nov 2026 18:09</span></div>
+            </a>
+            <a class="item" href="https://news.google.com/rss/articles/CBMiowFBVV95cUxPZzlUSmhjZjlFYy0yVkY5TGY3TTU1MFB5QkhyWF84N0RERlRRTko5cXVtb1NZQmtyRTltRmJCMFZiWUdyTElDZXZXdFVMcU9HbnJQdlBfdS1pMHlDX21rQ05pb2k4cXpYT0FfY0szUHVkRUpfNDlvbk5QYUJDTXVrRExiM0NVT2tUUVNBUlVPd2FzeWl5QmhndUE4MDFvbnJGOVZv?oc=5" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-en">EN</span>Thomson Reuters CEO Says Content Is King When It Comes to AI - WSJ</div>
+              <div class="ja-line">🇯🇵 <strong>【和訳】</strong>トムソン・ロイターCEO、AIに関してはコンテンツこそが王様 - WSJ</div>
+              <div class="item-meta"><span>wsj.com</span><span class="pub">Mon, 16 Nov 2026 18:58</span></div>
+            </a>
+            <a class="item" href="https://news.google.com/rss/articles/CBMinwFBVV95cUxNd3VoTTBrT0l0VWowSm42OUJ2MWRQMjJNOTJUbVNhVXBpN2dwR2lHZEU4bGx0NF94UnZjNWgxczEwYzFQZmwzNFV6SHFGaFRuS1FLZUpCc3dBa01ERjR2RkdOU1puYXBhMzBHOGRiWF9Renl4cWJTRjlXZEMtUG9lblBUbU11WnBOb2V1WlplVFc4dXhvMDVkQUtTZDVSSEk?oc=5" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-en">EN</span>Exclusive | EQT Ventures Invests $10 Million in Enterprise AI Company Edra - WSJ</div>
+              <div class="ja-line">🇯🇵 <strong>【和訳】</strong>独占 | EQT Ventures、エンタープライズAI企業Edraに1000万ドル投資 - WSJ</div>
+              <div class="item-meta"><span>wsj.com</span><span class="pub">Mon, 16 Nov 2026 14:49</span></div>
+            </a>
+            <a class="item" href="https://news.google.com/rss/articles/CBMijwFBVV95cUxPYmJYUHcySGFfYmV5VGZrVXA0dHdWNGlPdG9velpHZDV6eE15S05Ec1MzM3pBQnIxdU93MUtkUUUxck54dXRINDdvMHZrY3VHN29YRXNqVUNRNVoyQXFFZkJGNld4R0pCS1kxR2o1cHF3TWhUMG0xWWF4UkRPTFMxVnZzTG4wTGo1ODg4NUNQVQ?oc=5" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-en">EN</span>Big Tech Needs to Spread Its Bets on Data Centers - WSJ</div>
+              <div class="ja-line">🇯🇵 <strong>【和訳】</strong>大手ハイテク企業はデータセンターへの賭けを広げる必要がある - WSJ</div>
+              <div class="item-meta"><span>wsj.com</span><span class="pub">Mon, 16 Nov 2026 10:30</span></div>
+            </a>
+            <a class="item" href="https://news.google.com/rss/articles/CBMirgFBVV95cUxQR2ZsNi15QXlUaXlMV3VCQzR3aTRlRmc5OEJSTW1fYkpaek92VFhUT2k1UGFfOGIwOEJmRlBSbGI0bktSTXAtUVdCcDBpZmVfbFlseVdOdWhxT21kU09iRDV3bjJjSmo4ZENaUElycXhsZ1ZOZ29PYmpLOHdaS21mRlhaQXlMemhXVHVIZmlhMllYVjdKWDFuRFVpOEhrdVU1RTZodWZrV0o3NzdQSFE?oc=5" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-en">EN</span>Exclusive | Cyber Startup Corma Raises $125 Million for Defensive AI Agents - WSJ</div>
+              <div class="ja-line">🇯🇵 <strong>【和訳】</strong>独占 |サイバースタートアップのコルマ、防御型AIエージェント向けに1億2500万ドルを調達 - WSJ</div>
+              <div class="item-meta"><span>wsj.com</span><span class="pub">Mon, 16 Nov 2026 15:32</span></div>
+            </a>
+            <a class="item" href="https://news.google.com/rss/articles/CBMipgFBVV95cUxPbjM3c3k5Q2otRklJTDllbEJZR1N1VUMwQ3NoajUtV1k0bWkyZmg1eDJZbkxZRmlWdzBCSko1d0laWnVQaFhYN2RYNFAyUjN1R0VxaU1GbjcteC0tQ252bkRZWFhSb3ZjWEhNd2JMdVRwR0hXVmM5SzliNmtiWU5IN3Y2Y3ZHSmdURWZnY1doTzA2cmdVLXExYUNrMXU3VGw5WXNUblBR?oc=5" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-en">EN</span>Nvidia Earnings, Anthropic IPO Ahead in New Test for AI Economy - WSJ</div>
+              <div class="ja-line">🇯🇵 <strong>【和訳】</strong>エヌビディアの決算、人工知能IPOがAI経済の新たな試練で前進 - WSJ</div>
+              <div class="item-meta"><span>wsj.com</span><span class="pub">Mon, 16 Nov 2026 12:33</span></div>
+            </a>
+            <a class="item" href="https://news.google.com/rss/articles/CBMiogFBVV95cUxNbVZuRkZvWWp2cTVZRkh3Tm96YThHTGFtSmk4TjhOMWZqT0xsSXZkbEFQRzRZcWFaMHlzNGYxZHBzTF9YYUZJa0ktNFNua1ZiLTVvNDRNZGViZlFxMVVsQlZXM09faWZOSDZkNDRiaTJjYXFfMUgxN3p1UWZkZXVuOEQxUFJRSHI4TG9yRU1kT0Rlb2ZoUGQtQUNndkdnajdTZmc?oc=5" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-en">EN</span>Exclusive | Trump Administration to Name Nvidia Among AI ‘National Champions’ - WSJ</div>
+              <div class="ja-line">🇯🇵 <strong>【和訳】</strong>独占 |トランプ政権、エヌビディアをAI「国家チャンピオン」に選出 - WSJ</div>
+              <div class="item-meta"><span>wsj.com</span><span class="pub">Mon, 16 Nov 2026 03:59</span></div>
+            </a>
+            <a class="item" href="https://news.google.com/rss/articles/CBMipAFBVV95cUxQdXRsejdndmRqaEQtdlRCZE1mc19mWVdObHdta0hXcHBSbVo1N09pa3NHT1VpbVFoSjBjYnd4S1VaZDR5WVdnQVdOOGl3X2pFdHVOT01VQnBfVXVyLWV0dGFGbEtsYk1XaTNmMHdrTGhUM0pSTHhnTlhqVGVneUl2bnNDV1ZtdFFHZExBenBGa05DdWZRZTBPYzUtMXpORDU4M2dKVg?oc=5" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-en">EN</span>Nvidia’s Days as an Open Checkbook for the AI Economy Are Numbered - WSJ</div>
+              <div class="ja-line">🇯🇵 <strong>【和訳】</strong>AI経済のオープンな小切手帳としてのNVIDIAの時代も終わり - WSJ</div>
+              <div class="item-meta"><span>wsj.com</span><span class="pub">Mon, 16 Nov 2026 02:21</span></div>
+            </a>
+            <a class="item" href="https://news.google.com/rss/articles/CBMiywFBVV95cUxOS3NsU18tTmdONnFEdnZIZzUyb3JXVFVpQjhhQ04tcG15MFpUclFpeTVUczh3X3RmRWZ4eWQ2Tk5SbUwtVlBvaGNSQ3N6MXRYa0tSVk43alVlMFZNTGZRdnNDWHlQcUwxMjNtR3lnVU5zbkJpQkpta0R5anRiQ01rVTZhNDdqbEtsMWFnWms2ZzFHVUJLSWlZdXhlZFlIWXk0dUVOS3M2elFGOFhuRFU3bk9MOVgtMnJ6azltUGktWXdhd2lRaUZMYkp5UQ?oc=5" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-en">EN</span>U.S. Stocks Fall as Nvidia Drama Continues - WSJ</div>
+              <div class="ja-line">🇯🇵 <strong>【和訳】</strong>エヌビディアのドラマ継続で米国株下落 - WSJ</div>
+              <div class="item-meta"><span>wsj.com</span><span class="pub">Mon, 16 Nov 2026 20:25</span></div>
+            </a>
+            <a class="item" href="https://news.google.com/rss/articles/CBMinAFBVV95cUxOTlVyWlFQMGREU3k3UnVoZmlKNEVKaE02bzVRbWtEeDZNMEpLaVFuVTEzaUJ6UUFuT0U2eGNTQW9vSUw5SUV5aEN2YXhiQUhaNEFhcUxrTmh0dFdrLWl2dWl2aE9JMzBGOUkyajNVcjlsTjhzbDVTNHI1aTZNeVFNQUx0VDVfSUxvX1VXcGE3cjBHNXluTjctSVhQdDQ?oc=5" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-en">EN</span>Banks Race to Keep Up as AI Bots Use Credit Cards - WSJ</div>
+              <div class="ja-line">🇯🇵 <strong>【和訳】</strong>AIボットのクレジットカード利用に銀行は後れを取らないよう競う - WSJ</div>
+              <div class="item-meta"><span>wsj.com</span><span class="pub">Mon, 16 Nov 2026 11:25</span></div>
+            </a>
+            <a class="item" href="https://news.google.com/rss/articles/CBMinAFBVV95cUxNV2VzVEtNYTdJdjd6LUpYbTh2OTl4VzBVa3oySi1YQngwYVZTWDhGS2Z4TkwwaGZRdFlfTVdFeGxoQzB2dExtTlIyY3lMYWkzNlZCT05qNG5GbW9tc2xHT3Z1TGs4WlpvQXNkUGxpVUtxY0h3c2hqcjVGYTlvSTFCd0gtVUV5RjYzcmQ2NU83bTd2UEIxOGo2d0g2dzU?oc=5" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-en">EN</span>Inside the Frenetic Month That Shook Wall Street’s AI Trade - WSJ</div>
+              <div class="ja-line">🇯🇵 <strong>【和訳】</strong>ウォール街のAI貿易を震撼させた狂乱の月の裏側 - WSJ</div>
+              <div class="item-meta"><span>wsj.com</span><span class="pub">Mon, 16 Nov 2026 10:36</span></div>
+            </a>
+            <a class="item" href="https://news.google.com/rss/articles/CBMie0FVX3lxTE5WRVRId0ZUcVRGRlNaOFhjRE5vUUVQWnZ6OElxc0llcUVsaXAxbDFxdXJocTh6UTc2OGN6VnZuN2sxMnZROVhnaU1aTWVVUlZLbU1KRzFYT2ljczNYTV9FTVQxWnFrS2xNdDdZQ2FHejNDUjh2d29PbHRROA?oc=5" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-en">EN</span>How Jensen Huang Built the Backdoor Route That Keeps Beijing in the AI Race - WSJ</div>
+              <div class="ja-line">🇯🇵 <strong>【和訳】</strong>ジェンセン・ファン氏はいかにして北京をAI競争に参加させ続けるバックドアルートを構築したか - WSJ</div>
+              <div class="item-meta"><span>wsj.com</span><span class="pub">Sun, 15 Nov 2026 09:48</span></div>
+            </a>
+            <a class="item" href="https://news.google.com/rss/articles/CBMivwFBVV95cUxOYnlHMF9IdTZ4bEdCZnluYWxUWm9oUU11WDBfREtHem00aXlrZUc3LUhsdjBNdWlBdngwRUtGUEFFVjJkQ19fYjIyNUdTZ3ZzWFNQQUdRRjdtSU1NQWxuMHBUTFhyS1o3ajJzTUpIN0FnQnJNa3dWMUZ5YTRtdVMyOWJpbzUxMHBEMTNVNUY3dHNnZVRXVXNEd0pkTDNmd01HbHJUemtIZkZ5VVBHUjJvRFh4TXh4MFVqcnJ0TVVYSQ?oc=5" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-en">EN</span>New AI Millionaires Want Wealth Advisers Who Can Help Give Their Money Away - WSJ</div>
+              <div class="ja-line">🇯🇵 <strong>【和訳】</strong>新しいAI億万長者、お金を寄付してくれるウェルスアドバイザーを求めている - WSJ</div>
+              <div class="item-meta"><span>wsj.com</span><span class="pub">Sun, 15 Nov 2026 01:00</span></div>
+            </a>
+            <a class="item" href="https://news.google.com/rss/articles/CBMia0FVX3lxTFBXZDl3ZWFXbzYyNDZKMlV3Vk4ybU5ZclFSNmcwZDlPa09pUi1XRmV5ZDdJRlBMMGl2SThNY2dGY1Q4SExpdHVRR0NwUVExd2I2d0JVUndKOG1PYXYybGlIRGdGYUw3T3BtNTdR?oc=5" target="_blank" rel="noopener">
+              <div class="item-title"><span class="badge badge-en">EN</span>Jensen Huang’s Downfall - WSJ</div>
+              <div class="ja-line">🇯🇵 <strong>【和訳】</strong>ジェンセン・ファン氏の失脚 - WSJ</div>
+              <div class="item-meta"><span>wsj.com</span><span class="pub">Sun, 15 Nov 2026 15:55</span></div>
+            </a></div>
+        </section>
+</div>
+<script>
+function filterTab(key, btn) {
+  document.querySelectorAll('.tab').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  document.querySelectorAll('.source-card').forEach(card => {
+    if (key === 'ALL') card.style.display = 'block';
+    else if (key === 'EN_ONLY') card.style.display = (card.dataset.lang !== 'JP') ? 'block' : 'none';
+    else card.style.display = (card.dataset.media === key) ? 'block' : 'none';
+  });
+}
+</script>
+</body>
+</html>
