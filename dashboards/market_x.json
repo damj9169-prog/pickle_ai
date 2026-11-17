@@ -1,0 +1,99 @@
+{
+  "title": "📈 投資・相場X 10アカウント監視ダッシュボード",
+  "output_html": "/workspace/downloads/market-x-dashboard.html",
+  "telegram_thread_id": 2,
+  "github_repo": "damj9169-prog/pickle_ai",
+  "github_file": "market-x.html",
+  "feeds": [
+    {
+      "type": "x",
+      "media": "後藤達也",
+      "name": "@goto_finance",
+      "handle": "goto_finance",
+      "lang": "JP",
+      "domain": "x.com",
+      "limit": 15
+    },
+    {
+      "type": "x",
+      "media": "Masa",
+      "name": "@Masa_Aug2020",
+      "handle": "Masa_Aug2020",
+      "lang": "JP",
+      "domain": "x.com",
+      "limit": 15
+    },
+    {
+      "type": "x",
+      "media": "ABCトレーダー",
+      "name": "@ABC87791035",
+      "handle": "ABC87791035",
+      "lang": "JP",
+      "domain": "x.com",
+      "limit": 15
+    },
+    {
+      "type": "x",
+      "media": "Shen",
+      "name": "@shenmacro",
+      "handle": "shenmacro",
+      "lang": "JP",
+      "domain": "x.com",
+      "limit": 15
+    },
+    {
+      "type": "x",
+      "media": "ざら速",
+      "name": "@ZARASOKU",
+      "handle": "ZARASOKU",
+      "lang": "JP",
+      "domain": "x.com",
+      "limit": 15
+    },
+    {
+      "type": "x",
+      "media": "にこそく",
+      "name": "@nicosokufx",
+      "handle": "nicosokufx",
+      "lang": "JP",
+      "domain": "x.com",
+      "limit": 15
+    },
+    {
+      "type": "x",
+      "media": "たけぞう",
+      "name": "@noatake1127",
+      "handle": "noatake1127",
+      "lang": "JP",
+      "domain": "x.com",
+      "limit": 15
+    },
+    {
+      "type": "x",
+      "media": "満州中央銀行",
+      "name": "@kabutociti",
+      "handle": "kabutociti",
+      "lang": "JP",
+      "domain": "x.com",
+      "limit": 15
+    },
+    {
+      "type": "x",
+      "media": "T.Kamada",
+      "name": "@Kamada3",
+      "handle": "Kamada3",
+      "lang": "JP",
+      "domain": "x.com",
+      "limit": 15
+    },
+    {
+      "type": "x",
+      "media": "世界四季報",
+      "name": "@4ki4",
+      "handle": "4ki4",
+      "lang": "JP",
+      "domain": "x.com",
+      "limit": 15
+    }
+  ]
+}
