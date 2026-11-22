@@ -1,0 +1,307 @@
+[
+ {
+  "name": "ビューティー総合",
+  "url": "https://www.amazon.co.jp/gp/bestsellers/beauty",
+  "group": "スキンケア"
+ },
+ {
+  "name": "スキンケア総合",
+  "url": "https://www.amazon.co.jp/gp/bestsellers/beauty/170040011",
+  "group": "スキンケア"
+ },
+ {
+  "name": "UVカット・日焼け止め",
+  "url": "https://www.amazon.co.jp/gp/bestsellers/beauty/170263011",
+  "group": "スキンケア"
+ },
+ {
+  "name": "オールインワン",
+  "url": "https://www.amazon.co.jp/gp/bestsellers/beauty/170108011",
+  "group": "スキンケア"
+ },
+ {
+  "name": "クレンジング",
+  "url": "https://www.amazon.co.jp/gp/bestsellers/beauty/170041011",
+  "group": "スキンケア"
+ },
+ {
+  "name": "ゴマージュ・ピーリング",
+  "url": "https://www.amazon.co.jp/gp/bestsellers/beauty/170173011",
+  "group": "スキンケア"
+ },
+ {
+  "name": "セルフタンニング",
+  "url": "https://www.amazon.co.jp/gp/bestsellers/beauty/170266011",
+  "group": "スキンケア"
+ },
+ {
+  "name": "フェイスケアセット",
+  "url": "https://www.amazon.co.jp/gp/bestsellers/beauty/238091011",
+  "group": "スキンケア"
+ },
+ {
+  "name": "フェイスパック",
+  "url": "https://www.amazon.co.jp/gp/bestsellers/beauty/170159011",
+  "group": "スキンケア"
+ },
+ {
+  "name": "フェイスマスク",
+  "url": "https://www.amazon.co.jp/gp/bestsellers/beauty/52921051",
+  "group": "スキンケア"
+ },
+ {
+  "name": "保湿乳液・クリーム",
+  "url": "https://www.amazon.co.jp/gp/bestsellers/beauty/170113011",
+  "group": "スキンケア"
+ },
+ {
+  "name": "化粧品原料・原液",
+  "url": "https://www.amazon.co.jp/gp/bestsellers/beauty/170297011",
+  "group": "スキンケア"
+ },
+ {
+  "name": "化粧水",
+  "url": "https://www.amazon.co.jp/gp/bestsellers/beauty/170092011",
+  "group": "スキンケア"
+ },
+ {
+  "name": "洗顔",
+  "url": "https://www.amazon.co.jp/gp/bestsellers/beauty/5267101051",
+  "group": "スキンケア"
+ },
+ {
+  "name": "洗顔料",
+  "url": "https://www.amazon.co.jp/gp/bestsellers/beauty/170058011",
+  "group": "スキンケア"
+ },
+ {
+  "name": "泡洗顔料",
+  "url": "https://www.amazon.co.jp/gp/bestsellers/beauty/170066011",
+  "group": "スキンケア"
+ },
+ {
+  "name": "洗顔せっけん",
+  "url": "https://www.amazon.co.jp/gp/bestsellers/beauty/170060011",
+  "group": "スキンケア"
+ },
+ {
+  "name": "洗顔ジェル",
+  "url": "https://www.amazon.co.jp/gp/bestsellers/beauty/170063011",
+  "group": "スキンケア"
+ },
+ {
+  "name": "洗顔パウダー",
+  "url": "https://www.amazon.co.jp/gp/bestsellers/beauty/170062011",
+  "group": "スキンケア"
+ },
+ {
+  "name": "洗顔フォーム",
+  "url": "https://www.amazon.co.jp/gp/bestsellers/beauty/170059011",
+  "group": "スキンケア"
+ },
+ {
+  "name": "液体・クリーム洗顔料",
+  "url": "https://www.amazon.co.jp/gp/bestsellers/beauty/170064011",
+  "group": "スキンケア"
+ },
+ {
+  "name": "美容液",
+  "url": "https://www.amazon.co.jp/gp/bestsellers/beauty/170134011",
+  "group": "スキンケア"
+ },
+ {
+  "name": "部分パック",
+  "url": "https://www.amazon.co.jp/gp/bestsellers/beauty/5263253051",
+  "group": "スキンケア"
+ },
+ {
+  "name": "ヘアケア総合",
+  "url": "https://www.amazon.co.jp/gp/bestsellers/beauty/5267102051",
+  "group": "ヘアケア"
+ },
+ {
+  "name": "シャンプー・リンス",
+  "url": "https://www.amazon.co.jp/gp/bestsellers/beauty/10391281051",
+  "group": "ヘアケア"
+ },
+ {
+  "name": "ヘアオイル",
+  "url": "https://www.amazon.co.jp/gp/bestsellers/beauty/4641308051",
+  "group": "ヘアケア"
+ },
+ {
+  "name": "ヘアマスク",
+  "url": "https://www.amazon.co.jp/gp/bestsellers/beauty/52953051",
+  "group": "ヘアケア"
+ },
+ {
+  "name": "育毛・養毛・増毛",
+  "url": "https://www.amazon.co.jp/gp/bestsellers/beauty/169747011",
+  "group": "ヘアケア"
+ },
+ {
+  "name": "増毛・ボリュームアップスプレー",
+  "url": "https://www.amazon.co.jp/gp/bestsellers/beauty/169751011",
+  "group": "ヘアケア"
+ },
+ {
+  "name": "育毛デバイス",
+  "url": "https://www.amazon.co.jp/gp/bestsellers/beauty/8485985051",
+  "group": "ヘアケア"
+ },
+ {
+  "name": "育毛・養毛用コンディショナー",
+  "url": "https://www.amazon.co.jp/gp/bestsellers/beauty/2356825051",
+  "group": "ヘアケア"
+ },
+ {
+  "name": "育毛・養毛用シャンプー",
+  "url": "https://www.amazon.co.jp/gp/bestsellers/beauty/2356824051",
+  "group": "ヘアケア"
+ },
+ {
+  "name": "育毛・養毛用トニック・エッセンス",
+  "url": "https://www.amazon.co.jp/gp/bestsellers/beauty/4642204051",
+  "group": "ヘアケア"
+ },
+ {
+  "name": "育毛・養毛用トリートメント",
+  "url": "https://www.amazon.co.jp/gp/bestsellers/beauty/5265278051",
+  "group": "ヘアケア"
+ },
+ {
+  "name": "バス用品総合",
+  "url": "https://www.amazon.co.jp/gp/bestsellers/beauty/169642011",
+  "group": "バス・シェービング"
+ },
+ {
+  "name": "デオドラント・制汗剤",
+  "url": "https://www.amazon.co.jp/gp/bestsellers/beauty/169859011",
+  "group": "バス・シェービング"
+ },
+ {
+  "name": "ボディウォッシュ",
+  "url": "https://www.amazon.co.jp/gp/bestsellers/beauty/2356805051",
+  "group": "バス・シェービング"
+ },
+ {
+  "name": "シェービング・ムダ毛処理",
+  "url": "https://www.amazon.co.jp/gp/bestsellers/beauty/169846011",
+  "group": "バス・シェービング"
+ },
+ {
+  "name": "シェービング用アクセサリ",
+  "url": "https://www.amazon.co.jp/gp/bestsellers/beauty/169794011",
+  "group": "バス・シェービング"
+ },
+ {
+  "name": "脱毛・除毛剤",
+  "url": "https://www.amazon.co.jp/gp/bestsellers/beauty/169848011",
+  "group": "バス・シェービング"
+ },
+ {
+  "name": "ハンドケア・フットケア",
+  "url": "https://www.amazon.co.jp/gp/bestsellers/hpc/169808011",
+  "group": "バス・シェービング"
+ },
+ {
+  "name": "BBクリーム",
+  "url": "https://www.amazon.co.jp/gp/bestsellers/beauty/2356834051",
+  "group": "ベースメイク"
+ },
+ {
+  "name": "CCクリーム",
+  "url": "https://www.amazon.co.jp/gp/bestsellers/beauty/5263277051",
+  "group": "ベースメイク"
+ },
+ {
+  "name": "DDクリーム",
+  "url": "https://www.amazon.co.jp/gp/bestsellers/beauty/5263278051",
+  "group": "ベースメイク"
+ },
+ {
+  "name": "コンシーラー",
+  "url": "https://www.amazon.co.jp/gp/bestsellers/beauty/170218011",
+  "group": "ベースメイク"
+ },
+ {
+  "name": "ファンデーション",
+  "url": "https://www.amazon.co.jp/gp/bestsellers/beauty/170201011",
+  "group": "ベースメイク"
+ },
+ {
+  "name": "フェイスパウダー",
+  "url": "https://www.amazon.co.jp/gp/bestsellers/beauty/170212011",
+  "group": "ベースメイク"
+ },
+ {
+  "name": "化粧下地",
+  "url": "https://www.amazon.co.jp/gp/bestsellers/beauty/170192011",
+  "group": "ベースメイク"
+ },
+ {
+  "name": "オーラルケア",
+  "url": "https://www.amazon.co.jp/gp/bestsellers/hpc/169762011",
+  "group": "ドラッグストア"
+ },
+ {
+  "name": "ベビーケア・おむつ",
+  "url": "https://www.amazon.co.jp/gp/bestsellers/hpc/170303011",
+  "group": "ベビー"
+ },
+ {
+  "name": "ベビーヘアケア",
+  "url": "https://www.amazon.co.jp/gp/bestsellers/baby/10311650051",
+  "group": "ベビー"
+ },
+ {
+  "name": "ベビーシャンプー",
+  "url": "https://www.amazon.co.jp/gp/bestsellers/baby/3607069051",
+  "group": "ベビー"
+ },
+ {
+  "name": "ベビースキンケア",
+  "url": "https://www.amazon.co.jp/gp/bestsellers/baby/170388011",
+  "group": "ベビー"
+ },
+ {
+  "name": "ベビースポンジ",
+  "url": "https://www.amazon.co.jp/gp/bestsellers/baby/170359011",
+  "group": "ベビー"
+ },
+ {
+  "name": "ベビーソープ",
+  "url": "https://www.amazon.co.jp/gp/bestsellers/baby/170356011",
+  "group": "ベビー"
+ },
+ {
+  "name": "ベビーデンタルケア",
+  "url": "https://www.amazon.co.jp/gp/bestsellers/baby/170414011",
+  "group": "ベビー"
+ },
+ {
+  "name": "婦人衛生用品・デリケートゾーンケア",
+  "url": "https://www.amazon.co.jp/gp/bestsellers/hpc/8486178051",
+  "group": "婦人衛生"
+ },
+ {
+  "name": "デリケートゾーンケア",
+  "url": "https://www.amazon.co.jp/gp/bestsellers/hpc/169939011",
+  "group": "婦人衛生"
+ },
+ {
+  "name": "洗浄＆浣腸",
+  "url": "https://www.amazon.co.jp/gp/bestsellers/hpc/8486179051",
+  "group": "婦人衛生"
+ },
+ {
+  "name": "犬オーラルケア",
+  "url": "https://www.amazon.co.jp/gp/bestsellers/pet-supplies/2155249051",
+  "group": "ペット"
+ },
+ {
+  "name": "犬目のケア",
+  "url": "https://www.amazon.co.jp/gp/bestsellers/pet-supplies/2155252051",
+  "group": "ペット"
+ }
+]

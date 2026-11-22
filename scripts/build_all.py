@@ -420,7 +420,7 @@ function filterTab(key, btn) {{
     return {"file": gh_file, "title": title, "feeds": feeds}
 
 
-def rebuild_index(items):
+def rebuild_index(items, extra_cards=None):
     cards = []
     for it in items:
         names = []
@@ -433,6 +433,16 @@ def rebuild_index(items):
     <div class="title">{html.escape(it['title'])}</div>
     <div class="desc">{html.escape(desc)}</div>
   </a>''')
+    rank_cards = []
+    for it in (extra_cards or []):
+        rank_cards.append(f'''  <a class="card rank" href="./{html.escape(it['file'])}">
+    <div class="title">{html.escape(it['title'])}</div>
+    <div class="desc">{html.escape(it.get('desc', ''))}</div>
+  </a>''')
+    rank_block = ""
+    if rank_cards:
+        rank_block = ('<h2 class="sec">📊 ランキング・調査データ（Excel / CSV ダウンロード）</h2>\n'
+                      + "\n".join(rank_cards))
     now_str = datetime.datetime.now(JST).strftime("%Y-%m-%d %H:%M")
     idx = f'''<!DOCTYPE html>
 <html lang="ja">
@@ -447,6 +457,9 @@ def rebuild_index(items):
   p {{ font-size: 13px; color: #6b7280; margin: 0 0 20px; }}
   .card {{ display: block; background: #fff; border: 1px solid #e5e7eb; border-left: 5px solid #145343; border-radius: 12px; padding: 18px 20px; margin-bottom: 14px; text-decoration: none; color: inherit; box-shadow: 0 1px 3px rgba(0,0,0,0.04); }}
   .card:hover {{ border-color: #145343; background: #f9fafb; }}
+  .sec {{ font-size: 15px; margin: 22px 0 10px; }}
+  .card.rank {{ border-left-color: #b45309; }}
+  .card.rank:hover {{ border-color: #b45309; }}
   .title {{ font-size: 16px; font-weight: 700; margin-bottom: 4px; }}
   .desc {{ font-size: 13px; color: #4b5563; line-height: 1.45; }}
 </style>
@@ -456,6 +469,7 @@ def rebuild_index(items):
   <h1>📰 ニュース監視ダッシュボード</h1>
   <p>最終更新: {now_str} JST（リロードで常に最新）</p>
 {''.join(cards)}
+{rank_block}
 </div>
 </body>
 </html>'''
@@ -468,9 +482,22 @@ def main():
     cache = load_cache()
     built = []
     for path in sorted(glob.glob(os.path.join(DASHBOARDS_DIR, "*.json"))):
-        built.append(build_one(path, cache))
+        try:
+            built.append(build_one(path, cache))
+        except Exception as e:
+            print(f"[error] {os.path.basename(path)}: {e}", file=sys.stderr)
     save_cache(cache)
-    rebuild_index(built)
+
+    # ランキング・調査ページ（Amazon / 楽天 / 東京IPO）— 期限が来たものだけ取得
+    extra = []
+    try:
+        sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+        import rank_pages
+        extra = rank_pages.build_due()
+    except Exception as e:
+        print(f"[error] rank_pages: {e}", file=sys.stderr)
+
+    rebuild_index(built, extra)
 
 
 if __name__ == "__main__":
