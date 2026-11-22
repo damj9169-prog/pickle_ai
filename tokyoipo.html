@@ -109,7 +109,16 @@ function rowsOf(){
     rows = rows.filter(r => [r.t, r.s, r.code, r.market, r.lead].some(v => v && String(v).toLowerCase().includes(q)));
   }
   const s = S.sort;
-  if (s === "rank") rows.sort((a,b) => (a.r == null ? 9e9 : a.r) - (b.r == null ? 9e9 : b.r) || String(a.c).localeCompare(String(b.c), "ja"));
+  if (s === "rank") {
+    const idx = {}; DATA.cats.forEach((c, i) => idx[c] = i);
+    rows.sort((a, b) => {
+      if (!S.c) {
+        const d = (idx[a.c || "その他"] ?? 999) - (idx[b.c || "その他"] ?? 999);
+        if (d) return d;
+      }
+      return (a.r == null ? 9e9 : a.r) - (b.r == null ? 9e9 : b.r);
+    });
+  }
   else if (s === "date") rows.sort((a,b) => String(a.date || "9999").localeCompare(String(b.date || "9999")));
   else if (s === "-rt") rows.sort((a,b) => (b.rt||0) - (a.rt||0));
   else if (s === "-rv") rows.sort((a,b) => (b.rv||0) - (a.rv||0));
@@ -167,6 +176,10 @@ function render(){
 }
 
 function setup(){
+  if (DATA.groups.length <= 1) {
+    const tb = document.getElementById("tabs");
+    if (tb && tb.parentElement) tb.parentElement.style.display = "none";
+  }
   document.getElementById("tabs").innerHTML = DATA.groups.map(g =>
     '<button class="tab' + (g.k === S.g ? " active" : "") + '" data-k="' + esc(g.k) + '">' + esc(g.l) + '</button>').join("");
   document.querySelectorAll("#tabs .tab").forEach(b => b.onclick = () => {
