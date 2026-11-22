@@ -222,6 +222,14 @@ def gather_amazon(prev_rows, rate):
         raise RuntimeError("amazon: 全カテゴリ取得失敗")
     if ok_cats < len(cats) * 0.5:
         raise RuntimeError(f"amazon: 取得成功 {ok_cats}/{len(cats)} が半数未満のため中止")
+    # 取れなかったカテゴリは前回データを残す（ページが空欄にならないように）
+    got = {r.get("c") for r in rows}
+    stale = [c["name"] for c in cats if c["name"] not in got]
+    if stale:
+        for r in prev_rows:
+            if r.get("c") in stale:
+                rows.append(r)
+        meta["stale_categories"] = stale
     return rows, meta
 
 
@@ -269,14 +277,19 @@ def gather_rakuten(prev_rows, _rate):
                              "u": it.get("url") or "", "mv": it.get("movement") or "",
                              "up": updated})
     meta = {"ok_categories": ok_cats, "total_categories": len(tasks), "failed": failed[:10]}
-    try:
-        meta["source_updated"] = rows[0].get("up") if rows else ""
-    except Exception:  # noqa: BLE001
-        pass
+    if rows:
+        meta["source_updated"] = rows[0].get("up") or ""
     if ok_cats == 0:
         raise RuntimeError("rakuten: 全カテゴリ取得失敗")
     if ok_cats < len(tasks) * 0.5:
         raise RuntimeError(f"rakuten: 取得成功 {ok_cats}/{len(tasks)} が半数未満のため中止")
+    got = {(r.get("g"), r.get("c")) for r in rows}
+    stale = [f"{t[0]}/{t[1]}" for t in tasks if (t[0], t[1]) not in got]
+    if stale:
+        for r in prev_rows:
+            if (r.get("g"), r.get("c")) in {(t[0], t[1]) for t in tasks if f"{t[0]}/{t[1]}" in stale}:
+                rows.append(r)
+        meta["stale_groups"] = stale
     return rows, meta
 
 
