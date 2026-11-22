@@ -174,8 +174,8 @@ def gather_amazon(prev_rows, rate):
     cats = amazon_categories()
     prev_rank = {}
     for r in prev_rows:
-        if r.get("asin"):
-            prev_rank[(r.get("c"), r.get("asin"))] = r.get("r")
+        if r.get("id"):
+            prev_rank[(r.get("c"), r.get("id"))] = r.get("r")
     rows, ok_cats, failed = [], 0, []
 
     def work(cat):
