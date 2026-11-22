@@ -218,7 +218,7 @@ def write_xlsx(path, sheets, title=None):
                'xmlns:vt="http://schemas.openxmlformats.org/officeDocument/2006/docPropsVTypes">'
                '<Application>xlsx_lite</Application></Properties>')
     import datetime
-    now = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+    now = "2020-01-01T00:00:00Z"
     core_xml = ('<?xml version="1.0" encoding="UTF-8" standalone="yes"?>'
                 '<cp:coreProperties xmlns:cp="http://schemas.openxmlformats.org/package/2006/metadata/core-properties" '
                 'xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" '
@@ -229,13 +229,13 @@ def write_xlsx(path, sheets, title=None):
                 '</cp:coreProperties>')
 
     with zipfile.ZipFile(path, "w", zipfile.ZIP_DEFLATED) as z:
-        z.writestr("[Content_Types].xml", _CT.format(sheets=ct_sheets))
-        z.writestr("_rels/.rels", _RELS)
-        z.writestr("docProps/core.xml", core_xml)
-        z.writestr("docProps/app.xml", app_xml)
-        z.writestr("xl/workbook.xml", workbook)
-        z.writestr("xl/_rels/workbook.xml.rels", "".join(rels))
-        z.writestr("xl/styles.xml", _STYLES)
+        _write(z, "[Content_Types].xml", _CT.format(sheets=ct_sheets))
+        _write(z, "_rels/.rels", _RELS)
+        _write(z, "docProps/core.xml", core_xml)
+        _write(z, "docProps/app.xml", app_xml)
+        _write(z, "xl/workbook.xml", workbook)
+        _write(z, "xl/_rels/workbook.xml.rels", "".join(rels))
+        _write(z, "xl/styles.xml", _STYLES)
         for n, i in names:
             links = []
             xml = _sheet_xml(sheets[i - 1], links)
@@ -250,8 +250,16 @@ def write_xlsx(path, sheets, title=None):
                     hl.append(f'<hyperlink ref="{ref}" r:id="rId{k}"/>')
                 rel_xml.append("</Relationships>")
                 xml = xml.replace("</worksheet>", "<hyperlinks>" + "".join(hl) + "</hyperlinks></worksheet>")
-                z.writestr(f"xl/worksheets/_rels/sheet{i}.xml.rels", "".join(rel_xml))
-            z.writestr(f"xl/worksheets/sheet{i}.xml", xml)
+                _write(z, f"xl/worksheets/_rels/sheet{i}.xml.rels", "".join(rel_xml))
+            _write(z, f"xl/worksheets/sheet{i}.xml", xml)
+
+
+def _write(z, name, data):
+    """ZIP エントリのタイムスタンプを固定し、同内容なら同一バイト列になるようにする。"""
+    zi = zipfile.ZipInfo(name, date_time=(1980, 1, 1, 0, 0, 0))
+    zi.compress_type = zipfile.ZIP_DEFLATED
+    zi.external_attr = 0o600 << 16
+    z.writestr(zi, data)
 
 
 def write_csv(path, header, rows):

@@ -535,11 +535,18 @@ def render_html(key, snap):
                       for g in sorted(groups, reverse=True)]
 
     cats = []
+    if key == "rakuten":
+        have = {r.get("c") for r in rows}
+        cats = [name for (_k, name, _gid) in RAKUTEN_CATEGORIES if name in have]
+    elif key == "amazon":
+        have = {r.get("c") for r in rows}
+        cats = [c["name"] for c in amazon_categories() if c["name"] in have]
     for r in rows:
         c = r.get("c") or "その他"
         if c not in cats:
             cats.append(c)
-    cats.sort()
+    if key == "tokyoipo":
+        cats.sort()
 
     updated = ymd(snap.get("generated_at"))
     meta = snap.get("meta") or {}
